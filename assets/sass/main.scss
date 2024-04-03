@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+//--Abstracts--//
+@import "_abstracts/_mixins";
+@import "_abstracts/_variables";
+//--Abstracts--//
+
+//--Base--//
+@import "_base/_typography";
+//--Base--//
+
+//--Layout--//
+@import "_layout/_header";
+@import "_layout/_banner";
+@import "_layout/_about";
+@import "_layout/_service";
+@import "_layout/_feature";
+@import "_layout/_gallery";
+@import "_layout/testimonial";
+@import "_layout/_client";
+@import "_layout/_project";
+@import "_layout/_conntect";
+@import "_layout/_team";
+@import "_layout/_animation";
+@import "_layout/_blog";
+@import "_layout/_contact";
+@import "_layout/_footer";
+//--Layout--//
+
+//--Components--//
+@import "_components/_buttons";
+//--Components--//
+
+
+//--All css  --//
+@import "swiper-bundle.min.css";
+@import "odometer.css";
+@import "animate.css";
+@import "magnific-popup.css";
+@import "nice-select.css";
+//--All css Linked--//

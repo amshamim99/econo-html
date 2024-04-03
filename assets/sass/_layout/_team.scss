@@ -1,0 +1,121 @@
+//--Service Section Start--//
+.team__section{
+    position: relative;
+    .left__shape{
+        position: absolute;
+        top: -8px;
+        left: 0;
+        z-index: -9;
+        img{
+            @include imgw;
+        }
+        @include breakpoint(max-xxxl){
+           top: -45px;
+         }
+        @media screen and (max-width: 1555px) {
+            top: -55px;
+        }
+        @include breakpoint(max-xl){
+           display: none;
+        }
+    }
+    .vector__shape{
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+    .section__title{
+        .sub{
+            color: var(--theme);
+        }
+    }
+    .team__items{
+        .team__thumb{
+            position: relative;
+            img{
+                @include imgw;
+            }
+            .team__content{
+                background-color: var(--white);
+                padding: 35px 35px;
+                position: absolute;
+                bottom: -33px;
+                left: 45px;
+                right: 0;
+                overflow: hidden;
+                clip-path: polygon(0 0, 100% 1%, 100% 81%, 89% 100%, 0 100%, 0% 50%);
+                p{
+                    color: var(--pra2);
+                }
+                @include breakpoint(max-lg){
+                    bottom: 0;
+                    clip-path: initial;
+                }
+            }
+            .team__social{
+                text-align: center;
+                transition: all 0.3s ease 0s;
+                position: absolute;
+                bottom: 18%;
+                left: 45px;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                background-color: var(--theme2);
+                @include breakpoint(max-lg){
+                    bottom: 30%;
+                }
+                .share__alt{
+                    i{
+                        color: var(--white);
+                        font-size: 16px;
+                    }
+                }
+                li{
+                    display: list-item;
+                    margin:0;
+                    cursor: pointer;
+                    a{
+                        color: var(--white);
+                        display: inline-block;
+                        text-align: center;
+                        font-size: 16px;
+                        position: relative;
+                        z-index: 999;
+                        width: 45px;
+                        height: 45px; 
+                        line-height: 45px;
+                        @include transition;
+                        &:hover{
+                            background-color: var(--theme2);
+                        }
+                        i{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                ul{
+                    opacity: 0;
+                    position: absolute;
+                    transition: all 0.4s ease-in-out;
+                    display: inline-block;
+                    left: 45px;
+                    bottom: 0;
+                    background-color: var(--theme);
+                    z-index: 999;
+                    @include flex;
+                }
+            }
+            &:hover{
+                .team__social{
+                    ul{
+                        opacity: 1;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+//--Service Section End--//
+

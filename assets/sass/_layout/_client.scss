@@ -1,0 +1,21 @@
+//--Client Section Start--//
+.client__section{
+    background: url(../img/client/client.jpg) no-repeat center center;
+    background-size: cover;
+    .client__wrapper{
+        .client__thumb{
+            width: 88px;
+            text-align: center;
+            margin: 0 auto;
+            img{
+               @include imgw;
+            }
+        }
+        .owl-dots{
+            @include breakpoint(max-xl){
+                display: none
+            }
+        }
+    }
+}
+//--Client Section End--//

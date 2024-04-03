@@ -1,0 +1,893 @@
+body {
+	color: var(--theme);
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: scroll !important;
+	background-color: var(--body);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { 
+	color: var(--theme);
+	margin-top: 0;
+	margin-bottom: 0;
+	@include headfont;
+	a{
+		color: var(--title);
+		@include headfont;
+	}
+}
+button{
+	border: unset;
+}
+::placeholder{
+	color: var(--title);
+}
+
+h1 {
+	font-size: 84px;
+	font-weight: 700;
+	line-height: 120%;
+}
+
+h2 {
+	font-size: 45px;
+	line-height: 120%;
+	font-weight: 700;
+	@include breakpoint(max-xl){
+		font-size: 36px;
+	}
+	@include breakpoint(max-sm){
+		font-size: 29px;
+	}
+}
+
+h3 {
+	font-size: 27px;
+	line-height: 135%;
+	font-weight: 700;
+	@include breakpoint(max-xl){
+		font-size: 24px;
+	}
+	@include breakpoint(max-md){
+		font-size: 20px;
+	}
+	@include breakpoint(max-sm){
+		font-size: 18px;
+	}
+}
+
+h4 {
+	font-size: 23px;
+	line-height: 130%;
+	font-weight: 700;
+	@include breakpoint(max-xs){
+		font-size: 20px;
+	}
+}
+
+h5 {
+	font-size: 19px;
+	line-height: 130%;
+	font-weight: 700;
+	@include breakpoint(max-xs){
+		font-size: 18px;
+	}
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 130%;
+	@include breakpoint(max-xl){
+		font-size: 15px;
+	}
+	@include breakpoint(max-sm){
+		font-size: 12px;
+	}
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	margin: 0;
+	color: var(--title);
+	transition: all 0.3s;
+}
+a:hover {
+	text-decoration: none;
+	color: var(--white);
+}
+input:focus{
+	color: var(--white);
+	outline: none;
+}
+input{
+	color: var(--white);
+}
+::placeholder{
+	color: var(--title);
+}
+p {
+	font-size: 16px;
+	line-height: 160%;
+	margin-bottom: 0;
+	color: var(--pra);
+	@include bodyfont;
+	@include breakpoint(max-xl){
+		font-size: 15px;
+	}
+	@include breakpoint(max-md){
+		font-size: 14px;
+	}
+	@include breakpoint(max-sm){
+		font-size: 13px;
+	}
+}
+.pl-24{
+	padding-left: 24px;
+	@include breakpoint(max-xxl){
+		padding-left: 14px;
+	}
+	@include breakpoint(max-lg){
+		padding-left: 10px;
+	}
+}
+.pr-24{
+	padding-right: 24px;
+	@include breakpoint(max-xxl){
+		padding-right: 14px;
+	}
+	@include breakpoint(max-lg){
+		padding-right: 10px;
+	}
+}
+
+.ml-24{
+	margin-left: 24px;
+	@include breakpoint(max-xxl){
+		margin-left: 14px;
+	}
+}
+.mr-24{
+	margin-right: 24px;
+	@include breakpoint(max-xxl){
+		margin-right: 14px;
+	}
+}
+
+.arrowrotate{
+	transform: rotate(-32deg);
+	font-size: 24px;
+}
+//font sizing
+.fs-8{
+	font-size: 8px;
+}
+.fs-10{
+	font-size: 10px;
+}
+.fs-12{
+	font-size: 12px;
+}
+.fs-14{
+	font-size: 14px;
+}
+.fs-16{
+	font-size: 16px;
+	@include breakpoint(max-md){
+		font-size: 14px;
+	}
+}
+.fs-18{
+	font-size: 18px;
+	@include breakpoint(max-md){
+		font-size: 16px;
+	}
+}
+.fs-20{
+	font-size: 20px;
+	@include breakpoint(max-md){
+		font-size: 18px;
+	}
+}
+.fs-xxl16{
+	font-size: 16px;
+}
+.fs-24{
+	font-size: 24px;
+	@include breakpoint(max-md){
+		font-size: 20px;
+	}
+	@include breakpoint(max-xs){
+		font-size: 18px;
+	}
+}
+.fs-xl-16{
+	font-size: 16px;
+}
+.fs-26{
+	font-size: 26px;
+	@include breakpoint(max-md){
+		font-size: 22px;
+	}
+}
+.fs-30{
+	font-size: 30px;
+	@include breakpoint(max-md){
+		font-size: 26px;
+	}
+}
+.fs-32{
+	font-size: 32px;
+	@include breakpoint(max-md){
+		font-size: 28px;
+	}
+}
+.fs-38{
+	font-size: 38px;
+	@include breakpoint(max-lg){
+		font-size: 28px;
+	}
+}
+.fw-400{
+	font-weight: 400 !important;
+}
+.fw-500{
+	font-weight: 500 !important;
+}
+.fw-600{
+	font-weight: 600;
+}
+.fw-700{
+	font-weight: 700;
+}
+
+
+//pragraph sizing
+.pfs-24{
+	font-size: 24px;
+	line-height: 150%;
+	@include breakpoint(max-lg){
+		font-size: 20px;
+	}
+	@include breakpoint(max-md){
+		font-size: 18px;
+	}
+}
+.pfs-20{
+	font-size: 20px;
+	line-height: 150%;
+	@include breakpoint(max-lg){
+		font-size: 18px;
+	}
+	@include breakpoint(max-md){
+		font-size: 16px;
+	}
+}
+.pfs-18{
+	font-size: 18px;
+	line-height: 150%;
+	@include breakpoint(max-lg){
+		font-size: 18px;
+	}
+	@include breakpoint(max-md){
+		font-size: 16px;
+	}
+}
+.pfs-16{
+	font-size: 16px;
+	line-height: 150%;
+}
+.pfs-14{
+	font-size: 14px;
+	line-height: 150%;
+}
+.pfs-12{
+	font-size: 12px;
+	line-height: 150%;
+}
+//pragraph sizing
+
+//padding custom sizing
+.p-24{
+	padding: 24px;
+	@include breakpoint(max-lg){
+		padding: 20px;
+	}
+	@include breakpoint(max-sm){
+		padding: 15px;
+	}
+}
+.pt-140 {
+	padding-top: 140px;
+	@include breakpoint(max-xl){
+		padding-top: 120px;
+	}
+	@include breakpoint(max-lg){
+		padding-top: 100px;
+	}
+}
+.pt-130 {
+	padding-top: 130px;
+	@include breakpoint(max-xl){
+		padding-top: 110px;
+	}
+	@include breakpoint(max-lg){
+		padding-top: 90px;
+	}
+}
+.custom__150{
+	padding-top: 170px;
+	@include breakpoint(max-xxl){
+		padding-top: 150px;
+	}
+}
+.pb-140 {
+	padding-bottom: 140px;
+	@include breakpoint(max-xl){
+		padding-bottom: 120px;
+	}
+	@include breakpoint(max-lg){
+		padding-bottom: 100px;
+	}
+}
+.pb-130 {
+	padding-bottom: 130px;
+	@include breakpoint(max-xl){
+		padding-bottom: 110px;
+	}
+	@include breakpoint(max-lg){
+		padding-bottom: 90px;
+	}
+}
+.pt-110 {
+	padding-top: 110px;
+	@include breakpoint(max-xl){
+		padding-top: 100px;
+	}
+	@include breakpoint(max-lg){
+		padding-top: 80px;
+	}
+}
+.pb-110 {
+	padding-bottom: 110px;
+	@include breakpoint(max-xl){
+		padding-bottom: 100px;
+	}
+	@include breakpoint(max-lg){
+		padding-bottom: 80px;
+	}
+}
+.pt-100 {
+	padding-top: 100px;
+	@include breakpoint(max-xl){
+		padding-top: 90px;
+	}
+	@include breakpoint(max-lg){
+		padding-top: 80px;
+	}
+	@include breakpoint(max-md){
+		padding-top: 65px;
+	}
+}
+.pb-100 {
+	padding-bottom: 100px;
+	@include breakpoint(max-xl){
+		padding-bottom: 90px;
+	}
+	@include breakpoint(max-lg){
+		padding-bottom: 80px;
+	}
+	@include breakpoint(max-md){
+		padding-bottom: 70px;
+	}
+}
+.pt-70 {
+	padding-top: 70px;
+	@include breakpoint(max-lg){
+		padding-top: 50px;
+	}
+}
+.pb-70 {
+	padding-bottom: 70px;
+	@include breakpoint(max-lg){
+		padding-bottom: 50px;
+	}
+}
+.pt-60 {
+	padding-top: 60px;
+	@include breakpoint(max-lg){
+		padding-top: 50px;
+	}
+}
+.pb-60 {
+	padding-bottom: 60px;
+	@include breakpoint(max-lg){
+		padding-bottom: 50px;
+	}
+}
+.pt-50 {
+	padding-top: 50px;
+	@include breakpoint(max-lg){
+		padding-top: 40px;
+	}
+}
+.pb-50 {
+	padding-bottom: 50px;
+	@include breakpoint(max-lg){
+		padding-bottom: 40px;
+	}
+}
+.pt-40 {
+	padding-top: 40px;
+	@include breakpoint(max-lg){
+		padding-top: 30px;
+	}
+}
+.pb-40 {
+	padding-bottom: 40px;
+	@include breakpoint(max-lg){
+		padding-bottom: 30px;
+	}
+}
+.pb-30{
+	padding-bottom: 30px;
+	@include breakpoint(max-lg){
+		padding-bottom: 20px;
+	}
+}
+.pt-30{
+	padding-top: 30px;
+	@include breakpoint(max-lg){
+		padding-top: 20px;
+	}
+}
+.pb-24{
+	padding-bottom: 24px;
+	@include breakpoint(max-lg){
+		padding-bottom: 15px;
+	}
+}
+.pt-24{
+	padding-top: 24px;
+	@include breakpoint(max-lg){
+		padding-top: 15px;
+	}
+}
+.pb-20{
+	padding-bottom: 20px;
+	@include breakpoint(max-lg){
+		padding-bottom: 15px;
+	}
+}
+.pt-20{
+	padding-top: 20px;
+	@include breakpoint(max-lg){
+		padding-top: 15px;
+	}
+}
+.pb-16{
+	padding-bottom: 16px;
+	@include breakpoint(max-lg){
+		padding-bottom: 10px;
+	}
+}
+.pt-16{
+	padding-top: 16px;
+	@include breakpoint(max-lg){
+		padding-top: 10px;
+	}
+}
+.pb-15{
+	padding-bottom: 15px;
+	@include breakpoint(max-lg){
+		margin-bottom: 10px;
+	}
+}
+.pt-15{
+	padding-top: 15px;
+	@include breakpoint(max-lg){
+		margin-top: 10px;
+	}
+}
+.pb-10{
+	padding-bottom: 10px;
+}
+.pt-10{
+	padding-top: 10px;
+}
+.pb5{
+	padding-bottom: 5px;
+}
+.pt5{
+	padding-top: 5px;
+}
+.p-8{
+	padding: 8px;
+}
+//padding custom sizing
+
+//margin custom sizing
+.mb-140{
+	margin-bottom: 140px;
+	@include breakpoint(max-xl){
+		margin-bottom: 120px;
+	}
+	@include breakpoint(max-lg){
+		margin-bottom: 90px;
+	}
+}
+.mt-120 {
+	margin-top: 120px;
+	@include breakpoint(max-xl){
+		margin-top: 100px;
+	}
+	@include breakpoint(max-lg){
+		margin-top: 80px;
+	}
+}
+.mb-120 {
+	margin-bottom: 120px;
+	@include breakpoint(max-xl){
+		margin-bottom: 100px;
+	}
+	@include breakpoint(max-lg){
+		margin-bottom: 80px;
+	}
+}
+.mt-100 {
+	margin-top: 100px;
+	@include breakpoint(max-xl){
+		margin-top: 90px;
+	}
+	@include breakpoint(max-lg){
+		margin-top: 80px;
+	}
+}
+.mb-100 {
+	margin-bottom: 100px;
+	@include breakpoint(max-xl){
+		margin-bottom: 90px;
+	}
+	@include breakpoint(max-lg){
+		margin-bottom: 80px;
+	}
+}
+.mt-80 {
+	margin-top: 80px;
+	@include breakpoint(max-lg){
+		margin-top: 60px;
+	}
+}
+.mb-80 {
+	margin-bottom: 80px;
+	@include breakpoint(max-lg){
+		margin-bottom: 60px;
+	}
+}
+.mt-60 {
+	margin-top: 60px;
+	@include breakpoint(max-lg){
+		margin-top: 50px;
+	}
+}
+.mb-60 {
+	margin-bottom: 60px;
+	@include breakpoint(max-lg){
+		margin-bottom: 50px;
+	}
+	@include breakpoint(max-sm){
+		margin-bottom: 35px;
+	}
+}
+.mb-50{
+	margin-bottom: 50px;
+	@include breakpoint(max-lg){
+		margin-bottom: 40px;
+	}
+}
+.mt-40 {
+	margin-top: 40px;
+	@include breakpoint(max-lg){
+		margin-top: 30px;
+	}
+}
+.mb-40 {
+	margin-bottom: 40px;
+	@include breakpoint(max-lg){
+		margin-bottom: 30px;
+	}
+}
+.mb-30{
+	margin-bottom: 30px;
+	@include breakpoint(max-lg){
+		margin-bottom: 20px;
+	}
+}
+.mt-30{
+	margin-top: 30px;
+	@include breakpoint(max-lg){
+		margin-top: 20px;
+	}
+}
+.mb-28{
+	margin-bottom: 28px;
+	@include breakpoint(max-lg){
+		margin-bottom: 18px;
+	}
+}
+.mt-28{
+	padding-top: 28px;
+	@include breakpoint(max-lg){
+		margin-top: 18px;
+	}
+}
+.mb-24{
+	margin-bottom: 24px;
+	@include breakpoint(max-lg){
+		margin-bottom: 15px;
+	}
+}
+.mt-24{
+	padding-top: 24px;
+	@include breakpoint(max-lg){
+		margin-top: 15px;
+	}
+	@include breakpoint(max-md){
+		margin-top: 10px;
+	}
+}
+.mb-20{
+	margin-bottom: 20px;
+	@include breakpoint(max-lg){
+		margin-bottom: 15px;
+	}
+}
+.mt-20{
+	padding-top: 20px;
+	@include breakpoint(max-lg){
+		margin-top: 15px;
+	}
+}
+.mb-18{
+	margin-bottom: 18px;
+	@include breakpoint(max-lg){
+		margin-bottom: 16px;
+	}
+}
+.mt-18{
+	margin-top: 18px;
+	@include breakpoint(max-lg){
+		margin-top: 16px;
+	}
+}
+.mb-15{
+	margin-bottom: 15px;
+	@include breakpoint(max-lg){
+		margin-bottom: 10px;
+	}
+}
+.mt-15{
+	margin-top: 15px;
+	@include breakpoint(max-lg){
+		margin-top: 10px;
+	}
+}
+.mb-16{
+	margin-bottom: 16px;
+	@include breakpoint(max-lg){
+		margin-bottom: 10px;
+	}
+}
+.mt-16{
+	margin-top: 16px;
+	@include breakpoint(max-lg){
+		margin-top: 10px;
+	}
+}
+.mt-35{
+	margin-top: 35px;
+}
+.mb-10{
+	margin-bottom: 10px;
+}
+.mt-10{
+	margin-top: 10px;
+}
+.mb-8{
+	margin-bottom: 8px;
+}
+.mt-8{
+	margin-top: 8px;
+}
+.mb5{
+	margin-bottom: 5px;
+}
+.mt5{
+	margin-top: 5px;
+}
+.bodyfont{
+	@include bodyfont;
+}
+.headfont{
+	@include headfont;
+}
+.custom__space{
+	padding-top: 112px;
+}
+//margin custom sizing
+
+//social meta
+.social{
+	gap: 12px;
+	li{
+		a{
+			width: 54px;
+			height: 54px;
+			display: block;
+			border-radius: 12px;
+			border: 1px solid var(--pra);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			i{
+				color: var(--pra);
+				font-size: 24px;
+			}
+			@include breakpoint(max-xxl){
+				width: 40px;
+				height: 40px;
+				i{
+					font-size: 20px;
+				}
+			}
+		}
+		&:hover{
+			a{
+				border: 1px solid var(--base);
+				i{
+					color: var(--base);
+				}
+			}
+		}
+	}
+}
+//social meta
+
+.white__color{
+	background-color: var(--white);
+}
+.theme__bg{
+	background-color: var(--theme);
+}
+.header__bg{
+	background-color: rgba(9, 30, 93, 0.9);
+}
+.bg__color{
+	background-color: #f2f1fc;
+}
+.clip__path{
+	clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 85%, 86% 100%, 0 100%, 0% 80%, 0% 20%);
+}
+//Section Title//
+.section__title{
+	.sub{
+		position: relative;
+		color: var(--white);
+		display: inline-block;
+		max-width: 560px;
+		span{
+			color: var(--theme2);
+		}
+        @include breakpoint(max-xs){
+            font-size: 20px;
+        }
+		@include breakpoint(max-xxs){
+            font-size: 18px;
+        }
+		&::before{
+			position: absolute;
+			bottom: -35px;
+			left: 0;
+			width: 180px;
+			height: 1px;
+			content: "";
+			background: var(--theme2);
+		}
+    }
+	h2{
+		@include breakpoint(max-xl){
+			font-size: 38px;
+		}
+		@include breakpoint(max-md){
+			font-size: 28px;
+		}
+		@include breakpoint(max-sm){
+			font-size: 22px;
+		}
+		@include breakpoint(max-xs){
+			font-size: 18px;
+		}
+		@include breakpoint(max-xxs){
+			font-size: 16px;
+		}
+	}
+}
+.header__text {
+	h2{
+		@include breakpoint(max-xxl){
+			font-size: 36px;
+		}
+		@include breakpoint(max-xl){
+			font-size: 32px;
+		}
+		@include breakpoint(max-sm){
+			font-size: 22px;
+		}
+	}
+	.view__btn{
+		font-weight: 500;
+		@include bodyfont;
+		font-size: 16px;
+		i{
+			font-size: 24px;
+		}
+	}
+}
+//Section Title//
+
+.transition{
+	transition: all 0.4s;
+}
+//all text color
+.max__width{
+	max-width: 310px;
+}
+.ralt{
+	position: relative;
+}
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+.overhid{
+	overflow: hidden;
+}
+
+//meta iocn choose
+.twitter{
+	background: var(--secoundary-color) !important;
+}
+.twitch{
+	background: rgb(110, 60, 210) !important;
+}
+.youtube{
+	background: rgb(172, 46, 46) !important;
+}
+.insta{
+	background: rgb(207, 93, 93) !important;
+}
+.lind{
+	background: rgb(78 131 228) !important;
+}
+.face{
+	background: rgb(27, 114, 244) !important;
+}
+i{
+	font-size: 18px;
+}
+//meta iocn choose
+
+.section__bg{
+	background-color: #f2f1fc;
+}
+
+

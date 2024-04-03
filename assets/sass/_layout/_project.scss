@@ -1,0 +1,104 @@
+//--Project Section Start--//
+.project__section{
+    background: url(../img/project/bg.png) no-repeat center center;
+    background-size: cover;
+    .right__shape{
+        position: absolute;
+        top: 0;
+        right: 0px;
+        bottom: -100px;
+        z-index: 1;
+        img{
+            @include imgw;
+        }
+        @include breakpoint(max-xl){
+            display: none;
+        }
+    }
+    .project__wrapper{
+        .owl-nav{
+             button.owl-next {
+                 padding: 0;
+                 background: #252837;
+                 width: 50px;
+                 height: 50px;
+                 position: absolute;
+                 top: 43%;
+                 left: -45px;
+                 transform: translate(-50%, -50%);
+                 i{
+                     color: var(--white);
+                 }
+             }
+             button.owl-prev{
+                padding: 0;
+                background: #252837;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 43%;
+                right: -95px;
+                transform: translate(-50%, -50%);
+                 i{
+                     color: var(--white);
+                 }
+             }
+         }
+    }
+    .project__items{
+        .project__thumb{
+            position: relative;
+            img{
+                @include imgw;
+            }
+            &::before{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(var(--theme)));
+                background: linear-gradient(to bottom, transparent 0%, var(--theme) 100%);
+                content: "";
+                z-index: 1;
+                transition: all 0.4s ease-in-out !important;
+                height: 365px
+            }
+            .content{
+                position: absolute;
+                bottom: 35px;
+                left: 30px;
+                color: var(--white);
+                z-index: 99;
+            }
+        }
+        &:hover{
+            .project__thumb{
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(var(--theme2)));
+                    background: linear-gradient(to bottom, transparent 0%, var(--theme2) 100%);
+                    content: "";
+                    z-index: 1;
+                    -webkit-transition: all 0.9s ease;
+                    transition: all 0.9s ease;
+                    height: 365px
+                }
+            }
+        }
+    }
+    .owl-carousel .owl-nav.disabled {
+        display: block !important;
+        @include breakpoint(max-md){
+            display: none !important;
+        }
+    }
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        display: none;
+    }
+}
+//--Project Section End--//

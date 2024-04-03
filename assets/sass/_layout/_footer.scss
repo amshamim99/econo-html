@@ -1,0 +1,99 @@
+//--Footer Section Start--//
+.footer__section{
+    .grad__shape__three{
+        position: absolute;
+        right: 0;
+        top: -67px;
+    }
+    .footer__top{
+        .footer__widget{
+            .widget__head{
+                position: relative;
+               h5{
+                  text-transform: capitalize;
+                  color: var(--white);
+                }
+                &::before{
+                    position: absolute;
+                    bottom: -25px;
+                    left: 0;
+                    height: 2px;
+                    width: 80px;
+                    content: "";
+                    background-color: var(--theme2);
+                }
+            }
+            p{
+                color: var(--white);
+            }
+            .social__icon{
+                margin-top: 35px;
+                @include flex;
+                gap: 6px;
+                li{
+                    width: 35px;
+                    height: 35px;
+                    line-height: 32px;
+                    border: 2px solid var(--border);
+                    text-align: center;
+                    border-radius: 0 0 10px;
+                    @include transition;
+                    cursor: pointer;
+                    a{
+                        i{
+                            color: var(--white);
+                            font-size: 15px;
+                        }
+                    }
+                    &:hover{
+                        background-color: var(--theme2);
+                        border: 2px solid var(--theme2);
+                    }
+                }
+            }
+            .link__list{
+                li{
+                    font-size: 16px;
+                    font-weight: 400;
+                    @include transition;
+                    &:not(:last-child){
+                        margin-bottom: 18px;
+                    }
+                    a{
+                        color: #f2f1fc;
+                        @include transition;
+                    }
+                    &:hover{
+                        margin-left: 5px;
+                        a{
+                            color: var(--theme2);
+                        }
+                    }
+                }
+            }
+            .form{
+                input{
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid #4d5c8b;
+                    width: 100%;
+                    padding-bottom: 25px;
+                    font-size: 16px;
+                    font-weight: 50;
+                }
+                .button{
+                    .cmn--btn{
+                        background-color: var(--theme2);
+                    }
+                }
+            }
+        }
+    }
+    .footer__bottom{
+        border-top: 1px solid var(--border);
+        p{
+            color: var(--white);
+        }
+    }
+}
+//--Footer Section End--//

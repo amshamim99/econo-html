@@ -1,0 +1,107 @@
+//--Connect Section Start--//
+.connect__section{
+    .laft__shape{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;    
+    }
+    .section__title{
+        .section__wrap{
+            @include breakpoint(max-xll){
+               flex-wrap: wrap;
+              }
+            .sub{
+                color: var(--theme);
+                position: relative;
+                @include breakpoint(max-xxl){
+                    &::after{
+                        display: none;
+                    }
+                  }
+                @include breakpoint(max-xll){
+                    margin-bottom: 50px;
+                  }
+                    &::before{
+                        bottom: -27px;
+                    }
+                    &::after{
+                        position: absolute;
+                        top: 20px;
+                        right: -20px;
+                        height: 73px;
+                        width: 1px;
+                        content: "";
+                        background-color: #d9dce4;
+                    }
+                }
+            .cont{
+                max-width: 600px;
+            }
+        }
+        h6{
+            margin-top: 60px;
+            @include flex;
+            gap: 20px;
+            span{
+                color: #1cb0eb;
+                font-size: 33px;
+            }
+        }
+    }
+    .map__thumb{
+        z-index: 99;
+        img{
+            @include imgw;
+        }
+    }
+    .faq-left-wrapper {
+        .accordion-item {
+           // background: var(--theme);
+            border: none;
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 2px 2px;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            .accordion-button {
+                color: var(--theme);
+                font-size: 19px;
+                font-weight: 600;
+                gap: 30px;
+                border-bottom: 1px solid #d9dce4;
+                @include breakpoint(max-md){
+                    font-size: 16px;
+                    gap: 10px;
+                }
+            }
+        }
+        .accordion-body {
+            padding: 15px 20px 20px;
+        }
+        .accordion-button:not(.collapsed) {
+           // color: var(--theme);
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+        .accordion-button::after {
+            flex-shrink: 0;
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-left: auto;
+            content: "";
+            background-image: url(../img/pricing/down.svg);
+            background-repeat: no-repeat;
+            background-size: 1.25rem;
+            transition: transform 0.2s ease-in-out;
+        }
+        .accordion-button:focus {
+            z-index: 3;
+            border-color: #d9dce4;
+            outline: 0;
+            box-shadow: none !important;
+        }
+    }
+}
+//--Connect Section End--//

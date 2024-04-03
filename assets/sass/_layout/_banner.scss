@@ -1,0 +1,254 @@
+//--Banner Section Start--//
+.banner__section{
+    background: url(../img/banner/main-bg.png) no-repeat center center;
+    background-size: cover;
+    &::before{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        height: 80px;
+        width: 120px;
+        background-color: var(--white);
+        @include breakpoint(max-xl){
+            display: none;
+        }
+    }
+    .shape__right{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        img{
+            @include imgw;
+        }
+        @include breakpoint(max-lg){
+           display: none;
+        }
+    }
+    .grad__shape{
+        position: absolute;
+        bottom: 0;
+        left: -55px;
+        img{
+            @include imgw;
+        }
+        @media screen and (max-width: 1300px) {
+           left: -165px;
+        }
+        @include breakpoint(max-xl){
+            display: none;
+        }
+    }
+    .vector__shape{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        @include breakpoint(max-md){
+            display: none;
+        }
+    }
+    .banner__wrap{
+        padding: 250px 0;
+        @include breakpoint(max-lg){
+           padding: 200px 0;
+        }
+        @include breakpoint(max-md){
+            padding: 150px 0;
+        }
+    }
+    .banner__content{
+        margin-left: 50px;
+        .box__shape{
+            gap: 25px;
+            img{
+                @include breakpoint(max-sm){
+                    display: none !important;
+                }
+            }
+            h4{
+                position: relative;
+                &::before{
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    width: 60px;
+                    border: 2px solid var(--theme2);
+                    content: "";
+                }
+                span{
+                    color: var(--theme2);
+                }
+            }
+        }
+        h1{
+            @include breakpoint(max-xxl){
+                font-size: 62px;
+            }
+            @include breakpoint(max-sm){
+                font-size: 42px;
+            }
+            span{
+                color: var(--theme2);
+            }
+        }
+    }
+    .banner__thumb{
+        position: absolute;
+        bottom: 0;
+        right: 150px;
+        width: 950px;
+        height: 870px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        @include breakpoint(max-x4l){
+            right: 160px;
+        }
+        @include breakpoint(max-xxxl){
+            right: 100px;
+            width: 800px;
+            height: 770px;
+        }
+        @include breakpoint(max-xl){
+            width: 640px;
+            height: 615px;
+            right: 0;
+        }
+        @include breakpoint(max-lg){
+            display: none;
+        }
+    }
+}
+.banner__two{
+    background: url(../img/banner/banner-bg.png) no-repeat center center;
+    background-size: cover;
+    padding: 130px 0;
+    &::before{
+        display: none;
+    }
+    .shape__right{
+        position: absolute;
+        bottom: -75px;
+        right: -50px;
+        img{
+            @include imgw;
+        }
+        @include breakpoint(max-x4l){
+           right: -310px;
+        }
+        @include breakpoint(max-xxxl){
+           bottom: -185px;
+         }
+        @include breakpoint(max-xl){
+           display: none;
+        }
+    }
+    .banner__content{
+        @include breakpoint(max-xl){
+            padding: 250px 0;
+        }
+        @include breakpoint(max-lg){
+            padding: 100px 0 200px 0;
+        }
+        @include breakpoint(max-md){
+            padding: 0 0 150px 0;
+        }
+        .box__shape{
+            h4{
+                color: var(--white);
+                margin-bottom: 15px;
+            }
+        }
+        h1{
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+        p{
+            color: var(--white);
+        }
+        .cmn--btn{
+            background-color: #1cb0eb;
+        }
+    }
+    .banner__thumb{
+        position: relative;
+        width: initial;
+        height: initial;
+        bottom: -115px;
+        right: 90px;
+    }
+}
+//--Banner Section End--//
+
+//--Breadcumd Section Start--//
+.breadcumd__banner{
+    background: url(../img/inner/bg.png) no-repeat center center;
+    background-size: cover;
+    padding: 250px 0;
+    .breadcumd__wrapper{
+        position: relative;
+        .breadcumd__items{
+            gap: 24px;
+            ul{
+                @include flex;
+                gap: 10px;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    content: "";
+                    height: 1px;
+                    width: 60px;
+                    background-color: var(--theme2);
+                }
+                li{
+                    font-size: 16px;
+                    color: var(--white);
+                    font-weight: 500;
+                    i{
+                        font-size: 15px;
+                    }
+                    a{
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+        .breadcumd__content{
+            color: var(--white);
+            @include breakpoint(max-xxl){
+                font-size: 66px;
+            }
+            @include breakpoint(max-lg){
+                font-size: 48px;
+            }
+            @include breakpoint(max-sm){
+                font-size: 32px;
+            }
+        }
+    }
+    .about__shape{
+        position: absolute;
+        bottom: -18px;
+        right: 0;
+        img{
+            @include imgw;
+        }
+    }
+}
+.about__bg{
+    background: url(../img/about/about-inner-bg.png) no-repeat center center;
+    background-size: cover;
+}
+.single__bg{
+    background: url(../img/banner/blog-single-bg.png) no-repeat center center;
+    background-size: cover;
+    .grad__shape{
+        position: absolute;
+        bottom: -17px;
+        right: 0;
+    }
+}
+//--Breadcumd Section End--//

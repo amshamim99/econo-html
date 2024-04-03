@@ -1,0 +1,170 @@
+//--Testmonial Section Start--//
+.testimonial__section{
+    background: url(../img/testimonial/testi-bg.png) no-repeat center center;
+    background-size: cover;
+    .right__shape{
+        position: absolute;
+        right: 100px;
+        bottom: 0;
+        @include breakpoint(max-x4l){
+           bottom: 30px;
+        }
+        @include breakpoint(max-xxxl){
+            bottom: 55px;
+         }
+        @include breakpoint(max-xxl){
+            right: 0;
+        }
+        @include breakpoint(max-xl){
+            display: none
+        }
+        img{
+            @include imgw;
+        }
+    }
+    .section__title{
+        .sub{
+            color: var(--theme);
+            &::before{
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .testi__wrapper{
+        .testi__items{
+            clip-path: polygon(100% 0, 100% 80%, 82% 100%, 0 100%, 0 0);
+            padding-top: 20px;
+            .testi__inner{
+               background-color: var(--white);
+               position: relative;
+              padding: 50px 50px;
+            }
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 25px;
+                width: 88%;
+                height: 100%;
+                content: "";
+                box-shadow: 0px 3px 51px 0px rgba(0, 22, 89, 0.11);
+                background-color: #f6f8f9;
+            } 
+            .testi__icon{
+                width: 75px;
+                img{
+                    @include imgw;
+                }
+            }
+            .testi__wrap{
+                gap: 18px;
+                .testi__thumb{
+                    border-left: 5px solid var(--theme2) ;
+                }
+                .testi__content{
+                    font-size: 15px;
+                    color: var(--pra-2);
+                    position: relative;
+                    margin-top: 20px;
+                    &::before{
+                        position: absolute;
+                       top: -10px;
+                       left: 0;
+                       content: "";
+                       width: 45px;
+                       height: 1px;
+                       background-color: #d9dce4;
+                    }
+                }
+            }
+        }
+        .owl-dots{
+            @include breakpoint(max-xxl){
+                display: none
+            }
+        }
+    }
+}
+.testi__style__two{
+    background: url(../img/testimonial/bg.jpg) no-repeat center center;
+    background-size: cover;
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: rgb(9, 7, 58);
+        opacity: 0.859;
+    }
+    .right__shape{
+        position: absolute;
+        right: -88px;
+        top: -250px;
+    }
+    .section__title{
+        position: relative;
+        .sub{
+            color: var(--white);
+            &::before{
+                left: initial;
+                transform: initial;
+                width: 110px;
+            }
+        }
+    }
+    .testi__item{
+        .testi__content{
+            h5{
+                color: var(--white);
+                font-weight: 400;
+                line-height: 150%;
+                margin-bottom: 40px;
+                span{
+                    color: var(--theme2)
+                }
+                @include breakpoint(max-xl){
+                    font-size: 16px;
+                }
+                @include breakpoint(max-lg){
+                    font-size: 16px;
+                }
+                @include breakpoint(max-sm){
+                    font-size: 14px;
+                }
+            }
+            ul{
+                li{
+                    color: #ffbf00;
+                }
+            }
+        }
+    }
+    .testi__thumb{
+        img{
+            @include imgw;
+        }
+    }
+    .testi__dot__wrp{
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            border-radius: 100px;
+            transition: 0.6s;
+            border:1px solid var(--white);
+            background-color: transparent;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: var(--theme2);
+            border:1px solid var(--theme2);
+            transition: 0.6s;
+        }
+    }
+}
+//--Testmonial Section End--//
+
+    

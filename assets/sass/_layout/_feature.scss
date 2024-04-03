@@ -1,0 +1,181 @@
+//--Feature Section Start--//
+.feature__section{
+    .left__shape{
+        position: absolute;
+        bottom: -57%;
+        left: -40px;
+        @include breakpoint(max-lg){
+            display: none;
+        }
+        img{
+            @include imgw;
+        }
+    }
+    .feature__wrapper{
+        position: relative;
+        .vector__shape{
+            position: absolute;
+            bottom: 40px;
+            left: -131px;
+            @include breakpoint(max-lg){
+                display: none;
+            }
+        }
+    }
+    .section__title{
+        .sub{
+            color: var(--theme);
+        }
+    }
+    .main__video{
+        .video__thumb{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 1100px;
+            @include breakpoint(max-x4l){
+              width: 800px;;
+            }
+            @include breakpoint(max-xxxl){
+                width: 750px;;
+              }
+            @include breakpoint(max-xl){
+                width: 600px;
+             }
+            @include breakpoint(max-lg){
+                display: none;
+            }
+           img{
+              @include imgw;
+                @include breakpoint(max-x4l){
+                object-fit: contain;
+                }
+            }
+        }
+        .video__icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            img{
+                @include imgw;
+            }
+        }
+    }
+    .feature__box{
+        gap: 25px;
+        .title__cont{
+            position: relative;
+            span{
+                color: var(--theme2);
+            }
+            &::before{
+                position: absolute;
+                bottom: -16px;
+                left: 0;
+                width: 60px;
+                height: 1px;
+                content: "";
+                background-color: var(--theme2);
+            }
+        }
+    }
+}
+.feature__two{
+    .feature__items__two{
+        position: relative;
+        .feature__number{
+            font-size: 90px;
+            color: var(--theme2);
+            line-height: 0px;
+            position: absolute;
+            top: 0;
+            left: 60px;
+            @include breakpoint(max-lg){
+               font-size: 72px;
+            }
+            @include breakpoint(max-md){
+                font-size: 62px;
+             }
+            @include breakpoint(max-sm){
+                font-size: 52px;
+             }
+        }
+        .feature__wrap{
+            padding: 75px 75px;
+            box-shadow: 0px 3px 29px 0px rgba(0, 22, 89, 0.14);
+            position: relative;
+            @include breakpoint(max-xl){
+                padding: 70px 40px;
+            }
+            .content{
+                h5{
+                    margin-bottom: 20px;
+                }
+                p{
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        bottom: -30px;
+                        content: "";
+                        height: 1px;
+                        width: 155px;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: var(--theme2);
+                    }
+                }
+            }
+        }
+    }
+}
+.icon__item{
+    .icon__wrap{
+        gap: 45px;
+        @include breakpoint(max-md){
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        &:not(:last-child){
+            margin-bottom: 40px;
+        }
+        .icon{
+            width: 95px;
+            height: 95px;
+            line-height: 85px;
+            border: 2px solid var(--theme2);
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 9px;
+                right: -7px;
+                width: 52px;
+                transform: rotate(-51deg);
+                border: 1px solid var(--theme2);
+                width: 29.5px;
+            } 
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -20px;
+                right: -3px;
+                margin-left: 0px;
+                border-width: 20px;
+                border-style: solid;
+                border-color: white transparent transparent transparent;
+                transform: rotate(-271deg);
+            } 
+        }
+        .content{
+            h5{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+//--Feature Section End--//
+
