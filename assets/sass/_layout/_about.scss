@@ -12,6 +12,12 @@
             display: none;
         }
     }
+    @include breakpoint(xsmall){
+        padding: 80px 0;
+    }
+    @include breakpoint(xl){
+        padding: 180px 0;
+    }
     .box__shape{
         position: absolute;
         top: 125px;
@@ -58,8 +64,12 @@
                     width: 170px;
                     background-color: var(--theme);
                     padding: 17px 28px;
+                    text-align: center;
                     @include breakpoint(max-sm){
                         width: 105px;
+                    }
+                    @include breakpoint(xl){
+                        padding: 4px 26px;
                     }
                     h2{
                         font-size: 84px;
@@ -72,13 +82,13 @@
                             font-size: 48px;
                         }
                         @include breakpoint(max-sm){
-                            font-size: 36px;
+                            font-size: 35px;
                         }
                     }
                 }
                 .counter__content{
                     background-color: var(--theme2);
-                    padding: 35px 28px;
+                    padding: 23px 28px;
                     clip-path: polygon(0 1%, 88% 0, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
                     @include breakpoint(max-xl){
                         padding: 25px 28px;

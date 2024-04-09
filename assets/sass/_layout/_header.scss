@@ -360,20 +360,20 @@
 			color: var(--white);
 			position: absolute;
 			top: 15px;
-			left: -75px;
+			left: -55px;
 			z-index: 99;
-			clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 75%, 86% 100%, 0 100%, 0% 80%, 0% 20%);
+			clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 76%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
 			@include breakpoint(max-xl){
-				padding: 12px 10px 11px 20px;
+				padding: 12px 10px 11px 15px;
 				font-size: 13px;
-				left: -25px;
+				left: -28px;
 			}
 			@include breakpoint(max-lgs){
 				display: none;
 			}
 		}
 		.cmn--btn{
-			padding: 30px 30px 25px 65px;
+			padding: 30px 45px 30px 125px;
 			background-color: var(--theme2);
 			clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 87%, 100% 100%, 0% 100%, 0% 110%, 26% -3%);
 			@include breakpoint(max-xl){
@@ -384,8 +384,8 @@
 				display: none;
 			}
 			i{
-				font-size: 15px;
-				margin-right: 15px;
+				font-size: 16px;
+				margin-right: 12px;
 				}	
 			}
 	}

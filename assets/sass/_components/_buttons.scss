@@ -10,9 +10,8 @@
 	z-index: 1;
 	transition: all 0.6s ease-in-out 0s;
 	overflow: hidden;
-	text-transform: uppercase;
 	color: var(--white);
-	clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 75%, 86% 100%, 0 100%, 0% 80%, 0% 20%);
+	clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 76%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
 	&:hover{
 		color: var(--white);
 		background: var(--theme2);

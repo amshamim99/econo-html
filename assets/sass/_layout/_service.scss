@@ -75,6 +75,8 @@
     }
     .service__items{
         padding: 30px;
+        -webkit-transition: all 4s ease;
+                transition: all 4s ease; 
         .service__thumb{
             position: relative;
             img{
@@ -82,17 +84,17 @@
             }
             &::before{
                 position: absolute;
-                left: 0;
-                bottom: 0;
-                height: 0;
+                right: 0;
+                top: 0;
+                height:100%;
                 width: 100%;
-                background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(var(--theme)));
-                background: linear-gradient(to bottom, transparent 0%, var(--theme) 100%);
+                background: -webkit-gradient(linear, right top, right bottom, from(transparent), to(var(--theme)));
+                background: linear-gradient(400deg, transparent 50%, var(--theme) 100%);
                 content: "";
                 pointer-events: none;
                 z-index: 1;
-                -webkit-transition: all 0.4s ease;
-                transition: all 0.4s ease;
+                -webkit-transition: all .4s ease;
+                transition: all .4s ease; 
             }
         }
         .service__content{
@@ -117,8 +119,10 @@
         &:hover{
             .service__thumb{
                 &::before{
-                    bottom: 0;
-                    height: 100%;
+                    top: 0;
+                    background: linear-gradient(400deg, transparent 0%, var(--theme) 100%);
+                    -webkit-transition: all .4s ease;
+                    transition: all .4s ease; 
                 }
             }
         }
