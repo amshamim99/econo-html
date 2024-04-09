@@ -100,7 +100,7 @@
 		@include breakpoint(max-xl){
 			gap: 45px;
 		}
-		@include breakpoint(max-lgs){
+		@include breakpoint(max-lg){
 			align-items: center;
 			justify-content: space-between;
 		}
@@ -117,7 +117,7 @@
 				width: 200px;
 				padding: 30px 30px 30px;
 			}
-			@include breakpoint(max-lgs){
+			@include breakpoint(max-lg){
 				width: 160px;
 				padding: 25px 23px 21px;
 			}
@@ -135,14 +135,14 @@
 }
 .header__top{
 	width: 100%;
-	@include breakpoint(max-lgs){
+	@include breakpoint(max-lg){
 		width: initial;
 	}
 	.item{
 		@include flex;
 		justify-content: space-between !important;
 		padding: 15px 0;
-		@include breakpoint(max-lgs){
+		@include breakpoint(max-lg){
 			display: none;
 		}
 		position: relative;
@@ -368,7 +368,7 @@
 				font-size: 13px;
 				left: -28px;
 			}
-			@include breakpoint(max-lgs){
+			@include breakpoint(max-lg){
 				display: none;
 			}
 		}
@@ -380,7 +380,7 @@
 				padding: 30px 26px 25px 80px;
 				font-size: 13px;
 			}
-			@include breakpoint(max-lgs){
+			@include breakpoint(max-lg){
 				display: none;
 			}
 			i{
