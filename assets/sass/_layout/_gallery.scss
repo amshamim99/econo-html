@@ -5,10 +5,18 @@
    position: relative;
    .left__shape{
     position: absolute;
-    bottom: 0;
+    bottom: 65px;
     right: 0;
+    height: 100%;
+    width: 305px;
     @include breakpoint(max-xl){
         display: none;
+    }
+    @include breakpoint(mid-xxl){
+        bottom: -23px;
+        height: inherit;
+        width: 72px;
+        overflow: hidden;
     }
    }
    .vector__shape{

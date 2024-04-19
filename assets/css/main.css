@@ -1240,6 +1240,16 @@ i {
   background-color: #f2f1fc;
 }
 
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
 .main__header__two {
   top: 0;
   width: 100%;
@@ -3109,6 +3119,18 @@ input.main-search-input::placeholder {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.feature__section .main__video .video__icon::before {
+  top: 65px;
+  left: 80px;
+  content: "";
+  z-index: -1;
+  width: 158px;
+  height: 135px;
+  background: var(--theme);
+  position: absolute;
+  border-radius: 35%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
 .feature__section .main__video .video__icon img {
   width: 100%;
   height: 100%;
@@ -3238,12 +3260,22 @@ input.main-search-input::placeholder {
 }
 .gallery__section .left__shape {
   position: absolute;
-  bottom: 0;
+  bottom: 65px;
   right: 0;
+  height: 100%;
+  width: 305px;
 }
 @media (max-width: 1199px) {
   .gallery__section .left__shape {
     display: none;
+  }
+}
+@media (max-width: 1440px) {
+  .gallery__section .left__shape {
+    bottom: -23px;
+    height: inherit;
+    width: 72px;
+    overflow: hidden;
   }
 }
 .gallery__section .vector__shape {
@@ -3382,9 +3414,20 @@ input.main-search-input::placeholder {
     display: none;
   }
 }
+@media (max-width: 1440px) {
+  .testimonial__section .right__shape {
+    right: 18px;
+  }
+}
 .testimonial__section .right__shape img {
-  width: 100%;
+  width: 95%;
   height: 100%;
+  float: right;
+}
+@media (max-width: 1440px) {
+  .testimonial__section .right__shape img {
+    width: 70%;
+  }
 }
 .testimonial__section .section__title .sub {
   color: var(--theme);

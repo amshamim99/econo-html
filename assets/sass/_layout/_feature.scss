@@ -58,6 +58,18 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+            &::before{    
+                top: 65px;
+                left: 80px;
+                content: "";
+                z-index: -1;
+                width: 158px;
+                height: 135px;
+                background: var(--theme);
+                position: absolute;
+                border-radius: 35%;
+                animation: pulse-border 1500ms ease-out infinite;
+            }
             img{
                 @include imgw;
             }

@@ -84,6 +84,11 @@
             @content ;
         }
     }
+    @else if $point==mid-xxl {
+        @media (max-width: 1440px) {
+            @content ;
+        }
+    }
     @else if $point==max-xxl {
         @media (max-width: 1399px) {
             @content ;

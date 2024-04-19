@@ -18,8 +18,16 @@
         @include breakpoint(max-xl){
             display: none
         }
-        img{
-            @include imgw;
+        @include breakpoint(mid-xxl){
+            right:18px;
+        }
+        img{    
+            width: 95%;
+            height: 100%;
+            float: right;
+            @include breakpoint(mid-xxl){
+                width: 70%;
+            }
         }
     }
     .section__title{
