@@ -3316,15 +3316,14 @@ input.main-search-input::placeholder {
 }
 .gallery__section .gallery-pagination .swiper-pagination-bullet {
   width: 33.33%;
-  height: 25px;
+  height: 24px;
   border-radius: 0;
   transition: 0.6s;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0;
 }
 .gallery__section .gallery-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 33.33%;
   background-color: var(--theme2);
-  transition: 0.6s;
 }
 .gallery__section .gallery__pagination__wrapper {
   position: absolute;
@@ -4627,7 +4626,7 @@ input.main-search-input::placeholder {
   transition: all 0.6s ease-in-out 0s;
   overflow: hidden;
   color: var(--white);
-  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 76%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 66%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
 }
 .cmn--btn:hover {
   color: var(--white);

@@ -79,15 +79,14 @@
     }
 .swiper-pagination-bullet {
     width: 33.33%;
-    height: 25px;
+    height: 24px;
     border-radius: 0;
     transition: 0.6s;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    width: 33.33%;
     background-color: var(--theme2);
-    transition: 0.6s;
   }
 }
 .gallery__pagination__wrapper {
