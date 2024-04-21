@@ -307,6 +307,15 @@ p {
 		padding: 15px;
 	}
 }
+.pt-150{
+	padding-top: 150px;
+	@include breakpoint(max-xl){
+		padding-top: 120px;
+	}
+	@include breakpoint(max-lg){
+		padding-top: 100px;
+	}
+}
 .pt-140 {
 	padding-top: 140px;
 	@include breakpoint(max-xl){
@@ -329,6 +338,15 @@ p {
 	padding-top: 170px;
 	@include breakpoint(max-xxl){
 		padding-top: 150px;
+	}
+}
+.pb-275{
+	padding-bottom: 275px;
+	@include breakpoint(max-xl){
+		padding-bottom: 120px;
+	}
+	@include breakpoint(max-lg){
+		padding-bottom: 100px;
 	}
 }
 .pb-140 {

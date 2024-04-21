@@ -121,10 +121,22 @@
 				width: 160px;
 				padding: 25px 23px 21px;
 			}
-			.shape {
+			.shape-1 {
 				position: absolute;
 				bottom: 0;
 				right: 0;
+				@include breakpoint(xsmall){
+					bottom: -10px;
+					right: -7px;
+				}
+				@include breakpoint(lg){
+					bottom: -1px;
+					right: -6px;
+				}
+				@include breakpoint(xl){
+					bottom: 0px;
+					right: 0px;
+				}
 			}
 			img{
 				max-width: 100%;
