@@ -58,9 +58,9 @@
                 background-color: #f6f8f9;
             } 
             .testi__icon{
-                width: 75px;
-                img{
-                    @include imgw;
+                i{
+                    font-size: 40px;
+                    color: var(--theme2);
                 }
             }
             .testi__wrap{
