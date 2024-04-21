@@ -1,4 +1,113 @@
+/*-- Table of contents --*/
+/*
+0. Google Font
+1. Animation
+2. Variables
+3. Typography
+4. Header
+5. Banner
+6. About
+7. Service
+8. Feature
+9. Gallery
+10. Testimonial
+11. Client
+12. Project
+13. Connect
+14. Team 
+15. Blog 
+16. Contact
+17. Footer
+*/
+/* 0. Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* 1. Animation */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.float-bob-y {
+  -webkit-animation-name: float-bob-y;
+  animation-name: float-bob-y;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes float-bob-y {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes float-bob-y {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+/* 2. Variables */
 :root {
   --body: #fff;
   --white: #ffffff;
@@ -14,6 +123,7 @@
   --placeholder: #B2B6BF;
 }
 
+/* 3. Typography */
 body {
   color: var(--theme);
   padding: 0;
@@ -1235,16 +1345,7 @@ i {
   background-color: #f2f1fc;
 }
 
-@keyframes pulse-border {
-  0% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-    opacity: 0;
-  }
-}
+/* 4. Header */
 .main__header__two {
   top: 0;
   width: 100%;
@@ -1996,6 +2097,7 @@ input.main-search-input::placeholder {
   opacity: 0;
 }
 
+/* 5. Banner */
 .banner__section {
   background: url(../img/banner/main-bg.png) no-repeat center center;
   background-size: cover;
@@ -2352,6 +2454,7 @@ input.main-search-input::placeholder {
   right: 0;
 }
 
+/* 6. About */
 .about__section {
   padding: 180px 0;
 }
@@ -2627,6 +2730,7 @@ input.main-search-input::placeholder {
   gap: 17px;
 }
 
+/* 7. Service */
 .service__section {
   background: url(../img/service/service-bg.jpg) no-repeat center center;
   background-size: cover;
@@ -3042,6 +3146,7 @@ input.main-search-input::placeholder {
   border-left: 27px solid transparent;
 }
 
+/* 8. Feature */
 .feature__section .left__shape {
   position: absolute;
   bottom: -60%;
@@ -3248,6 +3353,7 @@ input.main-search-input::placeholder {
   margin-bottom: 20px;
 }
 
+/* 9. Gallery */
 .gallery__section {
   background: url(../img/gallery/gallery-bg.jpg) no-repeat center center;
   background-size: cover;
@@ -3380,6 +3486,7 @@ input.main-search-input::placeholder {
   }
 }
 
+/* 10. Testimonial */
 .testimonial__section {
   background: url(../img/testimonial/testi-bg.png) no-repeat center center;
   background-size: cover;
@@ -3561,6 +3668,7 @@ input.main-search-input::placeholder {
   transition: 0.6s;
 }
 
+/* 11. Client */
 .client__section {
   background: url(../img/client/client.jpg) no-repeat center center;
   background-size: cover;
@@ -3582,6 +3690,7 @@ input.main-search-input::placeholder {
   }
 }
 
+/* 12. Project */
 .project__section {
   background: url(../img/project/bg.png) no-repeat center center;
   background-size: cover;
@@ -3681,6 +3790,7 @@ input.main-search-input::placeholder {
   display: none;
 }
 
+/* 13. Connect */
 .connect__section .laft__shape {
   position: absolute;
   bottom: 0;
@@ -3785,6 +3895,7 @@ input.main-search-input::placeholder {
   box-shadow: none !important;
 }
 
+/* 14. Team */
 .team__section {
   position: relative;
 }
@@ -3907,81 +4018,7 @@ input.main-search-input::placeholder {
   margin-top: 0;
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-moz-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.float-bob-y {
-  -webkit-animation-name: float-bob-y;
-  animation-name: float-bob-y;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-@-webkit-keyframes float-bob-y {
-  0% {
-    transform: translateY(-30px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(-30px);
-  }
-}
-@keyframes float-bob-y {
-  0% {
-    transform: translateY(-30px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(-30px);
-  }
-}
+/* 15. Blog */
 .blog__section {
   background-color: #f2f1fc;
 }
@@ -4440,6 +4477,7 @@ input.main-search-input::placeholder {
   color: var(--theme2);
 }
 
+/* 16. Contact */
 .map__section .googpemap iframe {
   width: 100%;
   height: 650px;
@@ -4568,6 +4606,7 @@ input.main-search-input::placeholder {
   background-color: var(--white);
 }
 
+/* 17. Footer */
 .footer__section .grad__shape__three {
   position: absolute;
   right: 0;
@@ -4653,7 +4692,7 @@ input.main-search-input::placeholder {
   color: var(--white);
 }
 
-/*--Button Area Start--*/
+/*--Button--*/
 .cmn--btn {
   padding: 15px 40px;
   font-size: 16px;

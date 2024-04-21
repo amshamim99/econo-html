@@ -1,5 +1,31 @@
+/*-- Table of contents --*/
+/*
+0. Google Font
+1. Animation
+2. Variables
+3. Typography
+4. Header
+5. Banner
+6. About
+7. Service
+8. Feature
+9. Gallery
+10. Testimonial
+11. Client
+12. Project
+13. Connect
+14. Team 
+15. Blog 
+16. Contact
+17. Footer
+*/
+
+
+/* 0. Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+@import "_layout/_animation";
 
 //--Abstracts--//
 @import "_abstracts/_mixins";
@@ -8,7 +34,6 @@
 
 //--Base--//
 @import "_base/_typography";
-@import "_base/_animation";
 //--Base--//
 
 //--Layout--//
@@ -23,7 +48,6 @@
 @import "_layout/_project";
 @import "_layout/_conntect";
 @import "_layout/_team";
-@import "_layout/_animation";
 @import "_layout/_blog";
 @import "_layout/_contact";
 @import "_layout/_footer";
