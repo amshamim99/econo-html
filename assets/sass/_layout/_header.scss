@@ -362,7 +362,7 @@
 			top: 15px;
 			left: -55px;
 			z-index: 99;
-			clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 76%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
+			clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 74%, 92% 100%, 0 100%, 0% 0%, 0% 20%);
 			@include breakpoint(max-xl){
 				padding: 12px 10px 11px 15px;
 				font-size: 13px;

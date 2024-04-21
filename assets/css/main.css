@@ -1615,7 +1615,7 @@ i {
   top: 15px;
   left: -55px;
   z-index: 99;
-  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 76%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 74%, 92% 100%, 0 100%, 0% 0%, 0% 20%);
 }
 @media (max-width: 1199px) {
   .header-wrapper .menu__components .small-cmn--btn {
@@ -3049,8 +3049,8 @@ input.main-search-input::placeholder {
 
 .feature__section .left__shape {
   position: absolute;
-  bottom: -57%;
-  left: -40px;
+  bottom: -60%;
+  left: 0;
 }
 @media (max-width: 991px) {
   .feature__section .left__shape {
@@ -3578,6 +3578,8 @@ input.main-search-input::placeholder {
 .client__section .client__wrapper .client__thumb img {
   width: 100%;
   height: 100%;
+  width: 85%;
+  filter: invert(100%) sepia(13%) saturate(7440%) hue-rotate(215deg) brightness(113%) contrast(115%);
 }
 @media (max-width: 1199px) {
   .client__section .client__wrapper .owl-dots {
@@ -4669,7 +4671,7 @@ input.main-search-input::placeholder {
   transition: all 0.6s ease-in-out 0s;
   overflow: hidden;
   color: var(--white);
-  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 66%, 90% 100%, 0 100%, 0% 80%, 0% 20%);
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 66%, 88% 100%, 0 100%, 0% 80%, 0% 20%);
 }
 .cmn--btn:hover {
   color: var(--white);

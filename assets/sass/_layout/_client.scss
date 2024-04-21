@@ -9,6 +9,8 @@
             margin: 0 auto;
             img{
                @include imgw;
+               width: 85%;
+               filter: invert(100%) sepia(13%) saturate(7440%) hue-rotate(215deg) brightness(113%) contrast(115%);
             }
         }
         .owl-dots{

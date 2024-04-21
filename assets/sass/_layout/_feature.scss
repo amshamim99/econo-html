@@ -1,9 +1,9 @@
 //--Feature Section Start--//
 .feature__section{
-    .left__shape{
+    .left__shape{    
         position: absolute;
-        bottom: -57%;
-        left: -40px;
+        bottom: -60%;
+        left: 0;
         @include breakpoint(max-lg){
             display: none;
         }
