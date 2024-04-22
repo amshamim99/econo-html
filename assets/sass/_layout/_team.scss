@@ -28,6 +28,11 @@
         .sub{
             color: var(--theme);
         }
+        .title__button{
+            .cmn--btn{
+                padding: 12px 24px 12px 18px;
+            }
+        }
     }
     .team__items{
         .team__thumb{
@@ -56,14 +61,26 @@
                 text-align: center;
                 transition: all 0.3s ease 0s;
                 position: absolute;
-                bottom: 18%;
+                bottom: 23%;
                 left: 45px;
                 width: 45px;
                 height: 45px;
                 line-height: 45px;
                 background-color: var(--theme2);
-                @include breakpoint(max-lg){
-                    bottom: 30%;
+                @include breakpoint(xsmall){
+                    bottom:18%;
+                }
+                @include breakpoint(md){
+                    bottom:30%;
+                }
+                @include breakpoint(lg){
+                    bottom:25%;
+                }
+                @include breakpoint(xl){
+                    bottom:21%;
+                }
+                @include breakpoint(xxl){
+                    bottom:18%;
                 }
                 .share__alt{
                     i{

@@ -112,7 +112,7 @@
 			justify-content: center;
 			align-items: center;
 			position: relative;
-			clip-path:polygon(0 0, 100% 0, 100% 20%, 100% 78%, 86% 100%, 0 100%, 0% 80%, 0% 20%);
+			clip-path:polygon(0 0, 100% 0, 100% 20%, 100% 80%, 87% 100%, 0 100%, 0% 80%, 0% 20%);
 			@include breakpoint(max-xl){
 				width: 200px;
 				padding: 30px 30px 30px;
@@ -123,11 +123,11 @@
 			}
 			.shape-1 {
 				position: absolute;
-				bottom: 0;
-				right: 0;
+				bottom: -12px;
+				right: -8px;
 				@include breakpoint(xsmall){
-					bottom: -10px;
-					right: -7px;
+					bottom: -12px;
+					right: -8px;
 				}
 				@include breakpoint(lg){
 					bottom: -1px;
@@ -135,7 +135,7 @@
 				}
 				@include breakpoint(xl){
 					bottom: 0px;
-					right: 0px;
+					right: -1px;
 				}
 			}
 			img{
@@ -248,10 +248,23 @@
 		display: none;
 	}
 	.main__logo{
-		.shape {
+		clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 70%, 88% 100%, 0 100%, 0% 80%, 0% 20%) !important;
+		.shape-1 {
 			position: absolute;
-			bottom: -7px !important;
-			right: 0;
+			bottom: -5px !important;
+			right: -8px !important;
+			@include breakpoint(xsmall){
+				bottom: -5px !important;
+				right: -8px !important;
+			}
+			@include breakpoint(lg){
+				bottom: -2px !important;
+				right: -8px !important;
+			}
+			@include breakpoint(xl){
+				bottom: -3px !important;
+				right: -2px !important;
+			}
 		}
 	}
 	.header__top{
@@ -270,7 +283,7 @@
 		}
 	}
 	.style__two{
-		padding: 30px 15px;
+		padding: 30px;
 	}
 }
 .header-wrapper {
@@ -359,6 +372,14 @@
 			}
 		}
 	}
+	.title__button{
+		.cmn--btn{
+			margin-left: 50px;
+			padding: 8px 20px;
+			background-color: #1cb0eb;
+			clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 94% 100%, 0 100%, 0% 0%, 0% 20%);
+		}
+	}
 	.menu__right__components{
 		gap: 15px;
 	}
@@ -374,11 +395,16 @@
 			top: 15px;
 			left: -55px;
 			z-index: 99;
-			clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 74%, 92% 100%, 0 100%, 0% 0%, 0% 20%);
-			@include breakpoint(max-xl){
+			clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 94% 100%, 0 100%, 0% 0%, 0% 20%);
+			@include breakpoint(lg){
 				padding: 12px 10px 11px 15px;
 				font-size: 13px;
-				left: -28px;
+				left: -35px;
+			}
+			@include breakpoint(xl){
+				padding: 12px 35px 12px;
+				font-size: 13px;
+				left: -50px;
 			}
 			@include breakpoint(max-lg){
 				display: none;
@@ -388,9 +414,15 @@
 			padding: 30px 45px 30px 125px;
 			background-color: var(--theme2);
 			clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 87%, 100% 100%, 0% 100%, 0% 110%, 26% -3%);
-			@include breakpoint(max-xl){
-				padding: 30px 26px 25px 80px;
+			@include breakpoint(lg){
+				padding: 30px 16px 25px 70px;
 				font-size: 13px;
+			}
+			@include breakpoint(xl){
+				padding: 30px 25px 30px 110px;
+			}
+			@include breakpoint(xxl){
+				padding: 30px 45px 30px 125px;
 			}
 			@include breakpoint(max-lg){
 				display: none;
@@ -398,8 +430,14 @@
 			i{
 				font-size: 16px;
 				margin-right: 12px;
-				}	
-			}
+				@include breakpoint(lg){
+					margin-right: 4px;
+				}
+				@include breakpoint(xl){
+					margin-right: 12px;
+				}
+			}	
+		}
 	}
 }
 @media screen and (max-width: 991px){

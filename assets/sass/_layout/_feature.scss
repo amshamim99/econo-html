@@ -59,12 +59,12 @@
             left: 50%;
             transform: translate(-50%,-50%);
             &::before{    
-                top: 74px;
-                left: 74px;
+                top: 65px;
+                left: 65px;
                 content: "";
                 z-index: -1;
-                width: 158px;
-                height: 158px;
+                width: 120px;
+                height: 120px;
                 background: var(--theme);
                 position: absolute;
                 border-radius: 50%;
@@ -72,8 +72,8 @@
             }
             a{
                 span {
-                    height: 150px;
-                    width: 150px;
+                    height: 130px;
+                    width: 130px;
                     background: linear-gradient(45deg, #ff8a54, var(--theme2));
                     border-radius: 50%;
                     display: flex;

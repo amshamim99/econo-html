@@ -149,6 +149,11 @@
                 }
             }
         }
+        .about-button{
+            .cmn--btn{
+                padding: 12px 48px;
+            }
+        }
     }
     .progress__wrap{
         margin-bottom: 32px;
@@ -201,8 +206,16 @@
     }
 }
 .about__two{
+    padding: 60px 0;
+    @include breakpoint(md){
+        padding: 100px 0;
+    }
+    @include breakpoint(xl){
+        padding: 180px 0;
+    }
     .left__shape{
-        left: -100px;
+        left: -65px;
+        bottom: -90px;
     }
     .logo__box{
         position: absolute;

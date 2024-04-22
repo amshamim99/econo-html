@@ -131,10 +131,6 @@
         right: -92px;
         max-width: 100%;
         height: auto;
-        img{
-            width: 100%;
-            height: auto;
-        }
         @include breakpoint(lg){
             top: 156px;
         }
@@ -167,7 +163,6 @@
 .banner__two{
     background: url(../img/banner/banner-bg.png) no-repeat center center;
     background-size: cover;
-    padding: 130px 0;
     &::before{
         display: none;
     }
@@ -189,15 +184,17 @@
         }
     }
     .banner__content{
-        @include breakpoint(max-xl){
+        padding: 150px 0 50px 0;
+        @include breakpoint(xsmall){
+            padding: 200px 0 100px 0
+        }
+        @include breakpoint(md){
             padding: 250px 0;
         }
-        @include breakpoint(max-lg){
+        @include breakpoint(lg){
             padding: 100px 0 200px 0;
         }
-        @include breakpoint(max-md){
-            padding: 0 0 150px 0;
-        }
+       
         .box__shape{
             h4{
                 color: var(--white);
@@ -215,12 +212,22 @@
             background-color: #1cb0eb;
         }
     }
-    .banner__thumb{
+    .banner__thumb {
         position: relative;
         width: initial;
         height: initial;
-        bottom: -115px;
-        right: 90px;
+        top: 160px;
+        right: 187px;
+        @include breakpoint(lg){
+           right: 275px;
+        }
+        @include breakpoint(xl){
+            right: 275px;
+        }
+        @include breakpoint(xxl){
+            right: 187px;
+        }
+       
     }
 }
 //--Banner Section End--//

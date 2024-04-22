@@ -159,9 +159,15 @@
 .sevice__two{
     position: relative;
     .service__two__wrap{
-        padding: 30px 30px;
-        background-color: var(--white);
-        margin-top: -250px;
+        padding: 25px 0;
+        @include breakpoint(md){
+            margin-top: -200px;
+            padding: 30px 30px;
+            background-color: var(--white);
+        }
+        @include breakpoint(lg){
+            margin-top: -250px;
+        }
         .service__two__items{
             -webkit-transition: all 0.9s ease;
             transition: all 0.9s ease;
