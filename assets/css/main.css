@@ -4701,12 +4701,16 @@ input.main-search-input::placeholder {
 
 .contact__right {
   background-color: var(--white);
-  padding: 60px 80px;
   border-radius: 10px;
 }
-@media (max-width: 1199px) {
+@media (min-width: 992px) {
   .contact__right {
     padding: 30px 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact__right {
+    padding: 60px 80px;
   }
 }
 .contact__right .info__header h6 {

@@ -22,10 +22,12 @@
 }
 .contact__right{
     background-color: var(--white);
-    padding: 60px 80px;
     border-radius: 10px;
-    @include breakpoint(max-xl){
+    @include breakpoint(lg){
        padding: 30px 30px;
+    }
+    @include breakpoint(xl){
+        padding: 60px 80px;
     }
     .info__header{
         h6{
