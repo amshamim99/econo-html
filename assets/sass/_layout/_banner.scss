@@ -300,6 +300,9 @@
         position: absolute;
         bottom: -17px;
         right: 0;
+        img{
+            @include imgw;
+        }
     }
 }
 //--Breadcumd Section End--//
