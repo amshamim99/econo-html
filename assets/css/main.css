@@ -2989,9 +2989,16 @@ input.main-search-input::placeholder {
   height: 45px;
   border-radius: 50%;
   border: 2px solid var(--white);
+  transition: 0.3s;
 }
 .service__section .service__wrapper .owl-nav button.owl-next i {
   color: var(--white);
+}
+.service__section .service__wrapper .owl-nav button.owl-next:hover {
+  border-color: var(--theme2);
+}
+.service__section .service__wrapper .owl-nav button.owl-next:hover i {
+  color: var(--theme2);
 }
 .service__section .service__wrapper .owl-nav button.owl-prev {
   padding: 0;
@@ -3000,9 +3007,16 @@ input.main-search-input::placeholder {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  border: 2px solid var(--theme2);
+  border: 2px solid var(--white);
+  transition: 0.3s;
 }
 .service__section .service__wrapper .owl-nav button.owl-prev i {
+  color: var(--white);
+}
+.service__section .service__wrapper .owl-nav button.owl-prev:hover {
+  border-color: var(--theme2);
+}
+.service__section .service__wrapper .owl-nav button.owl-prev:hover i {
   color: var(--theme2);
 }
 .service__section .service__items {

@@ -55,8 +55,15 @@
                 height: 45px;
                 border-radius: 50%;
                 border: 2px solid var(--white);
+                transition: .3s;
                 i{
                     color: var(--white);
+                }
+                &:hover{
+                    border-color: var(--theme2);
+                    i{
+                        color: var(--theme2);
+                    }
                 }
             }
             button.owl-prev{
@@ -66,9 +73,16 @@
                 width: 45px;
                 height: 45px;
                 border-radius: 50%;
-                border: 2px solid var(--theme2);
+                border: 2px solid var(--white);
+                transition: .3s;
                 i{
-                    color: var(--theme2);
+                    color: var(--white);
+                }
+                &:hover{
+                    border-color: var(--theme2);
+                    i{
+                        color: var(--theme2);
+                    }
                 }
             }
         }
