@@ -200,6 +200,7 @@
 			i{
 				color: var(--theme2);
 				margin-right: 10px;
+				font-size: 16px;
 			}
 		}
 	}
@@ -315,6 +316,9 @@
 				text-transform: capitalize;
 				&:hover {
 					color: var(--theme2);
+				}
+				i{
+					font-size: 16px;
 				}
 			}
 			.sub-menu {

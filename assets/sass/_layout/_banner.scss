@@ -2,17 +2,31 @@
 .banner__section{
     background: url(../img/banner/main-bg.png) no-repeat center center;
     background-size: cover;
-    background-position: center bottom;
     &::before{
         position: absolute;
-        left: 0;
-        bottom: 0;
+        left: -4px;
+        bottom: -18px;
         content: "";
         height: 80px;
-        width: 120px;
+        width: 135px;
         background-color: var(--white);
-        @include breakpoint(max-xl){
-            display: none;
+        transform: rotate(4deg);
+        display: none;
+        @include breakpoint(lg){
+            display: block;
+            height: 65px;
+        }
+        @include breakpoint(xl){
+            height: 80px;
+        }
+        @include breakpoint(xxl){
+            bottom: -8px;
+            width: 163px;
+        }
+        @include breakpoint(xxxl){
+            bottom: -8px;
+            width: 200px;
+            height: 90px;
         }
     }
     .shape__right{
@@ -32,6 +46,9 @@
         left: 0;
         img{
             @include imgw;
+            @include breakpoint(lg){
+                width: 60%;
+            }
             @include breakpoint(xl){
                width: 68%;
             }
@@ -51,7 +68,7 @@
         @media screen and (max-width: 1300px) {
         //    left: -165px;
         }
-        @include breakpoint(max-xl){
+        @include breakpoint(max-lg){
             display: none;
         }
     }
@@ -64,25 +81,24 @@
         }
     }
     .banner__wrap{
-        padding: 277px 0;
+        padding-top: 150px;
+        padding-bottom: 100px;
+        @include breakpoint(md){
+            padding-top: 200px;
+            padding-bottom: 100px;
+         }
         @include breakpoint(lg){
             padding-top: 250px;
-            padding-bottom: 66px;
+            padding-bottom: 106px;
         }
         @include breakpoint(xl){
-            padding-bottom: 180px;
+            padding-bottom: 186px;
         }
         @include breakpoint(xxl){
-            padding-bottom: 158px;
+            padding-bottom: 164px;
         }
         @include breakpoint(xxxl){
-            padding-bottom: 300px;
-        }
-        @include breakpoint(max-lg){
-           padding: 200px 0;
-        }
-        @include breakpoint(max-md){
-            padding: 150px 0;
+            padding-bottom: 157px;
         }
     }
     .banner__content{
@@ -133,10 +149,8 @@
         max-width: 100%;
         height: auto;
         img{
-            display: none;
-            @include breakpoint(lg){
-                display: block;
-            }
+            width: 100%;
+            height: auto;
         }
         @include breakpoint(lg){
             top: 156px;
@@ -150,10 +164,10 @@
             max-width: 60%;
         }
         @include breakpoint(max-x4l){
-            right: 160px;
+            // right: 160px;
         }
         @include breakpoint(max-xxxl){
-            right: 100px;
+            // right: 100px;
             width: 800px;
             height: 770px;
         }
@@ -162,7 +176,9 @@
             height: 615px;
             right: 0;
         }
-       
+        @include breakpoint(max-lg){
+            display: none;
+        }
     }
 }
 .banner__two{

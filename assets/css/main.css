@@ -1620,6 +1620,7 @@ i {
 .header__top .top__info li i {
   color: var(--theme2);
   margin-right: 10px;
+  font-size: 16px;
 }
 .header__top .social__icon {
   gap: 20px;
@@ -1739,6 +1740,9 @@ i {
 }
 .header-wrapper .main-menu li a:hover {
   color: var(--theme2);
+}
+.header-wrapper .main-menu li a i {
+  font-size: 16px;
 }
 .header-wrapper .main-menu li .sub-menu {
   padding: 5px 25px 5px 25px;
@@ -2231,20 +2235,40 @@ input.main-search-input::placeholder {
 .banner__section {
   background: url(../img/banner/main-bg.png) no-repeat center center;
   background-size: cover;
-  background-position: center bottom;
 }
 .banner__section::before {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: -4px;
+  bottom: -18px;
   content: "";
   height: 80px;
-  width: 120px;
+  width: 135px;
   background-color: var(--white);
+  transform: rotate(4deg);
+  display: none;
 }
-@media (max-width: 1199px) {
+@media (min-width: 992px) {
   .banner__section::before {
-    display: none;
+    display: block;
+    height: 65px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner__section::before {
+    height: 80px;
+  }
+}
+@media (min-width: 1400px) {
+  .banner__section::before {
+    bottom: -8px;
+    width: 163px;
+  }
+}
+@media (min-width: 1600px) {
+  .banner__section::before {
+    bottom: -8px;
+    width: 200px;
+    height: 90px;
   }
 }
 .banner__section .shape__right {
@@ -2269,6 +2293,11 @@ input.main-search-input::placeholder {
 .banner__section .grad__shape img {
   width: 100%;
   height: 100%;
+}
+@media (min-width: 992px) {
+  .banner__section .grad__shape img {
+    width: 60%;
+  }
 }
 @media (min-width: 1200px) {
   .banner__section .grad__shape img {
@@ -2295,7 +2324,7 @@ input.main-search-input::placeholder {
     left: 0;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .banner__section .grad__shape {
     display: none;
   }
@@ -2311,37 +2340,34 @@ input.main-search-input::placeholder {
   }
 }
 .banner__section .banner__wrap {
-  padding: 277px 0;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .banner__section .banner__wrap {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
 }
 @media (min-width: 992px) {
   .banner__section .banner__wrap {
     padding-top: 250px;
-    padding-bottom: 66px;
+    padding-bottom: 106px;
   }
 }
 @media (min-width: 1200px) {
   .banner__section .banner__wrap {
-    padding-bottom: 180px;
+    padding-bottom: 186px;
   }
 }
 @media (min-width: 1400px) {
   .banner__section .banner__wrap {
-    padding-bottom: 158px;
+    padding-bottom: 164px;
   }
 }
 @media (min-width: 1600px) {
   .banner__section .banner__wrap {
-    padding-bottom: 300px;
-  }
-}
-@media (max-width: 991px) {
-  .banner__section .banner__wrap {
-    padding: 200px 0;
-  }
-}
-@media (max-width: 767px) {
-  .banner__section .banner__wrap {
-    padding: 150px 0;
+    padding-bottom: 157px;
   }
 }
 @media (min-width: 1200px) {
@@ -2397,12 +2423,8 @@ input.main-search-input::placeholder {
   height: auto;
 }
 .banner__section .banner__thumb img {
-  display: none;
-}
-@media (min-width: 992px) {
-  .banner__section .banner__thumb img {
-    display: block;
-  }
+  width: 100%;
+  height: auto;
 }
 @media (min-width: 992px) {
   .banner__section .banner__thumb {
@@ -2421,14 +2443,8 @@ input.main-search-input::placeholder {
     max-width: 60%;
   }
 }
-@media (max-width: 1800px) {
-  .banner__section .banner__thumb {
-    right: 160px;
-  }
-}
 @media (max-width: 1600px) {
   .banner__section .banner__thumb {
-    right: 100px;
     width: 800px;
     height: 770px;
   }
@@ -2438,6 +2454,11 @@ input.main-search-input::placeholder {
     width: 640px;
     height: 615px;
     right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .banner__section .banner__thumb {
+    display: none;
   }
 }
 
@@ -2613,7 +2634,7 @@ input.main-search-input::placeholder {
 
 /* 6. About */
 .about__section {
-  padding: 180px 0;
+  padding: 80px 0;
 }
 .about__section .left__shape {
   position: absolute;
@@ -2627,11 +2648,6 @@ input.main-search-input::placeholder {
 @media (max-width: 1199px) {
   .about__section .left__shape {
     display: none;
-  }
-}
-@media (min-width: 450px) {
-  .about__section {
-    padding: 80px 0;
   }
 }
 @media (min-width: 1200px) {
