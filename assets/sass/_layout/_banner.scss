@@ -2,6 +2,7 @@
 .banner__section{
     background: url(../img/banner/main-bg.png) no-repeat center center;
     background-size: cover;
+    background-position: center bottom;
     &::before{
         position: absolute;
         left: 0;
@@ -75,7 +76,7 @@
             padding-bottom: 158px;
         }
         @include breakpoint(xxxl){
-            padding-bottom: 150px;
+            padding-bottom: 300px;
         }
         @include breakpoint(max-lg){
            padding: 200px 0;
@@ -131,6 +132,12 @@
         right: -92px;
         max-width: 100%;
         height: auto;
+        img{
+            display: none;
+            @include breakpoint(lg){
+                display: block;
+            }
+        }
         @include breakpoint(lg){
             top: 156px;
         }
@@ -143,10 +150,10 @@
             max-width: 60%;
         }
         @include breakpoint(max-x4l){
-            // right: 160px;
+            right: 160px;
         }
         @include breakpoint(max-xxxl){
-            // right: 100px;
+            right: 100px;
             width: 800px;
             height: 770px;
         }
@@ -155,9 +162,7 @@
             height: 615px;
             right: 0;
         }
-        @include breakpoint(max-lg){
-            display: none;
-        }
+       
     }
 }
 .banner__two{

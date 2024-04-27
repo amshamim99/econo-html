@@ -310,7 +310,7 @@
 			a {
 				color: var(--theme);
 				font-weight: 700;
-				font-size: 15px;
+				font-size: 16px;
 				transition: all 0.3s;
 				text-transform: capitalize;
 				&:hover {
@@ -403,8 +403,8 @@
 			}
 			@include breakpoint(xl){
 				padding: 12px 35px 12px;
-				font-size: 13px;
-				left: -50px;
+				font-size: 16px;
+				left: -66px;
 			}
 			@include breakpoint(max-lg){
 				display: none;
@@ -420,6 +420,7 @@
 			}
 			@include breakpoint(xl){
 				padding: 30px 25px 30px 110px;
+				font-size: 16px;
 			}
 			@include breakpoint(xxl){
 				padding: 30px 45px 30px 125px;
@@ -428,13 +429,14 @@
 				display: none;
 			}
 			i{
-				font-size: 16px;
 				margin-right: 12px;
 				@include breakpoint(lg){
 					margin-right: 4px;
+					font-size: 13px;
 				}
 				@include breakpoint(xl){
 					margin-right: 12px;
+					font-size: 16px;
 				}
 			}	
 		}

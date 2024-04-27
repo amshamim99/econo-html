@@ -1733,7 +1733,7 @@ i {
 .header-wrapper .main-menu li a {
   color: var(--theme);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   transition: all 0.3s;
   text-transform: capitalize;
 }
@@ -1824,8 +1824,8 @@ i {
 @media (min-width: 1200px) {
   .header-wrapper .menu__components .small-cmn--btn {
     padding: 12px 35px 12px;
-    font-size: 13px;
-    left: -50px;
+    font-size: 16px;
+    left: -66px;
   }
 }
 @media (max-width: 991px) {
@@ -1847,6 +1847,7 @@ i {
 @media (min-width: 1200px) {
   .header-wrapper .menu__components .cmn--btn {
     padding: 30px 25px 30px 110px;
+    font-size: 16px;
   }
 }
 @media (min-width: 1400px) {
@@ -1860,17 +1861,18 @@ i {
   }
 }
 .header-wrapper .menu__components .cmn--btn i {
-  font-size: 16px;
   margin-right: 12px;
 }
 @media (min-width: 992px) {
   .header-wrapper .menu__components .cmn--btn i {
     margin-right: 4px;
+    font-size: 13px;
   }
 }
 @media (min-width: 1200px) {
   .header-wrapper .menu__components .cmn--btn i {
     margin-right: 12px;
+    font-size: 16px;
   }
 }
 
@@ -2229,6 +2231,7 @@ input.main-search-input::placeholder {
 .banner__section {
   background: url(../img/banner/main-bg.png) no-repeat center center;
   background-size: cover;
+  background-position: center bottom;
 }
 .banner__section::before {
   position: absolute;
@@ -2328,7 +2331,7 @@ input.main-search-input::placeholder {
 }
 @media (min-width: 1600px) {
   .banner__section .banner__wrap {
-    padding-bottom: 150px;
+    padding-bottom: 300px;
   }
 }
 @media (max-width: 991px) {
@@ -2393,6 +2396,14 @@ input.main-search-input::placeholder {
   max-width: 100%;
   height: auto;
 }
+.banner__section .banner__thumb img {
+  display: none;
+}
+@media (min-width: 992px) {
+  .banner__section .banner__thumb img {
+    display: block;
+  }
+}
 @media (min-width: 992px) {
   .banner__section .banner__thumb {
     top: 156px;
@@ -2410,8 +2421,14 @@ input.main-search-input::placeholder {
     max-width: 60%;
   }
 }
+@media (max-width: 1800px) {
+  .banner__section .banner__thumb {
+    right: 160px;
+  }
+}
 @media (max-width: 1600px) {
   .banner__section .banner__thumb {
+    right: 100px;
     width: 800px;
     height: 770px;
   }
@@ -2421,11 +2438,6 @@ input.main-search-input::placeholder {
     width: 640px;
     height: 615px;
     right: 0;
-  }
-}
-@media (max-width: 991px) {
-  .banner__section .banner__thumb {
-    display: none;
   }
 }
 
@@ -4924,7 +4936,7 @@ input.main-search-input::placeholder {
   transition: all 0.6s ease-in-out 0s;
   overflow: hidden;
   color: var(--white);
-  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 66%, 88% 100%, 0 100%, 0% 80%, 0% 20%);
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 94% 100%, 0 100%, 0% 80%, 0% 20%);
 }
 .cmn--btn:hover {
   color: var(--white);
