@@ -2306,7 +2306,7 @@ input.main-search-input::placeholder {
 }
 @media (min-width: 1400px) {
   .banner__section .grad__shape img {
-    width: 81%;
+    width: 82%;
   }
 }
 @media (min-width: 1600px) {
@@ -2339,35 +2339,46 @@ input.main-search-input::placeholder {
     display: none;
   }
 }
-.banner__section .banner__wrap {
-  padding-top: 150px;
-  padding-bottom: 100px;
+.banner__section .banner-thum {
+  padding-top: 170px;
+}
+.banner__section .banner-thum img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .banner__section .banner-thum {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
-  .banner__section .banner__wrap {
-    padding-top: 200px;
-    padding-bottom: 100px;
+  .banner__section .banner-thum {
+    padding-top: 72px;
   }
 }
 @media (min-width: 992px) {
-  .banner__section .banner__wrap {
-    padding-top: 250px;
-    padding-bottom: 106px;
+  .banner__section .banner-thum {
+    padding-top: 155px;
   }
 }
 @media (min-width: 1200px) {
-  .banner__section .banner__wrap {
-    padding-bottom: 186px;
+  .banner__section .banner-thum {
+    padding-top: 172px;
   }
 }
 @media (min-width: 1400px) {
-  .banner__section .banner__wrap {
-    padding-bottom: 164px;
+  .banner__section .banner-thum {
+    padding-left: 100px;
   }
 }
-@media (min-width: 1600px) {
-  .banner__section .banner__wrap {
-    padding-bottom: 157px;
+.banner__section .banner__content {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .banner__section .banner__content {
+    padding-top: 100px;
+    padding-bottom: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -2377,6 +2388,9 @@ input.main-search-input::placeholder {
 }
 .banner__section .banner__content .box__shape {
   gap: 25px;
+}
+.banner__section .banner__content .box__shape img {
+  max-width: 100% !important;
 }
 @media (max-width: 575px) {
   .banner__section .banner__content .box__shape img {
@@ -2397,69 +2411,36 @@ input.main-search-input::placeholder {
 .banner__section .banner__content .box__shape h4 span {
   color: var(--theme2);
 }
-@media (max-width: 1399px) {
-  .banner__section .banner__content h1 {
-    font-size: 62px;
-  }
+.banner__section .banner__content h1 {
+  font-size: 42px;
 }
-@media (max-width: 1199px) {
+@media (min-width: 576px) {
   .banner__section .banner__content h1 {
     font-size: 53px;
   }
 }
-@media (max-width: 575px) {
+@media (min-width: 768px) {
   .banner__section .banner__content h1 {
     font-size: 42px;
   }
 }
-.banner__section .banner__content h1 span {
-  color: var(--theme2);
-}
-.banner__section .banner__thumb {
-  position: absolute;
-  top: 177px;
-  right: -92px;
-  max-width: 100%;
-  height: auto;
-}
-.banner__section .banner__thumb img {
-  width: 100%;
-  height: auto;
-}
 @media (min-width: 992px) {
-  .banner__section .banner__thumb {
-    top: 156px;
+  .banner__section .banner__content h1 {
+    font-size: 58px;
   }
 }
 @media (min-width: 1200px) {
-  .banner__section .banner__thumb {
-    right: 0px;
-    max-width: 65%;
-    top: 172px;
+  .banner__section .banner__content h1 {
+    font-size: 62px;
   }
 }
-@media (min-width: 1600px) {
-  .banner__section .banner__thumb {
-    max-width: 60%;
+@media (min-width: 1400px) {
+  .banner__section .banner__content h1 {
+    font-size: 84px;
   }
 }
-@media (max-width: 1600px) {
-  .banner__section .banner__thumb {
-    width: 800px;
-    height: 770px;
-  }
-}
-@media (max-width: 1199px) {
-  .banner__section .banner__thumb {
-    width: 640px;
-    height: 615px;
-    right: 0;
-  }
-}
-@media (max-width: 991px) {
-  .banner__section .banner__thumb {
-    display: none;
-  }
+.banner__section .banner__content h1 span {
+  color: var(--theme2);
 }
 
 .banner__two {
@@ -3658,6 +3639,7 @@ input.main-search-input::placeholder {
   text-align: center;
   margin: 49% auto;
   transform: translateY(-50%);
+  transition: 0.3s;
 }
 .gallery__section .gallery__wrapper .gallery__thumb .gallery__effect .icon img {
   width: 100%;
@@ -3665,6 +3647,9 @@ input.main-search-input::placeholder {
 }
 .gallery__section .gallery__wrapper .gallery__thumb:hover .gallery__effect {
   opacity: 1;
+}
+.gallery__section .gallery__wrapper .gallery__thumb:hover .gallery__effect .icon {
+  width: 90px;
 }
 .gallery__section .gallery__items {
   background-color: var(--white);

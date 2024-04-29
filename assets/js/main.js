@@ -96,6 +96,17 @@ $(document).ready(function () {
     });
     //odometer-area-start-end
 
+     // slide-active start
+     $('.slide-active').owlCarousel({
+        loop:true,
+        autoplay:true,
+        items:1,
+        margin: 10,
+        nav:false,
+        dots:false,
+    })
+    // slide-active end
+
    //service-slide-area-start-here
    $('.service__wrapper').owlCarousel({
     loop:true,
