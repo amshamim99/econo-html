@@ -21,14 +21,14 @@
     }
 }
 .contact__right{
-    background-color: var(--white);
-    border-radius: 10px;
-    @include breakpoint(lg){
-       padding: 30px 30px;
-    }
-    @include breakpoint(xl){
-        padding: 60px 80px;
-    }
+    // background-color: var(--white);
+    // border-radius: 10px;
+    // @include breakpoint(lg){
+    //    padding: 30px 30px;
+    // }
+    // @include breakpoint(xl){
+    //     padding: 60px 80px;
+    // }
     .info__header{
         h6{
             text-transform: capitalize;
@@ -71,7 +71,7 @@
                 font-size: 14px;
             }
         }
-      }
+    }
 }
 .left__info{
     h3{
@@ -108,6 +108,14 @@
     }
 }
 .style__two{
+    .grad__shape{
+        position: absolute;
+        bottom: -15px;
+        right: 0;
+        img{
+            @include imgw;
+        }
+    }
     .left__info{
         border: 1px solid var(--border);
         margin: 0;
@@ -123,6 +131,14 @@
         }
     }
     .contact__right{
+        background-color: var(--white);
+        border-radius: 10px;
+        @include breakpoint(lg){
+           padding: 30px 30px;
+        }
+        @include breakpoint(xl){
+            padding: 60px 80px;
+        }
         .form__clt{
            input{
                 border: 1px solid var(--border);

@@ -161,14 +161,22 @@
 		&::before{
 			position: absolute;
 			bottom: 0;
-			left: -70px;
+			left: -45px;
 			right: 0;
 			content: "";
 			height: 1px;
-			width: 1000px;
+			width: 768px;
 			background-color: #ededed;
-			@include breakpoint(max-xl){
-				display: none;
+			display: none;
+			@include breakpoint(lg){
+				display: block;
+			}
+			@include breakpoint(xl){
+				width: 900px;
+				left: -70px;
+			}
+			@include breakpoint(xxl){
+				width: 1076px;
 			}
 		}
 		&::after{
@@ -179,7 +187,7 @@
 			width: 50px;
 			content: "";
 			background-color: var(--theme2);
-			@include breakpoint(max-xl){
+			@include breakpoint(max-lg){
 				display: none;
 			}
 		}
