@@ -2784,8 +2784,8 @@ input.main-search-input::placeholder {
   }
 }
 @media (max-width: 991px) {
-  .about__section .about__content {
-    margin-top: 40px;
+  .about__section .about__content.about__content-2 {
+    margin-top: 80px;
   }
 }
 .about__section .about__content .title__content {

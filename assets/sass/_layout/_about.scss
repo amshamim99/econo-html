@@ -116,8 +116,10 @@
         }
     }
     .about__content{
-        @include breakpoint(max-lg){
-           margin-top: 40px;
+        &.about__content-2{
+            @include breakpoint(max-lg){
+                margin-top: 80px;
+            }
         }
         .title__content{
             gap: 35px;
