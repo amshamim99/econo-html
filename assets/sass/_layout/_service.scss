@@ -203,6 +203,12 @@
                     -webkit-transition: all 0.9s ease;
                     transition: all 0.9s ease;
                     height: 100%;
+                    
+                }
+                &.service-thum-3{
+                    &::before{
+                        clip-path: polygon(100% 0, 100% 82%, 80% 100%, 0 100%, 0 0);
+                    }
                 }
                 .service__content{
                     position: absolute;

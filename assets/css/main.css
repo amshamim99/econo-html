@@ -2661,6 +2661,9 @@ input.main-search-input::placeholder {
 .about__section .about__thumb {
   position: relative;
 }
+.about__section .about__thumb.about__thumb-2 {
+  clip-path: polygon(100% 0, 100% 82%, 80% 100%, 0 100%, 0 0);
+}
 .about__section .about__thumb .vector__shape {
   position: absolute;
   bottom: -100px;
@@ -3122,6 +3125,9 @@ input.main-search-input::placeholder {
   -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
   height: 100%;
+}
+.sevice__two .service__two__wrap .service__two__items .sevice__thumb.service-thum-3::before {
+  clip-path: polygon(100% 0, 100% 82%, 80% 100%, 0 100%, 0 0);
 }
 .sevice__two .service__two__wrap .service__two__items .sevice__thumb .service__content {
   position: absolute;
@@ -3930,6 +3936,11 @@ input.main-search-input::placeholder {
   .project__section .right__shape {
     display: none;
   }
+}
+.project__section .project__wrapper {
+  background: #fff;
+  padding: 10px;
+  padding-bottom: 1px;
 }
 .project__section .project__wrapper .owl-nav button.owl-next {
   padding: 0;

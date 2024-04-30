@@ -243,7 +243,7 @@ $(document).ready(function () {
    $('.project__wrapper').owlCarousel({
     loop:true,
     autoplay:true,
-    margin:0,
+    margin:10,
     autoplayTimeout: 3000,
     smartSpeed: 700,
     navText: [
