@@ -3417,32 +3417,32 @@ input.main-search-input::placeholder {
   transform: translate(-50%, -50%);
 }
 .feature__section .main__video .video__icon::before {
-  top: 45px;
+  top: 65px;
   left: 65px;
   content: "";
   z-index: -1;
-  height: 80px;
+  height: 110px;
   width: 110px;
   background: var(--theme);
   position: absolute;
-  border-radius: 50%/10%;
+  border-radius: 100%;
   animation: pulse-border 1500ms ease-out infinite;
 }
 .feature__section .main__video .video__icon a {
   display: inline-block;
 }
 .feature__section .main__video .video__icon a span {
-  height: 90px;
+  height: 130px;
   width: 130px;
   background: linear-gradient(45deg, #ff8a54, var(--theme2));
-  border-radius: 50%/10%;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.3s;
 }
 .feature__section .main__video .video__icon a span:hover {
-  background: linear-gradient(90deg, #ff8a54, var(--theme2));
+  background: linear-gradient(90deg, #fa641e, var(--theme2));
 }
 .feature__section .main__video .video__icon a span i {
   color: var(--body);

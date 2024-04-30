@@ -59,30 +59,30 @@
             left: 50%;
             transform: translate(-50%,-50%);
             &::before{    
-                top: 45px;
+                top: 65px;
                 left: 65px;
                 content: "";
                 z-index: -1;
-                height: 80px;
+                height: 110px;
                 width: 110px;
                 background: var(--theme);
                 position: absolute;
-                border-radius: 50% / 10%;
+                border-radius: 100%;
                 animation: pulse-border 1500ms ease-out infinite;
             }
             a{
                 display: inline-block;
                 span {
-                    height: 90px;
+                    height: 130px;
                     width: 130px;
                     background: linear-gradient(45deg, #ff8a54, var(--theme2));
-                    border-radius: 50% / 10%;
+                    border-radius: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     transition: .3s;
                     &:hover{
-                        background: linear-gradient(90deg, #ff8a54, var(--theme2));
+                        background: linear-gradient(90deg, #fa641e, var(--theme2));
                     }
                     i{
                         color: var(--body);
