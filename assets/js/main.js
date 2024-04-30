@@ -220,19 +220,19 @@ $(document).ready(function () {
         '<i class="fa-solid fa-chevron-right"></i>'
     ],
     responsive:{
-    0:{
-        items:1
-    },
+        0:{
+            items:1
+        },
         576:{
             items:1
         },
         600:{
             items:1
         },
-        1000:{
+        768:{
             items:2
         },
-        1399:{
+        1200:{
             items:3
         }
     }

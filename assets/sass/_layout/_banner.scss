@@ -211,14 +211,16 @@
             background-color: #1cb0eb;
         }
     }
-    .banner__thumb {
+    .banner__thumb-2 {
         position: relative;
         width: initial;
         height: initial;
         top: 160px;
         right: 187px;
+        display: none;
         @include breakpoint(lg){
            right: 275px;
+           display: block;
         }
         @include breakpoint(xl){
             right: 275px;
