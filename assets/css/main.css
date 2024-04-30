@@ -3898,6 +3898,15 @@ input.main-search-input::placeholder {
   background: url(../img/client/client.jpg) no-repeat center center;
   background-size: cover;
 }
+.client__section .grad__shape__three {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+}
+.client__section .grad__shape__three img {
+  width: 100%;
+  height: 100%;
+}
 .client__section .client__wrapper .client__thumb {
   width: 88px;
   text-align: center;
@@ -4150,15 +4159,15 @@ input.main-search-input::placeholder {
     top: -55px;
   }
 }
-@media (max-width: 1199px) {
-  .team__section .left__shape {
-    display: none;
-  }
-}
 .team__section .vector__shape {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 5%;
+}
+@media (min-width: 1800px) {
+  .team__section .vector__shape {
+    top: 40%;
+  }
 }
 .team__section .section__title .sub {
   color: var(--theme);
@@ -4182,6 +4191,7 @@ input.main-search-input::placeholder {
   right: 0;
   overflow: hidden;
   clip-path: polygon(0 0, 100% 1%, 100% 81%, 89% 100%, 0 100%, 0% 50%);
+  z-index: 99;
 }
 .team__section .team__items .team__thumb .team__content p {
   color: var(--pra2);
@@ -4202,6 +4212,7 @@ input.main-search-input::placeholder {
   height: 45px;
   line-height: 45px;
   background-color: var(--theme2);
+  z-index: 999;
 }
 @media (min-width: 450px) {
   .team__section .team__items .team__thumb .team__social {
@@ -4284,11 +4295,6 @@ input.main-search-input::placeholder {
 .blog__section .grad__shape img {
   width: 100%;
   height: 100%;
-}
-@media (max-width: 1199px) {
-  .blog__section .grad__shape {
-    display: none;
-  }
 }
 .blog__section .left__shape {
   position: absolute;
@@ -4865,11 +4871,6 @@ input.main-search-input::placeholder {
 }
 
 /* 17. Footer */
-.footer__section .grad__shape__three {
-  position: absolute;
-  right: 0;
-  top: -67px;
-}
 .footer__section .footer__top .footer__widget .widget__head {
   position: relative;
 }

@@ -15,14 +15,14 @@
         @media screen and (max-width: 1555px) {
             top: -55px;
         }
-        @include breakpoint(max-xl){
-           display: none;
-        }
     }
     .vector__shape{
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 5%;
+        @include breakpoint(x4l){
+            top: 40%;
+        }
     }
     .section__title{
         .sub{
@@ -49,6 +49,7 @@
                 right: 0;
                 overflow: hidden;
                 clip-path: polygon(0 0, 100% 1%, 100% 81%, 89% 100%, 0 100%, 0% 50%);
+                z-index: 99;
                 p{
                     color: var(--pra2);
                 }
@@ -67,6 +68,7 @@
                 height: 45px;
                 line-height: 45px;
                 background-color: var(--theme2);
+                z-index: 999;
                 @include breakpoint(xsmall){
                     bottom:18%;
                 }

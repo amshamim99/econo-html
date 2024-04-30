@@ -2,6 +2,14 @@
 .client__section{
     background: url(../img/client/client.jpg) no-repeat center center;
     background-size: cover;
+    .grad__shape__three{
+        position: absolute;
+        right: 0;
+        bottom: -15px;
+        img{
+            @include imgw;
+        }
+    }
     .client__wrapper{
         .client__thumb{
             width: 88px;

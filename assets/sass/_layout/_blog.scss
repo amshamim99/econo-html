@@ -8,9 +8,6 @@
         img{
             @include imgw;
         }
-        @include breakpoint(max-xl){
-            display: none;
-        }
     }
     .left__shape{
         position: absolute;
