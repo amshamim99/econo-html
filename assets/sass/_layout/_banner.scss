@@ -237,7 +237,22 @@
 .breadcumd__banner{
     background: url(../img/inner/bg.png) no-repeat center center;
     background-size: cover;
-    padding: 250px 0;
+    @include breakpoint(max-md){
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    @include breakpoint(md){
+        padding-top: 200px;
+        padding-bottom: 130px;
+    }
+    @include breakpoint(lg){
+        padding-top: 300px;
+        padding-bottom: 145px;
+    }
+    @include breakpoint(xxl){
+        padding-top: 300px;
+        padding-bottom: 250px;
+    }
     .breadcumd__wrapper{
         position: relative;
         .breadcumd__items{

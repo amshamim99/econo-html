@@ -81,6 +81,11 @@
                         background-color: var(--theme2);
                         padding: 12px 30px;
                     }
+                    &.f-button{
+                        .cmn--btn{
+                            background-color: #1cb0eb;
+                        }
+                    }
                 }
             }
         }
