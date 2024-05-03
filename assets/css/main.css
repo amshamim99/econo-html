@@ -2648,6 +2648,20 @@ input.main-search-input::placeholder {
     display: none;
   }
 }
+.breadcumd__banner.single__bg .shape-3 {
+  position: absolute;
+  right: -2px;
+  bottom: -8px;
+  width: 74px;
+  height: 56px;
+  background: #f2f1fc;
+  transform: rotate(-2deg);
+}
+@media (max-width: 767px) {
+  .breadcumd__banner.single__bg .shape-3 {
+    display: none;
+  }
+}
 .breadcumd__banner.single__bg .grad__shape {
   position: absolute;
   bottom: -17px;
@@ -2663,7 +2677,7 @@ input.main-search-input::placeholder {
   bottom: -8px;
   width: 74px;
   height: 57px;
-  background: #f2f1fc;
+  background: var(--white);
   transform: rotate(-2deg);
 }
 @media (max-width: 767px) {

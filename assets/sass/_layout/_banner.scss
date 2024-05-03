@@ -319,13 +319,22 @@
                 display: none;
             }             
         }
+        .shape-3{
+            position: absolute;
+            right: -2px;
+            bottom: -8px;
+            width: 74px;
+            height: 56px;
+            background: #f2f1fc;  
+            transform: rotate(-2deg);
+            @include breakpoint(max-md){
+                display: none;
+            }             
+        }
         .grad__shape{
             position: absolute;
             bottom: -17px;
             right: 0;
-            // img{
-            //     @include imgw;
-            // }
         }
     }
     &.about__bg{
@@ -337,7 +346,7 @@
             bottom: -8px;
             width: 74px;
             height: 57px;
-            background: #f2f1fc;  
+            background: var(--white);  
             transform: rotate(-2deg);
             @include breakpoint(max-md){
                 display: none;
@@ -347,9 +356,6 @@
             position: absolute;
             bottom: -17px;
             right: 0;
-            // img{
-            //     @include imgw;
-            // }
         }
     }
 }
