@@ -40,47 +40,51 @@
         }
     }
     .testi__wrapper{
-        .testi__items{
-            clip-path: polygon(100% 0, 100% 80%, 82% 100%, 0 100%, 0 0);
-            padding-top: 20px;
-            .testi__inner{
-               background-color: var(--white);
-               position: relative;
-              padding: 50px 50px;
-            }
-            &::before{
-                position: absolute;
-                top: 0;
-                left: 25px;
-                width: 88%;
-                height: 100%;
-                content: "";
-                background-color: #f6f8f9;
-            } 
-            .testi__icon{
-                i{
-                    font-size: 40px;
-                    color: var(--theme2);
-                }
-            }
-            .testi__wrap{
-                gap: 18px;
-                .testi__thumb{
-                    border-left: 5px solid var(--theme2) ;
-                }
-                .testi__content{
-                    font-size: 15px;
-                    color: var(--pra-2);
+        .testi-single{
+            filter: drop-shadow(6px 6px 7px rgb(0, 22, 89, 0.1));
+            padding-bottom: 20px;
+            .testi__items{
+                clip-path: polygon(100% 0, 100% 80%, 82% 100%, 0 100%, 0 0);
+                padding-top: 20px;
+                .testi__inner{
+                    background-color: var(--white);
                     position: relative;
-                    margin-top: 20px;
-                    &::before{
-                        position: absolute;
-                       top: -10px;
-                       left: 0;
-                       content: "";
-                       width: 45px;
-                       height: 1px;
-                       background-color: #d9dce4;
+                    padding: 50px 50px;
+                }
+                &::before{
+                    position: absolute;
+                    top: 0;
+                    left: 25px;
+                    width: 88%;
+                    height: 100%;
+                    content: "";
+                    background-color: #f6f8f9;
+                } 
+                .testi__icon{
+                    i{
+                        font-size: 40px;
+                        color: var(--theme2);
+                    }
+                }
+                .testi__wrap{
+                    gap: 18px;
+                    .testi__thumb{
+                        border-left: 5px solid var(--theme2) ;
+                    }
+                    .testi__content{
+                        font-size: 15px;
+                        color: var(--pra-2);
+                        position: relative;
+                        margin-top: 20px;
+                        &::before{
+                            position: absolute;
+                            top: -10px;
+                            left: 0;
+                            content: "";
+                            width: 45px;
+                            height: 1px;
+                            background-color: #d9dce4;
+                        }
                     }
                 }
             }

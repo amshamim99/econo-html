@@ -2630,24 +2630,51 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
 }
-
-.about__bg {
-  background: url(../img/about/about-inner-bg.png) no-repeat center center;
-  background-size: cover;
-}
-
-.single__bg {
+.breadcumd__banner.single__bg {
   background: url(../img/banner/blog-single-bg.png) no-repeat center center;
   background-size: cover;
 }
-.single__bg .grad__shape {
+.breadcumd__banner.single__bg .shape-2 {
+  position: absolute;
+  right: -2px;
+  bottom: -8px;
+  width: 74px;
+  height: 57px;
+  background: #f2f1fc;
+  transform: rotate(-2deg);
+}
+@media (max-width: 767px) {
+  .breadcumd__banner.single__bg .shape-2 {
+    display: none;
+  }
+}
+.breadcumd__banner.single__bg .grad__shape {
   position: absolute;
   bottom: -17px;
   right: 0;
 }
-.single__bg .grad__shape img {
-  width: 100%;
-  height: 100%;
+.breadcumd__banner.about__bg {
+  background: url(../img/about/about-inner-bg.png) no-repeat center center;
+  background-size: cover;
+}
+.breadcumd__banner.about__bg .shape-2 {
+  position: absolute;
+  right: -2px;
+  bottom: -8px;
+  width: 74px;
+  height: 57px;
+  background: #f2f1fc;
+  transform: rotate(-2deg);
+}
+@media (max-width: 767px) {
+  .breadcumd__banner.about__bg .shape-2 {
+    display: none;
+  }
+}
+.breadcumd__banner.about__bg .grad__shape {
+  position: absolute;
+  bottom: -17px;
+  right: 0;
 }
 
 /* 6. About */
@@ -3028,11 +3055,11 @@ input.main-search-input::placeholder {
 }
 .service__section .service__items {
   padding: 30px;
-  -webkit-transition: all 4s ease;
-  transition: all 4s ease;
 }
 .service__section .service__items .service__thumb {
   position: relative;
+  -webkit-transition: all 4s ease;
+  transition: all 4s ease;
 }
 .service__section .service__items .service__thumb img {
   width: 100%;
@@ -3040,10 +3067,7 @@ input.main-search-input::placeholder {
 }
 .service__section .service__items .service__thumb::before {
   position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+  inset: 0;
   background: -webkit-gradient(linear, right top, right bottom, from(transparent), to(var(--theme)));
   background: linear-gradient(400deg, transparent 50%, var(--theme) 100%);
   content: "";
@@ -3070,10 +3094,7 @@ input.main-search-input::placeholder {
   right: 12px;
 }
 .service__section .service__items:hover .service__thumb::before {
-  top: 0;
   background: linear-gradient(400deg, transparent 0%, var(--theme) 100%);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 .service__section .owl-carousel .owl-nav.disabled {
   display: block !important;
@@ -3787,16 +3808,20 @@ input.main-search-input::placeholder {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.testimonial__section .testi__wrapper .testi__items {
+.testimonial__section .testi__wrapper .testi-single {
+  filter: drop-shadow(6px 6px 7px rgba(0, 22, 89, 0.1));
+  padding-bottom: 20px;
+}
+.testimonial__section .testi__wrapper .testi-single .testi__items {
   clip-path: polygon(100% 0, 100% 80%, 82% 100%, 0 100%, 0 0);
   padding-top: 20px;
 }
-.testimonial__section .testi__wrapper .testi__items .testi__inner {
+.testimonial__section .testi__wrapper .testi-single .testi__items .testi__inner {
   background-color: var(--white);
   position: relative;
   padding: 50px 50px;
 }
-.testimonial__section .testi__wrapper .testi__items::before {
+.testimonial__section .testi__wrapper .testi-single .testi__items::before {
   position: absolute;
   top: 0;
   left: 25px;
@@ -3805,23 +3830,23 @@ input.main-search-input::placeholder {
   content: "";
   background-color: #f6f8f9;
 }
-.testimonial__section .testi__wrapper .testi__items .testi__icon i {
+.testimonial__section .testi__wrapper .testi-single .testi__items .testi__icon i {
   font-size: 40px;
   color: var(--theme2);
 }
-.testimonial__section .testi__wrapper .testi__items .testi__wrap {
+.testimonial__section .testi__wrapper .testi-single .testi__items .testi__wrap {
   gap: 18px;
 }
-.testimonial__section .testi__wrapper .testi__items .testi__wrap .testi__thumb {
+.testimonial__section .testi__wrapper .testi-single .testi__items .testi__wrap .testi__thumb {
   border-left: 5px solid var(--theme2);
 }
-.testimonial__section .testi__wrapper .testi__items .testi__wrap .testi__content {
+.testimonial__section .testi__wrapper .testi-single .testi__items .testi__wrap .testi__content {
   font-size: 15px;
   color: var(--pra-2);
   position: relative;
   margin-top: 20px;
 }
-.testimonial__section .testi__wrapper .testi__items .testi__wrap .testi__content::before {
+.testimonial__section .testi__wrapper .testi-single .testi__items .testi__wrap .testi__content::before {
   position: absolute;
   top: -10px;
   left: 0;

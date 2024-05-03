@@ -89,19 +89,18 @@
     }
     .service__items{
         padding: 30px;
-        -webkit-transition: all 4s ease;
-                transition: all 4s ease; 
+        // -webkit-transition: all 4s ease;
+        //         transition: all 4s ease; 
         .service__thumb{
             position: relative;
+            -webkit-transition: all 4s ease;
+                transition: all 4s ease; 
             img{
                 @include imgw;
             }
             &::before{
                 position: absolute;
-                right: 0;
-                top: 0;
-                height:100%;
-                width: 100%;
+                inset: 0;
                 background: -webkit-gradient(linear, right top, right bottom, from(transparent), to(var(--theme)));
                 background: linear-gradient(400deg, transparent 50%, var(--theme) 100%);
                 content: "";
@@ -110,7 +109,7 @@
                 -webkit-transition: all .4s ease;
                 transition: all .4s ease; 
             }
-        }
+        }     
         .service__content{
             h5{
                 margin-bottom: 15px;
@@ -133,10 +132,7 @@
         &:hover{
             .service__thumb{
                 &::before{
-                    top: 0;
                     background: linear-gradient(400deg, transparent 0%, var(--theme) 100%);
-                    -webkit-transition: all .4s ease;
-                    transition: all .4s ease; 
                 }
             }
         }
