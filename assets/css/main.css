@@ -20,7 +20,7 @@
 17. Footer
 */
 /* 0. Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 /* 1. Animation */
 @-webkit-keyframes spin {
   0% {
@@ -276,10 +276,11 @@ input {
 
 p {
   font-size: 16px;
-  line-height: 160%;
+  font-weight: 400;
+  line-height: 28px;
   margin-bottom: 0;
-  color: var(--pra);
-  font-family: "Poppins", sans-serif;
+  color: var(--pra2);
+  font-family: "Open Sans", sans-serif;
 }
 @media (max-width: 1199px) {
   p {
@@ -1206,7 +1207,7 @@ p {
 }
 
 .bodyfont {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .headfont {
@@ -1341,7 +1342,7 @@ p {
 }
 .header__text .view__btn {
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 .header__text .view__btn i {
@@ -1508,7 +1509,7 @@ i {
 .main__header .main__header__items .main__logo {
   width: 260px;
   background-color: var(--theme);
-  padding: 22px 40px;
+  padding: 23px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1627,7 +1628,7 @@ i {
 }
 .header__top .top__info li {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .header__top .top__info li i {
   color: var(--theme2);
@@ -2414,10 +2415,10 @@ input.main-search-input::placeholder {
 }
 .banner__section .banner__content .box__shape h4::before {
   position: absolute;
-  bottom: -15px;
+  bottom: -6px;
   left: 0;
   width: 60px;
-  border: 2px solid var(--theme2);
+  border: 1px solid var(--theme2);
   content: "";
 }
 .banner__section .banner__content .box__shape h4 span {
@@ -2693,12 +2694,12 @@ input.main-search-input::placeholder {
 
 /* 6. About */
 .about__section {
-  padding: 80px 0;
+  padding: 90px 0 120px 0;
 }
 .about__section .left__shape {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -225px;
+  left: 10px;
 }
 .about__section .left__shape img {
   width: 100%;
@@ -2711,7 +2712,7 @@ input.main-search-input::placeholder {
 }
 @media (min-width: 1200px) {
   .about__section {
-    padding: 180px 0;
+    padding: 90px 0 120px 0;
   }
 }
 .about__section .box__shape {
@@ -2742,7 +2743,7 @@ input.main-search-input::placeholder {
 }
 .about__section .about__thumb .vector__shape {
   position: absolute;
-  bottom: -100px;
+  bottom: -68px;
   left: 40px;
 }
 @media (max-width: 767px) {
@@ -2833,6 +2834,9 @@ input.main-search-input::placeholder {
     font-size: 24px;
   }
 }
+.about__section .about__content p {
+  color: var(--pra);
+}
 @media (max-width: 991px) {
   .about__section .about__content.about__content-2 {
     margin-top: 80px;
@@ -2850,7 +2854,7 @@ input.main-search-input::placeholder {
   position: absolute;
   bottom: -24px;
   left: 0;
-  border: 2px solid var(--theme2);
+  border: 1px solid var(--theme2);
   content: "";
   width: 110px;
 }
@@ -3837,7 +3841,7 @@ input.main-search-input::placeholder {
 .testimonial__section .testi__wrapper .testi-single .testi__items .testi__inner {
   background-color: var(--white);
   position: relative;
-  padding: 50px 50px;
+  padding: 60px 140px 60px 60px;
 }
 .testimonial__section .testi__wrapper .testi-single .testi__items::before {
   position: absolute;
@@ -3859,8 +3863,6 @@ input.main-search-input::placeholder {
   border-left: 5px solid var(--theme2);
 }
 .testimonial__section .testi__wrapper .testi-single .testi__items .testi__wrap .testi__content {
-  font-size: 15px;
-  color: var(--pra-2);
   position: relative;
   margin-top: 20px;
 }
@@ -3872,6 +3874,10 @@ input.main-search-input::placeholder {
   width: 45px;
   height: 1px;
   background-color: #d9dce4;
+}
+.testimonial__section .testi__wrapper .testi-single .testi__items .testi__wrap .testi__content p {
+  font-size: 15px;
+  color: var(--pra2);
 }
 @media (max-width: 1399px) {
   .testimonial__section .testi__wrapper .owl-dots {
@@ -4235,9 +4241,6 @@ input.main-search-input::placeholder {
 }
 .team__section .section__title .sub {
   color: var(--theme);
-}
-.team__section .section__title .title__button .cmn--btn {
-  padding: 12px 24px 12px 18px;
 }
 .team__section .team__items .team__thumb {
   position: relative;
