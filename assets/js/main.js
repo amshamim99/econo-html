@@ -125,15 +125,12 @@ $(document).ready(function () {
         576:{
             items:1
         },
-        600:{
+        768:{
             items:2
         },
-        1000:{
+        992:{
             items:3
         },
-        1199:{
-            items:3
-        }
     }
    })
    //service-slide-area-start-End

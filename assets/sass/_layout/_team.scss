@@ -9,19 +9,20 @@
         img{
             @include imgw;
         }
-        @include breakpoint(max-xxxl){
-           top: -45px;
-         }
-        @media screen and (max-width: 1555px) {
-            top: -55px;
-        }
     }
     .vector__shape{
         position: absolute;
         top: 30%;
-        left: 5%;
+        left: -55px;
+        @include breakpoint(xxl){
+            left: -3%;
+        }
+        @include breakpoint(xxxl){
+            left: 0;
+        }
         @include breakpoint(x4l){
-            top: 40%;
+            top: 32%;
+            left: 8%;
         }
     }
     .section__title{
@@ -36,20 +37,22 @@
                 @include imgw;
             }
             .team__content{
-                background-color: var(--white);
-                padding: 35px 35px;
                 position: absolute;
                 bottom: -33px;
                 left: 45px;
                 right: 0;
                 overflow: hidden;
-                clip-path: polygon(0 0, 100% 1%, 100% 81%, 89% 100%, 0 100%, 0% 50%);
                 z-index: 99;
+                filter: drop-shadow(6px 6px 7px rgba(0, 22, 89, 0.1));
+                .team-name{
+                    background-color: var(--white);
+                    padding: 35px;
+                    clip-path: polygon(0 0, 100% 1%, 100% 75%, 91% 100%, 0 100%, 0% 50%);
+                }
                 p{
                     color: var(--pra2);
                 }
                 @include breakpoint(max-lg){
-                    bottom: 0;
                     clip-path: initial;
                 }
             }
@@ -57,7 +60,7 @@
                 text-align: center;
                 transition: all 0.3s ease 0s;
                 position: absolute;
-                bottom: 23%;
+                bottom: 18%;
                 left: 45px;
                 width: 45px;
                 height: 45px;
@@ -65,10 +68,13 @@
                 background-color: var(--theme2);
                 z-index: 999;
                 @include breakpoint(xsmall){
-                    bottom:18%;
+                    bottom:14%;
+                }
+                @include breakpoint(sm){
+                    bottom:15%;
                 }
                 @include breakpoint(md){
-                    bottom:30%;
+                    bottom:24%;
                 }
                 @include breakpoint(lg){
                     bottom:25%;

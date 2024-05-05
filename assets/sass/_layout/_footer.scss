@@ -10,9 +10,9 @@
                 }
                 &::before{
                     position: absolute;
-                    bottom: -25px;
+                    bottom: -20px;
                     left: 0;
-                    height: 2px;
+                    height: 1px;
                     width: 80px;
                     content: "";
                     background-color: var(--theme2);
@@ -48,15 +48,14 @@
             }
             .link__list{
                 li{
-                    font-size: 16px;
-                    font-weight: 400;
                     @include transition;
-                    &:not(:last-child){
-                        margin-bottom: 18px;
-                    }
                     a{
                         color: #f2f1fc;
                         @include transition;
+                        line-height: 31px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        @include bodyfont;
                     }
                     &:hover{
                         margin-left: 5px;
@@ -72,9 +71,13 @@
                     border: none;
                     border-bottom: 1px solid #4d5c8b;
                     width: 100%;
-                    padding-bottom: 25px;
+                    padding-bottom: 20px;
                     font-size: 16px;
-                    font-weight: 50;
+                    font-weight: 400;
+                    color: var(--white);
+                    &::placeholder{
+                        color: var(--white);
+                    }
                 }
                 .button{
                     .cmn--btn{

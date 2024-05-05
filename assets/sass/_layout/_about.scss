@@ -66,13 +66,13 @@
                 .counter__items{
                     width: 105px;
                     background-color: var(--theme);
-                    padding: 17px 28px;
+                    padding: 17px 27px;
                     text-align: center;
                     @include breakpoint(md){
-                        width: 120px;
+                        width: 122px;
                     }
                     @include breakpoint(xxl){
-                        width: 132px;
+                        width: 137px;
                     }
                     h2{
                         font-size: 36px;

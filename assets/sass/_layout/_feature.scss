@@ -42,7 +42,7 @@
               }
             @include breakpoint(max-xl){
                 width: 600px;
-             }
+            }
             @include breakpoint(max-lg){
                 display: none;
             }
@@ -59,34 +59,47 @@
             left: 50%;
             transform: translate(-50%,-50%);
             &::before{    
-                top: 65px;
-                left: 65px;
+                top: 44px;
+                left: 44px;
                 content: "";
                 z-index: -1;
-                height: 110px;
-                width: 110px;
+                height: 80px;
+                width: 80px;
                 background: var(--theme);
                 position: absolute;
                 border-radius: 100%;
                 animation: pulse-border 1500ms ease-out infinite;
+                @include breakpoint(xxxl){
+                    top: 55px;
+                    left: 55px;
+                    height: 95px;
+                    width: 95px;
+                }
             }
             a{
                 display: inline-block;
                 span {
-                    height: 130px;
-                    width: 130px;
-                    background: linear-gradient(45deg, #ff8a54, var(--theme2));
+                    height: 90px;
+                    width: 90px;
+                    background: linear-gradient(-51deg, #ff8a54, #feaf38);
                     border-radius: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     transition: .3s;
+                    @include breakpoint(xxxl){
+                        height: 110px;
+                        width: 110px;
+                    }
                     &:hover{
-                        background: linear-gradient(90deg, #fa641e, var(--theme2));
+                        background: linear-gradient(180deg, #ff8a54, #feaf38);
                     }
                     i{
                         color: var(--body);
-                        font-size: 40px;
+                        font-size: 30px;
+                        @include breakpoint(xxxl){
+                            font-size: 40px;
+                        }
                     }
                 }
             }

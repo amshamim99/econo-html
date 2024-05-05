@@ -105,21 +105,20 @@
 			justify-content: space-between;
 		}
 		.main__logo{
-			width: 260px;
+			width: 160px;
 			background-color: var(--theme);
-			padding: 23px 40px;
+			padding: 25px 23px 21px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			position: relative;
 			clip-path:polygon(0 0, 100% 0, 100% 20%, 100% 80%, 87% 100%, 0 100%, 0% 80%, 0% 20%);
-			@include breakpoint(max-xl){
-				width: 200px;
-				padding: 30px 30px 30px;
+			@include breakpoint(lg){
+				width: 260px;
+				padding: 22px;
 			}
-			@include breakpoint(max-lg){
-				width: 160px;
-				padding: 25px 23px 21px;
+			@include breakpoint(xl){
+				padding: 23px;
 			}
 			.shape-1 {
 				position: absolute;
@@ -131,7 +130,7 @@
 				}
 				@include breakpoint(lg){
 					bottom: -1px;
-					right: -6px;
+					right: -2px;
 				}
 				@include breakpoint(xl){
 					bottom: 0px;
@@ -165,7 +164,7 @@
 			right: 0;
 			content: "";
 			height: 1px;
-			width: 768px;
+			width: 726px;
 			background-color: #ededed;
 			display: none;
 			@include breakpoint(lg){
@@ -268,7 +267,7 @@
 			}
 			@include breakpoint(lg){
 				bottom: -2px !important;
-				right: -8px !important;
+				right: -4px !important;
 			}
 			@include breakpoint(xl){
 				bottom: -3px !important;
@@ -427,7 +426,7 @@
 			background-color: var(--theme2);
 			clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 87%, 100% 100%, 0% 100%, 0% 110%, 26% -3%);
 			@include breakpoint(lg){
-				padding: 30px 16px 25px 70px;
+				padding: 30px 16px 32px 70px;
 				font-size: 13px;
 			}
 			@include breakpoint(xl){
