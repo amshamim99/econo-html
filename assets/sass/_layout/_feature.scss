@@ -114,7 +114,7 @@
             }
             &::before{
                 position: absolute;
-                bottom: -16px;
+                bottom: -6px;
                 left: 0;
                 width: 60px;
                 height: 1px;
@@ -183,22 +183,21 @@
             margin-bottom: 40px;
         }
         .icon{
-            width: 95px;
-            height: 95px;
-            line-height: 85px;
-            border: 2px solid var(--theme2);
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border: 1px solid var(--theme2);
             text-align: center;
             padding: 0 20px;
             position: relative;
             &::after {
                 content: "";
                 position: absolute;
-                bottom: 9px;
-                right: -7px;
-                width: 52px;
+                bottom: 8px;
+                right: -5px;
                 transform: rotate(-51deg);
                 border: 1px solid var(--theme2);
-                width: 29.5px;
+                width: 25.9px;
             } 
             &::before {
                 content: "";

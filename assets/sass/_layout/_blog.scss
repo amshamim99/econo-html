@@ -11,10 +11,20 @@
     }
     .left__shape{
         position: absolute;
-        top: -43%;
-        left: 0;
+        top: -50%;
+        left: -20%;
         @include breakpoint(max-lg){
             display: none;
+        }
+        @include breakpoint(xl){
+            top: -40%;
+            left: -12%;
+        }
+        @include breakpoint(xxxl){
+            left: -6%;
+        }
+        @include breakpoint(x4l){
+            left: -3%;
         }
         img{
             @include imgw;

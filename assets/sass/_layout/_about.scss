@@ -175,17 +175,21 @@
                     margin-bottom: 12px;
                 }
             }
+            .progress {
+                border-radius: 0;
+                height: 18px;
+            }
         }
         .progress-bar {
             background: var(--theme2);
-            color: var(--theme);
+            color: #fefefe;
             position: relative;
-            height: 15px;
-            border-radius: 0;
             width: 100%;
-            font-size: 16px;
-            color: var(--white);
-            font-weight: 700;
+            font-size: 13px;
+            font-weight: 400;
+            @include bodyfont;
+            text-align: right;
+            padding-right: 10px;
         }
         
         .progress-value {
