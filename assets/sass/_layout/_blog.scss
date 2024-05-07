@@ -11,20 +11,51 @@
     }
     .left__shape{
         position: absolute;
-        top: -50%;
+        top: -49%;
         left: -20%;
         @include breakpoint(max-lg){
             display: none;
         }
         @include breakpoint(xl){
-            top: -40%;
-            left: -12%;
+            top: -44%;
+            left: -17%;
+        }
+        @include breakpoint(xxl){
+            top: -42%;
+            left: -14%;
         }
         @include breakpoint(xxxl){
-            left: -6%;
+            left: -7%;
         }
         @include breakpoint(x4l){
-            left: -3%;
+            left: 0;
+            top: -45%;
+        }
+        img{
+            @include imgw;
+        }
+    }
+    .left__shape_3{
+        position: absolute;
+        top: -58%;
+        left: -20%;
+        @include breakpoint(max-lg){
+            display: none;
+        }
+        @include breakpoint(xl){
+            top: -53%;
+            left: -17%;
+        }
+        @include breakpoint(xxl){
+            top: -51%;
+            left: -14%;
+        }
+        @include breakpoint(xxxl){
+            left: -7%;
+        }
+        @include breakpoint(x4l){
+            left: 0;
+            top: -54%;
         }
         img{
             @include imgw;
@@ -158,21 +189,57 @@
 }
 .blog__two{
     .left__shape{
-        top: -16%;
-        left: 0;
+        top: -17%;
+        left: -14%;
+        @include breakpoint(xl){
+            top: -16%;
+            left: -12%;
+        }
+        @include breakpoint(xxxl){
+            left: -6%;
+        }
+        @include breakpoint(x4l){
+            left: 0;
+        }
     }
-}
-.style__blog{
-    background-color: var(--white);
-    position: relative;
-    &::before{
+    .left__shape_2{
         position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 30%;
-        content: "";
-        background-color: #f2f1fc;
+        top: -22%;
+        left: -15%;
+        @include breakpoint(xl){
+            top: -20%;
+            left: -13%;
+        }
+        @include breakpoint(xxl){
+            top: -19%;
+            left: -12%;
+        }
+        @include breakpoint(xxxl){
+            left: -6%;
+        }
+        @include breakpoint(x4l){
+            top: -20%;
+            left: 0;
+        }
+    }
+    .left__shape_3{
+        position: absolute;
+        top: -20%;
+        left: -14%;
+        @include breakpoint(xl){
+            top: -19%;
+            left: -12%;
+        }
+        @include breakpoint(xxl){
+            top: -18%;
+        }
+        @include breakpoint(xxxl){
+            left: -6%;
+        }
+        @include breakpoint(x4l){
+            top: -18%;
+            left: 0;
+        }
     }
 }
 //--Blog Section End--//
@@ -194,18 +261,41 @@
       transition: all 0.4s;
       cursor: pointer;
       font-weight: 500;
-      border-radius: 0 0 10px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: -9px;
+            right: -8px;
+            margin-left: 0px;
+            border-width: 6px;
+            border-style: solid;
+            border-color: #f2f1fc transparent transparent transparent;
+            transform: rotate(-43deg);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 2px;
+            right: -2px;
+            transform: rotate(-46deg);
+            border: 0.1px solid #a9afcb;
+            width: 9px;
+            transition: all 0.4s;
+        }
       a{
         transition: all 0.4s;
         color: var(--theme);
+        display: inline-block;
       }
       &:hover{
         background-color: var(--theme2);
-        width: 35px;
-        height: 35px;
-        border: 1px solid var(--white);
+        border-color: transparent;
         a{
           color: var(--white);
+        }
+        &::after{
+            border-color: transparent;
         }
       }
     }
@@ -226,13 +316,17 @@
             gap: 20px;
             border-bottom: 1px solid #d9dce4;
             padding: 0 0 23px;
+            h6{
+                @include bodyfont;
+            }
             span{
                 color: #565969;
                 font-size: 16px;
+                @include bodyfont;
                 i{
                     color: var(--theme2);
                     margin-right: 10px;
-                    font-size: 15px;
+                    font-size: 16px;
                 }
             }
         }
@@ -264,14 +358,37 @@
             border-top: 1px ;
             h6{
                 font-size: 14px;
+                font-weight: 600;
             }
             a{
                 border: 2px solid #d9dce4;
-                padding: 10px 20px;
-                font-size: 14px;
-                border-radius: 0 0 15px;
+                padding: 8px 20px;
+                font-size: 13px;
                 font-weight: 500;
                 color: var(--theme);
+                @include headfont;
+                display: inline-block;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: -20px;
+                    right: -3px;
+                    margin-left: 0px;
+                    border-width: 14px;
+                    border-style: solid;
+                    border-color: white transparent transparent transparent;
+                    transform: rotate(-271deg);
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 1px;
+                    right: -2px;
+                    transform: rotate(-46deg);
+                    border: 0.1px solid #d9dce4;
+                    width: 9px;
+                }
             }
         }
     }
@@ -283,6 +400,11 @@
         @include breakpoint(max-sm){
             flex-wrap: wrap;
         }
+        .profile__content{
+            p{
+                font-size: 15px;
+            }
+        }
 
     }
     .comments__wrap{
@@ -293,7 +415,37 @@
             @include breakpoint(max-sm){
                 flex-wrap: wrap;
             }
+            .reply{
+                position: absolute;
+                right: 0;
+                top: 186px;
+                font-size: 13px;
+                font-weight: 500;
+                color: var(--theme);
+                @include breakpoint(sm){
+                    top: 50px;
+                }
+                i{
+                    font-size: 13px;
+                    color: var(--theme2);
+                    margin-right: 4px;
+                }
+            }
             .comments__content{
+                p {
+                    font-size: 15px;
+                    br{
+                        @include breakpoint(max-md){
+                            display: none;
+                        }
+                        @include breakpoint(lg){
+                            display: none;
+                        }
+                        @include breakpoint(xl){
+                            display: block;
+                        }
+                    }
+                }
                 .head__wrap{
                     margin-bottom: 15px;
                     h5{
@@ -303,15 +455,6 @@
                             margin-left: 14px;
                             color: var(--theme2);
                             text-transform: capitalize;
-                        }
-                    }
-                    .reply{
-                        font-size: 14px;
-                        font-weight: 600;
-                        i{
-                            font-size: 16px;
-                            color: var(--theme2);
-                            margin-right: 4px;
                         }
                     }
                 }
@@ -332,11 +475,10 @@
         }
     }
     .contact__right{
-        .form__clt{
+        .form__clt_2{
             input{
                 width: 100%;
                 outline: none;
-                border-radius: 5px;
                 border: none;
                 padding: 20px 0;
                 background: transparent;
@@ -346,20 +488,25 @@
                 @include breakpoint(max-xl){
                     font-size: 14px;
                 }
+                &:focus{
+                    border-color: var(--theme2);
+                }
             }
          }
-         .form__clt__big{
+         .form__clt__big_2{
             textarea{
                 padding: 20px 0 70px;
                 width: 100%;
                 outline: none;
-                border-radius: 5px;
                 border: none;
                 color: var(--pra2);
                 border-bottom: 1px solid #d9dce4;
                 background-color: transparent;
                 @include breakpoint(max-xl){
                     font-size: 14px;
+                }
+                &:focus{
+                    border-color: var(--theme2);
                 }
             }
           }
@@ -368,6 +515,7 @@
 .sidebar__right{
     .sidebar__items{
         padding: 40px 40px;
+        filter: drop-shadow(0px 0px 40px rgba(0, 22, 89, 0.1));
         .shape{
             position: absolute;
             bottom: 10px;
@@ -394,6 +542,7 @@
                 }
                 .recent__content{
                     h6{
+                        line-height: 160%;
                         a{
                             @include transition;
                             &:hover{
@@ -405,8 +554,6 @@
             }
             .category__list{
                 li{
-                    font-size: 15px;
-                    font-weight: 500;
                     padding: 18px 0;
                     &:not(:last-child){
                         border-bottom: 1px solid #edeff2;
@@ -414,9 +561,13 @@
                     a{
                         @include transition;
                         color: var(--theme);
+                        font-size: 15px;
+                        font-weight: 400;
+                        @include headfont;
                         i{
                             color: var(--theme2);
                             margin-right: 4px;
+                            font-size: 14px;
                         }
                         &:hover{
                             color: var(--theme2);

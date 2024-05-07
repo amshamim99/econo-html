@@ -30,10 +30,32 @@
                     line-height: 32px;
                     border: 2px solid var(--border);
                     text-align: center;
-                    border-radius: 0 0 10px;
                     @include transition;
                     cursor: pointer;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        bottom: -9px;
+                        right: -8px;
+                        margin-left: 0px;
+                        border-width: 6px;
+                        border-style: solid;
+                        border-color: var(--theme) transparent transparent transparent;
+                        transform: rotate(-43deg);
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 1px;
+                        right: -2px;
+                        transform: rotate(-46deg);
+                        border: 0.1px solid var(--border);
+                        width: 9px;
+                        transition: all 0.4s;
+                    }
                     a{
+                        display: inline-block;
                         i{
                             color: var(--white);
                             font-size: 15px;
@@ -41,7 +63,10 @@
                     }
                     &:hover{
                         background-color: var(--theme2);
-                        border: 2px solid var(--theme2);
+                        border-color: transparent;
+                        &::after{
+                            border-color: transparent;
+                        }
                     }
                 }
             }
