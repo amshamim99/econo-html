@@ -18,6 +18,12 @@
         width: 72px;
         overflow: hidden;
     }
+    @include breakpoint(xxxl){
+        right: -3%;
+    }
+    @include breakpoint(x4l){
+        right: 0;
+    }
    }
    .vector__shape{
     position: absolute;

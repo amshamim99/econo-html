@@ -3423,7 +3423,22 @@ input.main-search-input::placeholder {
 .feature__section .left__shape {
   position: absolute;
   bottom: -60%;
-  left: 0;
+  left: -20%;
+}
+@media (min-width: 1400px) {
+  .feature__section .left__shape {
+    left: -17%;
+  }
+}
+@media (min-width: 1600px) {
+  .feature__section .left__shape {
+    left: -12%;
+  }
+}
+@media (min-width: 1800px) {
+  .feature__section .left__shape {
+    left: 0;
+  }
 }
 @media (max-width: 991px) {
   .feature__section .left__shape {
@@ -3642,7 +3657,7 @@ input.main-search-input::placeholder {
   bottom: 8px;
   right: -5px;
   transform: rotate(-51deg);
-  border: 1px solid var(--theme2);
+  border: thin solid var(--theme2);
   width: 25.9px;
 }
 .icon__item .icon__wrap .icon::before {
@@ -3688,6 +3703,16 @@ input.main-search-input::placeholder {
     height: inherit;
     width: 72px;
     overflow: hidden;
+  }
+}
+@media (min-width: 1600px) {
+  .gallery__section .left__shape {
+    right: -3%;
+  }
+}
+@media (min-width: 1800px) {
+  .gallery__section .left__shape {
+    right: 0;
   }
 }
 .gallery__section .vector__shape {
@@ -4494,7 +4519,8 @@ input.main-search-input::placeholder {
 .blog__section .blog__items {
   z-index: 99;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 85%, 86% 100%, 0 100%, 0% 80%, 0% 20%);
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 79%, 79% 100%, 0 100%, 0% 80%, 0% 20%);
+  padding-bottom: 30px;
 }
 @media (max-width: 767px) {
   .blog__section .blog__items {
@@ -4512,6 +4538,7 @@ input.main-search-input::placeholder {
   z-index: 1;
   position: relative;
   width: calc(100% - 100px);
+  filter: drop-shadow(0px 0px 20px rgba(0, 22, 89, 0.1));
 }
 @media (max-width: 767px) {
   .blog__section .blog__items .blog__content {
@@ -4522,8 +4549,9 @@ input.main-search-input::placeholder {
 }
 .blog__section .blog__items .blog__content .date {
   position: absolute;
-  top: -80px;
+  top: -83px;
   left: 50px;
+  filter: drop-shadow(0px 0px 20px rgba(255, 94, 20, 0.5));
 }
 @media (max-width: 575px) {
   .blog__section .blog__items .blog__content .date {
@@ -4538,7 +4566,7 @@ input.main-search-input::placeholder {
   padding: 10px 0;
   position: relative;
   z-index: 1;
-  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 75%, 86% 100%, 0 100%, 0% 80%, 0% 20%);
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 75%, 75% 100%, 0 100%, 0% 80%, 0% 20%);
 }
 @media (max-width: 575px) {
   .blog__section .blog__items .blog__content .date .box {
