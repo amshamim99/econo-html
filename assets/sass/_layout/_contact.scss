@@ -1,156 +1,157 @@
-/* 16. Contact */
-.map__section{
-    .googpemap{
-        iframe{
-            width: 100%;
-            height: 650px;
-        }
-    }
-}
-//--Map Section End--//
 
-//--Contact Info Section Start--//
-.contact__info__section{
-    .cmn--btn {
-        width: 100%;
-        border: none;
-        padding: 13px 10px 13px;
-        i{
-           margin-right: 5px;
-        }
+.contact__section{
+    padding:50px 0;
+    @include breakpoint(md){
+        padding: 80px 0;
     }
-}
-.contact__right{
-    // background-color: var(--white);
-    // border-radius: 10px;
-    // @include breakpoint(lg){
-    //    padding: 30px 30px;
-    // }
-    // @include breakpoint(xl){
-    //     padding: 60px 80px;
-    // }
-    .info__header{
-        h6{
-            text-transform: capitalize;
-            color: var(--theme-color);
-            margin-bottom: 15px;
-            @include breakpoint(max-xl){
-                font-size: 14px;
-            }
-        }
-        h3{
-            text-transform: capitalize;
-            margin-bottom: 20px;
-        }
+    @include breakpoint(lg){
+        padding-top: 120px;
+        padding-bottom: 130px;
     }
-    .form__clt{
-        input{
-            width: 100%;
-            outline: none;
-            border-radius: 5px;
-            border: none;
-            padding: 14px 15px;
-            color: var(--black-color);
-            background-color: var(--section);
-            font-size: 16px;
-            @include breakpoint(max-xl){
-                font-size: 14px;
-            }
-        }
-     }
-     .form__clt__big{
-        textarea{
-            padding: 14px 15px 130px;
-            width: 100%;
-            outline: none;
-            border-radius: 5px;
-            border: none;
-            color: var(--black-color);
-            background-color: var(--section);
-            @include breakpoint(max-xl){
-                font-size: 14px;
-            }
-        }
-    }
-}
-.left__info{
-    h3{
-        text-transform: capitalize;
-        margin-bottom: 10px;
-        @include breakpoint(max-xl){
-            font-size: 28px !important;
-        }
-        @include breakpoint(max-md){
-            font-size: 22px !important;
-        }
-        @include breakpoint(max-sm){
-            font-size: 18px !important;
-        }
-    }
-    .info__wrap{
-        gap: 20px;
-        .icon{
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-            background-color: var(--theme);
-            border-radius: 100px;
-            text-align: center;
-            i{
-                color: var(--white);
-            }
-        }
-        .content{
-            h6{
-                text-transform: capitalize;
-            }
-        }
-    }
-}
-.style__two{
-    .grad__shape{
+    .left__shape{
         position: absolute;
-        bottom: -15px;
-        right: 0;
+        top: -53%;
+        left: -20%;
         img{
             @include imgw;
         }
+        @include breakpoint(max-lg){
+           display: none;
+        }
+        @include breakpoint(xl){
+            top: -55%;
+            left: -16%;
+        }
+        @include breakpoint(xxl){
+            top: -55%;
+            left: -14%;
+        }
+        @include breakpoint(xxxl){
+            top: -57%;
+            left: -7%;
+        }
+        @include breakpoint(x4l){
+            top: -57%;
+            left: 0;
+        }
     }
-    .left__info{
-        border: 1px solid var(--border);
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        border-radius: 4px;
-        margin-top: 8px;
-        .info__wrap{
-            border-bottom: 1px solid #d6d6d6;
-            padding: 25px 25px;
-            position: relative;
-            flex-wrap: wrap;
+    .sidebar__left{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @include breakpoint(sm){
+           flex-direction: row;
+        }
+        @include breakpoint(lg){
+            flex-direction: column;
+        }
+        @include breakpoint(xl){
+            gap: 50px;
+        }
+        .sidebar__items {
+            padding: 40px;
+            filter: drop-shadow(0px 0px 40px rgba(0, 22, 89, 0.1));
+            .shape{
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+            }
+            .sidebar__widget{
+                h5 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 26px;
+                    color: var(--theme);
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        bottom: -10px;
+                        left: 0;
+                        width: 50px;
+                        height: 1px;
+                        content: "";
+                        background-color: var(--theme2);
+                    }
+                }
+            }
         }
     }
     .contact__right{
-        background-color: var(--white);
-        border-radius: 10px;
-        @include breakpoint(lg){
-           padding: 30px 30px;
-        }
-        @include breakpoint(xl){
-            padding: 60px 80px;
+        z-index: 9999999;
+        h2{
+            font-weight: 800;
+            position: relative;
+            &::before{
+                position: absolute;
+                bottom: -42px;
+                left: 0;
+                width: 180px;
+                height: 1px;
+                content: "";
+                background-color: var(--theme2);
+            }
         }
         .form__clt{
-           input{
-                border: 1px solid var(--border);
-                background-color: var(--white);
-           }
+            input{
+                width: 100%;
+                outline: none;
+                border: none;
+                padding: 20px 0;
+                background: transparent;
+                color: var(--pra2);
+                border-bottom: 1px solid #d9dce4;
+                font-size: 13px;
+                font-weight: 400;
+                @include bodyfont;
+                &:focus{
+                    border-color: var(--theme2);
+                }
+            }
         }
         .form__clt__big{
             textarea{
-                border: 1px solid var(--border);
-                background-color: var(--white);
+                height: 100px;
+                width: 100%;
+                outline: none;
+                border: none;
+                color: var(--pra2);
+                border-bottom: 1px solid #d9dce4;
+                background-color: transparent;
+                font-size: 13px;
+                font-weight: 400;
+                @include bodyfont;
+                &:focus{
+                    border-color: var(--theme2);
+                }
             }
         }
     }
 }
-//--Contact Info Section End--//
+
+.map-section{
+    .grad__shape{
+        position: absolute;
+        right: 0;
+        bottom: -9px;
+        z-index: 9999;
+        @include breakpoint(xl){
+            bottom: -12px;
+        }
+        @include breakpoint(xxxl){
+            bottom: -14px;
+        }
+        @include breakpoint(x4l){
+            bottom: -15px;
+        }
+        img{
+            @include imgw
+        }
+    }
+    #map { 
+        height: 600px;
+        width: 100%;
+        @include breakpoint(max-lg){
+            height: 400px;
+        } 
+    }
+}

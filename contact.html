@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!--Animate css-->
     <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- leaflet.css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <!--main css-->
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
@@ -177,8 +179,8 @@
     </div>
     <!-- Fullscreen search bar area End -->
 
-    <!--Breadcrumb Section Start-->
-    <section class="breadcumd__banner ralt about__bg overhid">
+     <!--Breadcrumb Section Start-->
+     <section class="breadcumd__banner overhid single__bg ralt">
       <div class="shape-2"></div>
       <div class="grad__shape d-none d-md-block">
         <img src="assets/img/blog/single/grad.png" alt="shape__img">
@@ -194,89 +196,69 @@
               <li>
                 <i class="fa-solid fa-chevron-right"></i>
               </li>
-              <li> Contact us </li>
+              <li> Our Blog </li>
             </ul>
           </div>
-          <h1 class="breadcumd__content mt-30"> Contact us </h1>
+          <h1 class="breadcumd__content mt-30">Contact</h1>
         </div>
       </div>
     </section>
     <!--Breadcrumb Section End-->
 
-    <!--Map Section Start-->
-    <div class="map__section overhid pt-130">
-      <div class="container">
-        <div class="googpemap">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13004082.928417291!2d-104.65713107818928!3d37.275578278180674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1649599302291!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+     <!--Contact Info Section Start-->
+     <div class="contact__section bg__color overhid ralt">
+      <div class="left__shape">
+        <img src="assets/img/blog/left.png" alt="left__shape">
       </div>
-    </div>
-    <!--Map Section End-->
-
-    <!--Contact Info Section Start-->
-    <div class="contact__section style__two pb-130 ralt">
-      <div class="grad__shape d-none d-lg-block">
+      <div class="grad__shape d-none">
         <img src="assets/img/footer/grad3.png" alt="grad__shape">
       </div>
       <div class="container">
-        <div class="row g-4 align-items-center">
+        <div class="row g-5">
           <div class="col-lg-4">
-            <div class="left__info">
-              <div class="info__wrap d-flex align-items-center justify-content-between">
-                <div class="content">
-                  <h6> Hotline </h6>
-                  <p> +47 232 001 </p>
+              <div class="sidebar__left">
+                <div class="sidebar__items ralt white__color">
+                  <div class="shape"></div>
+                  <div class="sidebar__widget mb-20">
+                      <h5 class="widget__tittle mb-30">Head Office</h5>
+                      <p>Park road, North tower <br> New park city, United States, USA</p>
+                      <p>+1 (315) 640-8565</p>
+                      <p>mail@econo.com</p>
+                  </div>
                 </div>
-                <div class="icon">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-              </div>
-              <div class="info__wrap d-flex align-items-center justify-content-between">
-                <div class="content">
-                  <h6> our location </h6>
-                  <p> Inner Circular Rose Valley Park. </p>
-                </div>
-                <div class="icon">
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-              </div>
-              <div class="info__wrap d-flex align-items-center justify-content-between">
-                <div class="content">
-                  <h6> email </h6>
-                  <p> example@example.com </p>
-                </div>
-                <div class="icon">
-                  <i class="fa-solid fa-envelope"></i>
+                <div class="sidebar__items ralt white__color">
+                  <div class="shape"></div>
+                  <div class="sidebar__widget mb-20">
+                      <h5 class="widget__tittle mb-30">Branch Office</h5>
+                      <p>Park road, North tower <br> New park city, United States, USA</p>
+                      <p>+1 (315) 640-8565</p>
+                      <p>mail@econo.com</p>
+                  </div>
                 </div>
               </div>
-            </div>
           </div>
           <div class="col-lg-8">
             <div class="contact__right">
+              <h2 class="mb-80">Get in touch</h2>
               <form action="contact.php" id="contact-form" method="POST">
                 <div class="row g-4">
-                  <div class="col-lg-12">
+                  <div class="col-lg-6 col-md-6">
                     <div class="form__clt">
-                      <input type="text" name="name" id="name" placeholder="Your Name...">
+                      <input type="text" name="name" id="name" placeholder="Name*">
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-md-6">
                     <div class="form__clt">
-                      <input type="text" name="email" id="email" placeholder=" Your Email...">
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form__clt">
-                      <input type="text" name="number" id="number" placeholder="Phone Number...">
+                      <input type="text" name="email" id="email" placeholder="Email*">
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="form__clt__big">
-                      <textarea name="message" id="message" placeholder="Message..."></textarea>
+                      <textarea name="message" id="message" placeholder="Comment"></textarea>
                     </div>
                   </div>
                   <div class="col-lg-12">
-                    <button type="submit" class="cmn--btn"> send message </button>
+                    <button type="submit" class="cmn--btn mt-10">Comment</button>
                   </div>
                 </div>
               </form>
@@ -288,14 +270,23 @@
     </div>
     <!--Contact Info Section End-->
 
+    <!-- map-section-start -->
+    <div class="map-section ralt">
+      <div class="grad__shape d-none d-lg-block">
+        <img src="assets/img/footer/grad3.png" alt="grad__shape">
+      </div>
+      <div id="map"></div>
+    </div>
+    <!-- map-section-end -->
+
     <!--Footer Section Start-->
     <section class="footer__section ralt theme__bg">
       <div class="container">
         <div class="footer__top pt-70 pb-70">
           <div class="row g-4">
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="3s">
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s">
               <div class="footer__widget">
-                <div class="widget__head mb-50">
+                <div class="widget__head-1 mb-30">
                   <div class="footer__logo">
                     <a href="index.html">
                       <img src="assets/img/logo/footer-logo.png" alt="footer__logo">
@@ -332,9 +323,9 @@
                 </ul>
               </div>
             </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="5s">
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="4s">
               <div class="footer__widget">
-                <div class="widget__head mb-50">
+                <div class="widget__head mb-40">
                   <h5>Useful Links</h5>
                 </div>
                 <ul class="link__list">
@@ -359,9 +350,9 @@
                 </ul>
               </div>
             </div>
-            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="7s">
+            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="6s">
               <div class="footer__widget">
-                <div class="widget__head mb-50">
+                <div class="widget__head mb-40">
                   <h5>Useful Links</h5>
                 </div>
                 <ul class="link__list">
@@ -428,7 +419,23 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!--swipper bundle Js-->
     <script src="assets/js/wow.min.js"></script>
+    <!-- leaflet.js -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <!--main Js-->
     <script src="assets/js/main.js"></script>
+
+    <!-- google map -->
+    <script>
+        var map = L.map('map').setView([40.712776, -74.005974], 12);
+
+        var smooth = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.{ext}', {
+          minZoom: 0,
+          maxZoom: 20,
+          attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          ext: 'png'
+        });
+        smooth.addTo(map);
+    </script>
+
   </body>
 </html>
