@@ -1,3 +1,21 @@
+.breadcumd__banner{
+    .shadow-png {
+        position: absolute;
+        top: -85%;
+        right: -11%;
+        @include breakpoint(xl){
+            top: -76%;
+            right: -5%;
+        }
+        @include breakpoint(xxl){
+            top: -67%;
+            right: 0;
+        }
+        @include breakpoint(max-lg){
+            display: none;
+        }
+    }
+}
 
 .contact__section{
     padding:50px 0;
@@ -5,12 +23,12 @@
         padding: 80px 0;
     }
     @include breakpoint(lg){
-        padding-top: 120px;
-        padding-bottom: 130px;
+        padding-top: 110px;
+        padding-bottom: 120px;
     }
     .left__shape{
         position: absolute;
-        top: -53%;
+        top: -54%;
         left: -20%;
         img{
             @include imgw;
@@ -19,19 +37,17 @@
            display: none;
         }
         @include breakpoint(xl){
-            top: -55%;
+            top: -57%;
             left: -16%;
         }
         @include breakpoint(xxl){
-            top: -55%;
             left: -14%;
         }
         @include breakpoint(xxxl){
-            top: -57%;
+            top: -60%;
             left: -7%;
         }
         @include breakpoint(x4l){
-            top: -57%;
             left: 0;
         }
     }
@@ -83,7 +99,7 @@
             position: relative;
             &::before{
                 position: absolute;
-                bottom: -42px;
+                bottom: -40px;
                 left: 0;
                 width: 180px;
                 height: 1px;
