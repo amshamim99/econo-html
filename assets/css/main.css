@@ -4032,7 +4032,6 @@ input.main-search-input::placeholder {
 .client__section .client__wrapper .client__thumb img {
   width: 100%;
   height: 100%;
-  width: 85%;
   filter: invert(100%) sepia(13%) saturate(7440%) hue-rotate(215deg) brightness(113%) contrast(115%);
 }
 @media (max-width: 1199px) {
