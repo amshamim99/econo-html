@@ -3878,12 +3878,25 @@ input.main-search-input::placeholder {
 .testimonial__section .testi__wrapper .testi-single .testi__items .testi__inner {
   background-color: var(--white);
   position: relative;
-  padding: 60px;
+  padding: 30px;
 }
-@media (max-width: 767px) {
-  .testimonial__section .testi__wrapper .testi-single .testi__items .testi__inner p br {
-    display: none;
+@media (min-width: 450px) {
+  .testimonial__section .testi__wrapper .testi-single .testi__items .testi__inner {
+    padding: 60px;
   }
+}
+@media (min-width: 768px) {
+  .testimonial__section .testi__wrapper .testi-single .testi__items .testi__inner {
+    padding: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .testimonial__section .testi__wrapper .testi-single .testi__items .testi__inner {
+    padding: 60px;
+  }
+}
+.testimonial__section .testi__wrapper .testi-single .testi__items .testi__inner p {
+  font-size: 19px;
 }
 .testimonial__section .testi__wrapper .testi-single .testi__items::before {
   position: absolute;
@@ -4715,7 +4728,7 @@ input.main-search-input::placeholder {
 .default__pagination li {
   width: 35px;
   height: 35px;
-  border: 1px solid #a9afcb;
+  border: 2px solid #a9afcb;
   line-height: 35px;
   display: flex;
   align-items: center;
@@ -4739,10 +4752,10 @@ input.main-search-input::placeholder {
 .default__pagination li::after {
   content: "";
   position: absolute;
-  bottom: 2px;
+  bottom: 1px;
   right: -2px;
   transform: rotate(-46deg);
-  border: 0.1px solid #a9afcb;
+  border: 1px solid #a9afcb;
   width: 9px;
   transition: all 0.4s;
 }
@@ -4845,11 +4858,11 @@ input.main-search-input::placeholder {
 .blog__single .blog__single__content .tag a::after {
   content: "";
   position: absolute;
-  bottom: 1px;
-  right: -2px;
+  bottom: 2px;
+  right: -3px;
   transform: rotate(-46deg);
-  border: 0.1px solid #d9dce4;
-  width: 9px;
+  border: 1px solid #d9dce4;
+  width: 12px;
 }
 .blog__single .blog__profile {
   padding: 30px 25px;
@@ -5320,7 +5333,7 @@ input.main-search-input::placeholder {
   bottom: 1px;
   right: -2px;
   transform: rotate(-46deg);
-  border: 0.1px solid var(--border);
+  border: 1px solid var(--border);
   width: 9px;
   transition: all 0.4s;
 }
