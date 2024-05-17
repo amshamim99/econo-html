@@ -5199,6 +5199,14 @@ input.main-search-input::placeholder {
   content: "";
   background-color: var(--theme2);
 }
+.contact__section .sidebar__left .sidebar__items .sidebar__widget p a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: var(--pra2);
+  font-family: "Open Sans", sans-serif;
+}
 .contact__section .contact__right {
   z-index: 9999999;
 }
@@ -5274,6 +5282,7 @@ input.main-search-input::placeholder {
 .map-section #map {
   height: 600px;
   width: 100%;
+  -webkit-filter: grayscale(100%);
 }
 @media (max-width: 991px) {
   .map-section #map {

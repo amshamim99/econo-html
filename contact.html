@@ -225,8 +225,8 @@
                   <div class="sidebar__widget mb-20">
                       <h5 class="widget__tittle mb-30">Head Office</h5>
                       <p>Park road, North tower <br> New park city, United States, USA</p>
-                      <p>+1 (315) 640-8565</p>
-                      <p>mail@econo.com</p>
+                      <p><a href="#">+1 (315) 640-8565</a></p>
+                      <p><a href="#">mail@econo.com</a></p>
                   </div>
                 </div>
                 <div class="sidebar__items ralt white__color">
@@ -234,8 +234,8 @@
                   <div class="sidebar__widget mb-20">
                       <h5 class="widget__tittle mb-30">Branch Office</h5>
                       <p>Park road, North tower <br> New park city, United States, USA</p>
-                      <p>+1 (315) 640-8565</p>
-                      <p>mail@econo.com</p>
+                      <p><a href="#">+1 (315) 640-8565</a></p>
+                      <p><a href="#">mail@econo.com</a></p>
                   </div>
                 </div>
               </div>
@@ -429,15 +429,13 @@
 
     <!-- google map -->
     <script>
-        var map = L.map('map').setView([40.712776, -74.005974], 12);
+        var map = L.map('map').setView([40.712776, -74.005974], 13);
 
-        var smooth = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.{ext}', {
-          minZoom: 0,
-          maxZoom: 20,
-          attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-          ext: 'png'
+        var OpenStreetMap_Mapnik = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         });
-        smooth.addTo(map);
+        OpenStreetMap_Mapnik.addTo(map);
     </script>
 
   </body>
