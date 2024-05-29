@@ -2953,20 +2953,111 @@ input.main-search-input::placeholder {
 }
 .about__two .logo__box {
   position: absolute;
-  top: 85px;
-  right: 70px;
+  top: 60px;
+  right: 38px;
+}
+@media (max-width: 450px) {
+  .about__two .logo__box {
+    display: none;
+  }
+}
+@media (min-width: 470px) {
+  .about__two .logo__box {
+    top: 60px;
+    right: 40px;
+  }
+}
+@media (min-width: 500px) {
+  .about__two .logo__box {
+    top: 73px;
+    right: 50px;
+  }
+}
+@media (min-width: 576px) {
+  .about__two .logo__box {
+    top: 85px;
+    right: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .about__two .logo__box {
+    top: 140px;
+    right: 107px;
+  }
+}
+@media (min-width: 992px) {
+  .about__two .logo__box {
+    top: 70px;
+    right: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .about__two .logo__box {
+    top: 90px;
+    right: 65px;
+  }
+}
+@media (min-width: 1400px) {
+  .about__two .logo__box {
+    top: 115px;
+    right: 85px;
+  }
 }
 .about__two .box__shape__two {
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 0;
   animation-duration: 2s;
   animation: scale 2s alternate infinite;
 }
+@media (max-width: 450px) {
+  .about__two .box__shape__two {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  .about__two .box__shape__two {
+    top: 30px;
+    right: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .about__two .box__shape__two {
+    top: 85px;
+    right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .about__two .box__shape__two {
+    top: 30px;
+  }
+}
+@media (min-width: 1400px) {
+  .about__two .box__shape__two {
+    top: 85px;
+  }
+}
 .about__two .about__thumb .right__vector__two {
   position: absolute;
-  left: 150px;
-  bottom: 20px;
+  left: 90px;
+  bottom: 0;
+}
+@media (min-width: 450px) {
+  .about__two .about__thumb .right__vector__two {
+    left: 120px;
+    bottom: 10px;
+  }
+}
+@media (min-width: 500px) {
+  .about__two .about__thumb .right__vector__two {
+    left: 140px;
+  }
+}
+@media (min-width: 500px) {
+  .about__two .about__thumb .right__vector__two {
+    left: 150px;
+    bottom: 20px;
+  }
 }
 .about__two .profile__item {
   gap: 8px;
@@ -5282,6 +5373,7 @@ input.main-search-input::placeholder {
 .map-section #map {
   height: 600px;
   width: 100%;
+  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
 @media (max-width: 991px) {

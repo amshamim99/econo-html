@@ -176,6 +176,7 @@
     #map { 
         height: 600px;
         width: 100%;
+        filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
         @include breakpoint(max-lg){
             height: 400px;

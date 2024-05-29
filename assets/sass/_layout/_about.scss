@@ -220,21 +220,80 @@
     }
     .logo__box{
         position: absolute;
-        top: 85px;
-        right: 70px;
+        top: 60px;
+        right: 38px;
+        @include breakpoint(max-xxsmall){
+            display: none;
+        }
+        @include breakpoint(xxs){
+           top: 60px;
+           right: 40px;
+        }
+        @include breakpoint(xs){
+            top: 73px;
+            right: 50px;
+        }
+        @include breakpoint(sm){
+            top: 85px;
+            right: 60px;
+        }
+        @include breakpoint(md){
+            top: 140px;
+            right: 107px;
+        }
+        @include breakpoint(lg){
+            top: 70px;
+            right: 40px;
+        }
+        @include breakpoint(xl){
+            top: 90px;
+            right: 65px;
+        }
+        @include breakpoint(xxl){
+            top: 115px;
+            right: 85px;
+        }
     }
     .box__shape__two{
         position: absolute;
-        top: 0;
+        top: 20px;
         right: 0;
         animation-duration: 2s;
         animation: scale 2s alternate infinite;
+        @include breakpoint(max-xxsmall){
+            display: none;
+        }
+        @include breakpoint(sm){
+            top: 30px;
+            right: 25px;
+        }
+        @include breakpoint(md){
+            top: 85px;
+            right: 20px;
+        }
+        @include breakpoint(lg){
+            top: 30px;
+        }
+        @include breakpoint(xxl){
+            top: 85px;
+        }
     }
     .about__thumb{
         .right__vector__two{
             position: absolute;
-            left: 150px;
-            bottom: 20px;
+            left: 90px;
+            bottom: 0;
+            @include breakpoint(xsmall){
+               left: 120px;
+               bottom: 10px;
+            }
+            @include breakpoint(xs){
+                left: 140px;
+            }
+            @include breakpoint(xs){
+                left: 150px;
+                bottom: 20px;
+            }
         }
     }
     .profile__item{
