@@ -20,6 +20,9 @@
                 width: 70%;
             }
         }
+        @include breakpoint(max-md){
+           display: none;
+        }
     }
     .section__title{
         .sub{

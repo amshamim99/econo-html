@@ -402,29 +402,57 @@
 			font-weight: 600;
 			background-color: var(--theme);
 			color: var(--white);
-			position: absolute;
-			top: 15px;
-			left: -55px;
+			position: relative;
 			z-index: 99;
+			transition: .3s;
 			clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 94% 100%, 0 100%, 0% 0%, 0% 20%);
+			&::before {
+				background-color: var(--white);
+				content: "";
+				height: 150px;
+				left: -75px;
+				position: absolute;
+				top: -60px;
+				transform: rotate(35deg);
+				transition: all 2600ms cubic-bezier(0.19, 1, 0.22, 1);
+				width: 20px;
+				opacity: 0;
+			}
+			&:hover::before {
+				left: 140%;
+				transition: all 2300ms cubic-bezier(0.19, 1, 0.22, 1);
+				opacity: 0.5;
+			}
 			@include breakpoint(lg){
-				padding: 12px 10px 11px 15px;
+				padding: 12px 25px;
 				font-size: 13px;
-				left: -35px;
 			}
 			@include breakpoint(xl){
 				padding: 12px 35px 12px;
 				font-size: 16px;
-				left: -66px;
 			}
 			@include breakpoint(max-lg){
 				display: none;
+			}
+			&.small-btn{
+				position: absolute;
+				top: 15px;
+				left: -55px;
+				@include breakpoint(lg){
+					left: -60px;
+				}
+				@include breakpoint(xl){
+					left: -66px;
+				}
 			}
 		}
 		.cmn--btn{
 			padding: 30px 45px 30px 125px;
 			background-color: var(--theme2);
 			clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 87%, 100% 100%, 0% 100%, 0% 110%, 26% -3%);
+			&::before{
+				display: none;
+			}
 			@include breakpoint(lg){
 				padding: 30px 16px 32px 70px;
 				font-size: 13px;
