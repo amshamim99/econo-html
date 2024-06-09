@@ -8,21 +8,14 @@
     bottom: 65px;
     right: 0;
     height: 100%;
-    width: 305px;
     @include breakpoint(max-xl){
         display: none;
     }
     @include breakpoint(mid-xxl){
         bottom: -23px;
         height: inherit;
-        width: 72px;
+        width: 140px;
         overflow: hidden;
-    }
-    @include breakpoint(xxxl){
-        right: -3%;
-    }
-    @include breakpoint(x4l){
-        right: 0;
     }
    }
    .vector__shape{

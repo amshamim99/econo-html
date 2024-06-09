@@ -21,32 +21,34 @@
         padding: 10px;
         padding-bottom: 1px;
         .owl-nav{
-             button.owl-next {
-                 padding: 0;
-                 background: #252837;
-                 width: 50px;
-                 height: 50px;
-                 position: absolute;
-                 top: 43%;
-                 left: -45px;
-                 transform: translate(-50%, -50%);
-                 i{
-                     color: var(--white);
-                 }
-             }
-             button.owl-prev{
-                padding: 0;
+            button{
                 background: #252837;
                 width: 50px;
                 height: 50px;
                 position: absolute;
-                top: 43%;
-                right: -95px;
-                transform: translate(-50%, -50%);
-                 i{
-                     color: var(--white);
-                 }
-             }
+                top: 50%;
+                left: -30px;
+                transform: translateY(-50%);
+                i{
+                    color: var(--white);
+                }
+               @include breakpoint(xxl){
+                  left: -55px;
+               }
+               @include breakpoint(xxxl){
+                   left: -70px;
+               }
+            }
+            button.owl-next{
+                right: -30px;
+                left: auto;
+                @include breakpoint(xxl){
+                    right:-55px;
+                }
+                @include breakpoint(xxxl){
+                    right: -70px;
+                }
+            }
          }
     }
     .project__items{
@@ -95,12 +97,11 @@
     }
     .owl-carousel .owl-nav.disabled {
         display: block !important;
-        @include breakpoint(max-md){
+        @include breakpoint(max-lg){
             display: none !important;
         }
     }
     .owl-theme .owl-dots .owl-dot {
-        display: inline-block;
         zoom: 1;
         display: none;
     }
