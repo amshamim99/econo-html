@@ -244,8 +244,8 @@ $(document).ready(function () {
     autoplayTimeout: 3000,
     smartSpeed: 700,
     navText: [
+        '<i class="fa-solid fa-chevron-left"></i>',
         '<i class="fa-solid fa-chevron-right"></i>',
-        '<i class="fa-solid fa-chevron-left"></i>'
     ],
     responsive:{
     0:{
@@ -254,13 +254,13 @@ $(document).ready(function () {
         576:{
             items:1
         },
-        600:{
+        768:{
             items:2
         },
-        1000:{
+        992:{
             items:3
         },
-        1199:{
+        1200:{
             items:4
         }
     }
