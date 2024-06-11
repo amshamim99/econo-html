@@ -192,10 +192,8 @@ $(document).ready(function () {
    //gallery-slide-area-start-End
 
    //image and video-popup-area-start-here
-   $('.video-btn').magnificPopup({
-    type: 'iframe',
-    callbacks: {
-      }
+    $('.video-btn').magnificPopup({
+    type: 'iframe'
     });
     $(".img-popup").magnificPopup({
         type: "image",
