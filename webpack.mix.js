@@ -8,7 +8,9 @@ mix.webpackConfig({
     devtool: 'source-map'
 });
 
-mix.sass('assets/sass/main.scss', 'assets/css/');
+if (!mix.inProduction()) {
+    mix.sass('assets/sass/main.scss', 'assets/css/');
+}
 mix.options({
     processCssUrls: false
 });
@@ -16,5 +18,6 @@ mix.options({
 mix.sourceMaps();
 
 if (mix.inProduction()) {
-    mix.styles('assets/css/main.css', 'assets/css/main.min.css');
+    mix.sass('assets/sass/main.scss', 'assets/css/main.min.css');
+    // mix.styles('assets/css/main.css', 'assets/css/main.min.css');
 }
