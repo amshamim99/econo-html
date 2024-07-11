@@ -3383,13 +3383,32 @@ input.main-search-input::placeholder {
   align-items: center;
 }
 .sevice__two .service__two__wrap .service__two__items .sevice__thumb .service__content .count__style .span__two {
-  font-size: 50px;
-  margin-top: 30px;
+  font-size: 36px;
+  margin-top: 10px;
 }
-@media (max-width: 991px) {
+@media (min-width: 450px) {
   .sevice__two .service__two__wrap .service__two__items .sevice__thumb .service__content .count__style .span__two {
-    margin-top: 0;
-    font-size: 36px;
+    margin-top: 12px;
+  }
+}
+@media (min-width: 470px) {
+  .sevice__two .service__two__wrap .service__two__items .sevice__thumb .service__content .count__style .span__two {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .sevice__two .service__two__wrap .service__two__items .sevice__thumb .service__content .count__style .span__two {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .sevice__two .service__two__wrap .service__two__items .sevice__thumb .service__content .count__style .span__two {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .sevice__two .service__two__wrap .service__two__items .sevice__thumb .service__content .count__style .span__two {
+    margin-top: 35px;
   }
 }
 .sevice__two .service__two__wrap .service__two__items .sevice__thumb .service__content .count__style .margin__top {
@@ -3407,7 +3426,7 @@ input.main-search-input::placeholder {
   background-color: var(--theme2);
 }
 .sevice__two .service__two__wrap .service__two__items .sevice__thumb .service__content h5 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: var(--white);
 }
 .sevice__two .service__two__wrap .service__two__items .sevice__thumb .service__content p {
@@ -3747,6 +3766,10 @@ input.main-search-input::placeholder {
   .feature__two .feature__items__two .feature__wrap {
     padding: 70px 40px;
   }
+}
+.feature__two .feature__items__two .feature__wrap .icon i {
+  font-size: 80px;
+  color: #1cb0eb;
 }
 .feature__two .feature__items__two .feature__wrap .content h5 {
   margin-bottom: 20px;
@@ -4364,6 +4387,10 @@ input.main-search-input::placeholder {
     font-size: 16px;
     gap: 10px;
   }
+}
+.connect__section .faq-left-wrapper .accordion-item .accordion-button i {
+  font-size: 60px;
+  color: #1cb0eb;
 }
 .connect__section .faq-left-wrapper .accordion-body {
   padding: 15px 20px 20px;
