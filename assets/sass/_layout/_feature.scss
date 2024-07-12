@@ -211,34 +211,25 @@
         &:not(:last-child){
             margin-bottom: 40px;
         }
-        .icon__wrap_item {
-            height: 80px;
-            width: 80px;
+        .icon_wrap_inner{
+            background: transparent;
             filter: drop-shadow(0px 0px 10px rgba(0, 22, 89, 0.2));
-            position: relative;
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: 8px;
-                right: -2px;
-                transform: rotate(-45deg);
-                border: thin solid var(--theme2);
-                width: 23px;
-            } 
-            .icon{
-                width: 80px;
-                height: 80px;
-                line-height: 80px;
+            width: 80px;
+            .icon__wrap_item {
+                width: fit-content;
+                background: var(--theme2);
                 border: 1px solid var(--theme2);
-                text-align: center;
-                padding: 0 20px;
-                position: relative;
-                background: white;
                 clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 78%, 78% 100%, 0 100%, 0% 0%, 0% 20%);
-                i{
-                    font-size: 38px;
-                    color: var(--theme2);
-                } 
+                .icon{  
+                    width: 80px;
+                    height: 80px;
+                    background: white;
+                    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 78%, 78% 100%, 0 100%, 0% 0%, 0% 20%);
+                    i{
+                        font-size: 38px;
+                        color: var(--theme2);
+                    } 
+                }
             }
         }
         .content{

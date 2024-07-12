@@ -3800,33 +3800,24 @@ input.main-search-input::placeholder {
 .icon__item .icon__wrap:not(:last-child) {
   margin-bottom: 40px;
 }
-.icon__item .icon__wrap .icon__wrap_item {
-  height: 80px;
-  width: 80px;
+.icon__item .icon__wrap .icon_wrap_inner {
+  background: transparent;
   filter: drop-shadow(0px 0px 10px rgba(0, 22, 89, 0.2));
-  position: relative;
+  width: 80px;
 }
-.icon__item .icon__wrap .icon__wrap_item::after {
-  content: "";
-  position: absolute;
-  bottom: 8px;
-  right: -2px;
-  transform: rotate(-45deg);
-  border: thin solid var(--theme2);
-  width: 23px;
+.icon__item .icon__wrap .icon_wrap_inner .icon__wrap_item {
+  width: fit-content;
+  background: var(--theme2);
+  border: 1px solid var(--theme2);
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 78%, 78% 100%, 0 100%, 0% 0%, 0% 20%);
 }
-.icon__item .icon__wrap .icon__wrap_item .icon {
+.icon__item .icon__wrap .icon_wrap_inner .icon__wrap_item .icon {
   width: 80px;
   height: 80px;
-  line-height: 80px;
-  border: 1px solid var(--theme2);
-  text-align: center;
-  padding: 0 20px;
-  position: relative;
   background: white;
   clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 78%, 78% 100%, 0 100%, 0% 0%, 0% 20%);
 }
-.icon__item .icon__wrap .icon__wrap_item .icon i {
+.icon__item .icon__wrap .icon_wrap_inner .icon__wrap_item .icon i {
   font-size: 38px;
   color: var(--theme2);
 }
