@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'FinestIcon';
-  src:  url('../webfonts/FinestIcon.eot?z8lz89');
-  src:  url('../webfonts/FinestIcon.eot?z8lz89#iefix') format('embedded-opentype'),
-    url('../webfonts/FinestIcon.ttf?z8lz89') format('truetype'),
-    url('../webfonts/FinestIcon.woff?z8lz89') format('woff'),
-    url('../webfonts/FinestIcon.svg?z8lz89#FinestIcon') format('svg');
+  src:  url('../webfonts/FinestIcon.eot?neekye');
+  src:  url('../webfonts/FinestIcon.eot?neekye#iefix') format('embedded-opentype'),
+    url('../webfonts/FinestIcon.ttf?neekye') format('truetype'),
+    url('../webfonts/FinestIcon.woff?neekye') format('woff'),
+    url('../webfonts/FinestIcon.svg?neekye#FinestIcon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="fi-"], [class*=" fi-"] {
+i {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'FinestIcon' !important;
+  font-family: 'FinestIcon';
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,177 +25,174 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.fi-youtube:before {
+.fi-petrolium:before {
   content: "\e900";
 }
-.fi-x:before {
+.fi-petro-doller:before {
   content: "\e901";
 }
-.fi-user:before {
+.fi-lab:before {
   content: "\e902";
 }
-.fi-twitter:before {
+.fi-gas-fire:before {
   content: "\e903";
 }
-.fi-star:before {
+.fi-chemical:before {
   content: "\e904";
 }
-.fi-star-fill:before {
+.fi-building-2:before {
   content: "\e905";
 }
-.fi-shop:before {
+.fi-bar:before {
   content: "\e906";
 }
-.fi-share:before {
+.fi-youtube:before {
   content: "\e907";
 }
-.fi-settings:before {
+.fi-x:before {
   content: "\e908";
 }
-.fi-send:before {
+.fi-user:before {
   content: "\e909";
 }
-.fi-search:before {
+.fi-twitter:before {
   content: "\e90a";
 }
-.fi-search-home:before {
+.fi-star-fill:before {
   content: "\e90b";
 }
-.fi-save:before {
+.fi-star:before {
   content: "\e90c";
 }
-.fi-quote-fill:before {
+.fi-shop:before {
   content: "\e90d";
 }
-.fi-print:before {
+.fi-share:before {
   content: "\e90e";
 }
-.fi-plus:before {
+.fi-settings:before {
   content: "\e90f";
 }
-.fi-play:before {
+.fi-send:before {
   content: "\e910";
 }
-.fi-phone-incoming:before {
+.fi-search-home:before {
   content: "\e911";
 }
-.fi-park:before {
+.fi-search:before {
   content: "\e912";
 }
-.fi-park-2:before {
+.fi-save:before {
   content: "\e913";
 }
-.fi-minus:before {
+.fi-quote-fill:before {
   content: "\e914";
 }
-.fi-menu:before {
+.fi-print:before {
   content: "\e915";
 }
-.fi-map-pin:before {
+.fi-plus:before {
   content: "\e916";
 }
-.fi-linkedin:before {
+.fi-play:before {
   content: "\e917";
 }
-.fi-instagram:before {
+.fi-phone-incoming:before {
   content: "\e918";
 }
-.fi-home:before {
+.fi-park-2:before {
   content: "\e919";
 }
-.fi-home-star:before {
+.fi-park:before {
   content: "\e91a";
 }
-.fi-home-map:before {
+.fi-minus:before {
   content: "\e91b";
 }
-.fi-heart:before {
+.fi-menu:before {
   content: "\e91c";
 }
-.fi-facebook:before {
+.fi-map-pin:before {
   content: "\e91d";
 }
-.fi-email:before {
+.fi-linkedin:before {
   content: "\e91e";
 }
-.fi-edit:before {
+.fi-instagram:before {
   content: "\e91f";
 }
-.fi-construction-wall:before {
+.fi-home-star:before {
   content: "\e920";
 }
-.fi-construction-user:before {
+.fi-home-map:before {
   content: "\e921";
 }
-.fi-construction-pencil:before {
+.fi-home:before {
   content: "\e922";
 }
-.fi-construction-paint:before {
+.fi-heart:before {
   content: "\e923";
 }
-.fi-construction-industry:before {
+.fi-facebook:before {
   content: "\e924";
 }
-.fi-construction-hook:before {
+.fi-email:before {
   content: "\e925";
 }
-.fi-construction-cart:before {
+.fi-edit:before {
   content: "\e926";
 }
-.fi-commercial:before {
+.fi-construction-wall:before {
   content: "\e927";
 }
-.fi-close:before {
+.fi-construction-user:before {
   content: "\e928";
 }
-.fi-chevron-up:before {
+.fi-construction-pencil:before {
   content: "\e929";
 }
-.fi-chevron-right:before {
+.fi-construction-paint:before {
   content: "\e92a";
 }
-.fi-chevron-left:before {
+.fi-construction-industry:before {
   content: "\e92b";
 }
-.fi-chevron-down:before {
+.fi-construction-hook:before {
   content: "\e92c";
 }
-.fi-check:before {
+.fi-construction-cart:before {
   content: "\e92d";
 }
-.fi-building:before {
+.fi-commercial:before {
   content: "\e92e";
 }
-.fi-bar:before {
+.fi-close:before {
   content: "\e92f";
 }
-.fi-arrow-up-right:before {
+.fi-chevron-up:before {
   content: "\e930";
 }
-.fi-arrow-right:before {
+.fi-chevron-right:before {
   content: "\e931";
 }
-.fi-arrow-left:before {
+.fi-chevron-left:before {
   content: "\e932";
 }
-.fi-building-2:before {
+.fi-chevron-down:before {
   content: "\e933";
-  color: #59595b;
 }
-.fi-lab:before {
+.fi-check:before {
   content: "\e934";
-  color: #59595b;
 }
-.fi-petro-doller:before {
+.fi-building:before {
   content: "\e935";
-  color: #59595b;
 }
-.fi-petrolium:before {
+.fi-arrow-up-right:before {
   content: "\e936";
 }
-.fi-gas-fire:before {
+.fi-arrow-right:before {
   content: "\e937";
 }
-.fi-chemical:before {
+.fi-arrow-left:before {
   content: "\e938";
 }
