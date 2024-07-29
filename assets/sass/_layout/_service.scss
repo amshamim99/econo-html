@@ -258,11 +258,22 @@
                         display: flex;
                         align-items: center;
                         .span__two{
-                            font-size: 50px;
-                            margin-top: 30px;
-                            @include breakpoint(max-lg){
-                                margin-top: 0;
-                                font-size: 36px;
+                            font-size: 36px;
+                            margin-top: 10px;
+                            @include breakpoint(xsmall){
+                                margin-top: 12px;
+                            }
+                            @include breakpoint(xxs){
+                                margin-top: 20px;
+                            }
+                            @include breakpoint(lg){
+                                font-size: 40px;
+                            }
+                            @include breakpoint(xl){
+                                font-size: 50px;
+                            }
+                            @include breakpoint(xxl){
+                                margin-top: 35px;
                             }
                         }
                         .margin__top{
@@ -284,7 +295,7 @@
                         }
                     }
                     h5{
-                        margin-bottom: 30px;
+                        margin-bottom: 10px;
                         color: var(--white);
                     }
                     p{
