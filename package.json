@@ -1,0 +1,21 @@
+{
+  "name": "econo",
+  "version": "1.0.0",
+  "description": "=== Econo ===",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx mix watch",
+    "prod": "npx mix -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.77.6",
+    "sass-loader": "^12.6.0"
+  },
+  "dependencies": {
+    "autoprefixer": "10.4.5"
+  }
+}
