@@ -3,5 +3,8 @@
 .git
 .gitignore
 .travis.yml
+mix-manifest.json
+mix.js.map
 circle.yml
 assets/sass
+node_modules
