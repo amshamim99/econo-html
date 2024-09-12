@@ -266,19 +266,44 @@ $(document).ready(function () {
    //project-slide-area-start-End
 
    // Blog slider area start here ***
-	var swiper = new Swiper(".testi__slider", {
-		loop: "true",
-		spaceBetween: 30,
-		speed: 1200,
-		autoplay: {
-			delay: 1500,
-			disableOnInteraction: false,
-		},
-		pagination: {
-			el: ".testi__dot",
-			clickable: true,
-		},
-	});
+	// testimonial-active//
+    if($('.testi-active').length > 0){
+        $('.testi-active').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay:true,
+          arrows: false,
+          dots:true,
+          infinite: true,
+          fade: false,
+          asNavFor: '.testi-nav',
+      });
+    }
+    if($('.testi-nav').length > 0){
+      $('.testi-nav').slick({
+          slidesToShow:1,
+          slidesToScroll: 1,
+          asNavFor: '.testi-active',
+          dots: false,
+          centerMode: true,
+          infinite: true,
+          fade: true,
+          initialSlide:0,
+          focusOnSelect: true,
+          centerPadding:'0px',
+          arrows: false,
+          responsive: [
+              {
+                  breakpoint: 767,
+                      settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      arrows:false,
+                  }
+              }
+          ]
+      });
+    }
 	// Blog slider area end here ***
 
      //Wow-animation-area-start-here
