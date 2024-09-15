@@ -47,26 +47,6 @@
 				}
 			}
 		}
-		@include breakpoint(max-lg){
-			.header-bar {
-				margin-right: initial;
-				span {
-					background: var(--theme2);
-					&:first-child {
-						top: 0;
-						background: var(--theme2);
-					}
-					&:nth-child(2) {
-						top: 44%;
-						background: var(--theme2);
-					}
-					&:last-child {
-						bottom: 0;
-						background: var(--theme2);
-					}
-				}
-			}
-		}
 	}
 	.menu-fixed {
 		position: fixed !important;
@@ -78,6 +58,17 @@
 		background-color: rgba(9, 30, 93, 1);
 		z-index: 999;
 	}
+	.header-section.header__section__two{
+		.mean-container .mean-bar {
+			top: 67px;
+		}
+		.mean-container a.meanmenu-reveal i {
+			color: var(--theme2);
+		}
+		.mean-container .mean-nav {
+			margin-top: 24px;
+		}
+	} 
 }
 .main__header{
 	left: 0;
@@ -505,9 +496,9 @@ a.meanmenu-reveal {
 	top: 0;
 	right: 20px !important;
 	cursor: pointer;
-	color: #222222;
+	color: var(--theme);
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 32px;
 	line-height: 22px;
 	font-size: 1px;
 	display: block;
@@ -517,7 +508,6 @@ a.meanmenu-reveal {
 }
 .mean-container a.meanmenu-reveal i{
 	font-size: 32px;
-	color: var(--theme);
 }
 .mean-container .mean-nav {
 	float: left;
@@ -827,11 +817,7 @@ input.main-search-input::placeholder {
     -o-animation: spin 2.5s linear infinite;
     animation: spin 2.5s linear infinite;
 }
-
 /*/ Here the Magic /*/
-
-
-
 .loader-wrapper .loder-section {
     position: fixed;
     top: 0;
@@ -840,7 +826,6 @@ input.main-search-input::placeholder {
     background: var(--white);
     z-index: 2;
 }
-
 .loader-wrapper .loder-section.left-section {
     left: 0;
     transition: 1s 1.4s ease;
@@ -850,9 +835,7 @@ input.main-search-input::placeholder {
     right: 0;
     transition: 1s 1.4s ease;
 }
-
 /*/ When page loaded /*/
-
 .loaded .loder-section.left-section {
     left: -100%;
 }

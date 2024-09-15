@@ -1401,26 +1401,6 @@ i {
 .main__header__two .header-wrapper .main-menu li .cmn--btn:hover {
   color: var(--white);
 }
-@media (max-width: 991px) {
-  .main__header__two .header-wrapper .header-bar {
-    margin-right: initial;
-  }
-  .main__header__two .header-wrapper .header-bar span {
-    background: var(--theme2);
-  }
-  .main__header__two .header-wrapper .header-bar span:first-child {
-    top: 0;
-    background: var(--theme2);
-  }
-  .main__header__two .header-wrapper .header-bar span:nth-child(2) {
-    top: 44%;
-    background: var(--theme2);
-  }
-  .main__header__two .header-wrapper .header-bar span:last-child {
-    bottom: 0;
-    background: var(--theme2);
-  }
-}
 .main__header__two .menu-fixed {
   position: fixed !important;
   top: 0 !important;
@@ -1430,6 +1410,15 @@ i {
   transition: all 0.9s;
   background-color: rgb(9, 30, 93);
   z-index: 999;
+}
+.main__header__two .header-section.header__section__two .mean-container .mean-bar {
+  top: 67px;
+}
+.main__header__two .header-section.header__section__two .mean-container a.meanmenu-reveal i {
+  color: var(--theme2);
+}
+.main__header__two .header-section.header__section__two .mean-container .mean-nav {
+  margin-top: 24px;
 }
 
 .main__header {
@@ -1906,9 +1895,9 @@ a.meanmenu-reveal {
   top: 0;
   right: 20px !important;
   cursor: pointer;
-  color: #222222;
+  color: var(--theme);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 32px;
   line-height: 22px;
   font-size: 1px;
   display: block;
@@ -1919,7 +1908,6 @@ a.meanmenu-reveal {
 
 .mean-container a.meanmenu-reveal i {
   font-size: 32px;
-  color: var(--theme);
 }
 
 .mean-container .mean-nav {
