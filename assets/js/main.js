@@ -18,24 +18,14 @@ $(document).ready(function () {
     //menu top fixed bar
 
     //--Header Menu
-    $(".header-bar").on("click", function(e) {
-        $(".main-menu, .header-bar").toggleClass("active");
-    });
-    $(".main-menu li a").on("click", function(e) {
-        var element = $(this).parent("li");
-        if (element.hasClass("open")) {
-            element.removeClass("open");
-            element.find("li").removeClass("open");
-            element.find("ul").slideUp(300, "swing");
-        } else {
-            element.addClass("open");
-            element.children("ul").slideDown(300, "swing");
-            element.siblings("li").children("ul").slideUp(300, "swing");
-            element.siblings("li").removeClass("open");
-            element.siblings("li").find("li").removeClass("open");
-            element.siblings("li").find("ul").slideUp(300, "swing");
-        }
-    });
+     // mobile-menu//
+     if($('#mobile-menu-active').length > 0){
+        $('#mobile-menu-active').meanmenu({
+        meanScreenWidth: "991",
+        meanMenuContainer: '.mobile-menu'
+        });
+    }
+    // scrollToTop//
     $(".scrollToTop").on("click", function() {
         $("html, body").animate({
                 scrollTop: 0,
