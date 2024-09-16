@@ -21,8 +21,8 @@ $(document).ready(function () {
      // mobile-menu//
      if($('#mobile-menu-active').length > 0){
         $('#mobile-menu-active').meanmenu({
-        meanScreenWidth: "991",
-        meanMenuContainer: '.mobile-menu'
+            meanScreenWidth: "991",
+            meanMenuContainer: '.mobile-menu',
         });
     }
     // scrollToTop//
