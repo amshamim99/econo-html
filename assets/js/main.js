@@ -296,7 +296,31 @@ $(document).ready(function () {
     }
 	// Blog slider area end here ***
 
-     //Wow-animation-area-start-here
+    // progressbar-start////
+    const aboutSection = document.getElementById('about-section');
+    const skillBars = document.querySelectorAll('.skill-bar');
+
+    function showProgress(){
+    skillBars.forEach(skillBar=> {
+        const value = skillBar.dataset.progress;
+        skillBar.style.opacity = 1;
+        skillBar.style.width = `${value}%`;
+        
+    });
+    }
+    window.addEventListener('scroll',() => {
+        const sectionPos = aboutSection.getBoundingClientRect().top;
+        const screenPos = window.innerHeight /3;
+
+        if(sectionPos < screenPos){
+        showProgress();
+        }else{
+        hideProgress();
+        }
+    });
+    // progressbar-end////
+
+    //Wow-animation-area-start-here
 	 new WOW().init();
      //Wow-animation-area-start-End
 

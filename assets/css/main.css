@@ -2902,63 +2902,46 @@ input.main-search-input::placeholder {
 .about__section .about__content .about-button .cmn--btn {
   padding: 12px 48px;
 }
-.about__section .progress__wrap {
-  margin-bottom: 32px;
-}
-@media (max-width: 500px) {
-  .about__section .progress__wrap {
-    margin-bottom: 20px;
-  }
-}
-.about__section .progress__wrap .pro__items {
+.about__section .progress__wrap .progress-item {
   padding: 15px 24px 15px 0;
   width: 100%;
 }
-.about__section .progress__wrap .pro__items .pro__head {
+.about__section .progress__wrap .progress-item .progre-head {
   margin-bottom: 20px;
+  width: 100%;
 }
-.about__section .progress__wrap .pro__items .pro__head .title {
+.about__section .progress__wrap .progress-item .progre-head .title {
   font-size: 16px;
   color: var(--theme);
   font-weight: 700;
 }
-@media (max-width: 500px) {
-  .about__section .progress__wrap .pro__items {
-    width: 100%;
-    padding: 11px 24px 11px 0;
-  }
-  .about__section .progress__wrap .pro__items .pro__head {
-    margin-bottom: 12px;
-  }
-}
-.about__section .progress__wrap .pro__items .progress {
-  border-radius: 0;
-  height: 18px;
-}
-.about__section .progress__wrap .progress-bar {
-  background: var(--theme2);
-  color: #fefefe;
-  position: relative;
+.about__section .progress__wrap .progress-item .progress-line {
   width: 100%;
+  height: 18px;
+  background: #e9ecef;
+}
+.about__section .progress__wrap .progress-item .progress-line .skill-bar {
+  width: 0%;
+  opacity: 0;
+  height: 100%;
+  background-color: var(--theme2);
+  animation: animate 5s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  position: relative;
+  transition: all 0.5s;
+}
+.about__section .progress__wrap .progress-item .progress-line .skill-bar span {
+  position: absolute;
+  top: -1px;
+  right: 8px;
+  color: var(--white);
   font-size: 13px;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
-  text-align: right;
-  padding-right: 10px;
 }
-.about__section .progress__wrap .progress-value {
-  animation: load 3s normal forwards;
-  border-radius: 0;
-  background: var(--theme2);
-  height: 15px;
-  width: 0;
-}
-@keyframes load {
-  0% {
-    width: 0;
-  }
+@keyframes animate {
   100% {
-    width: 68%;
+    transform: scaleX(1);
   }
 }
 

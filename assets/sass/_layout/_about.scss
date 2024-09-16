@@ -153,56 +153,47 @@
         }
     }
     .progress__wrap{
-        margin-bottom: 32px;
-        @include breakpoint(max-xs){
-            margin-bottom: 20px;
-        }
-        .pro__items{
+        .progress-item{
             padding: 15px 24px 15px 0;
-            width: calc(100% / 1);
-            .pro__head{
+            width: 100%;
+            .progre-head{
                 margin-bottom: 20px;
+                width: 100%;
                 .title{
                     font-size: 16px;
                     color: var(--theme);
                     font-weight: 700;
                 }
             }
-            @include breakpoint(max-xs){
+            .progress-line{
                 width: 100%;
-                padding: 11px 24px 11px 0;
-                .pro__head{
-                    margin-bottom: 12px;
+                height: 18px;
+                background: #e9ecef;
+                .skill-bar{
+                    width: 0%;
+                    opacity: 0;
+                    height: 100%;
+                    background-color: var(--theme2);
+                    animation: animate 5s cubic-bezier(1,0,0.5,1) forwards;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    position: relative;
+                    transition: all .5s;
+                    span{
+                        position: absolute;
+                        top: -1px;
+                        right: 8px;
+                        color: var(--white);
+                        font-size: 13px;
+                        font-weight: 400;
+                    }
                 }
             }
-            .progress {
-                border-radius: 0;
-                height: 18px;
-            }
         }
-        .progress-bar {
-            background: var(--theme2);
-            color: #fefefe;
-            position: relative;
-            width: 100%;
-            font-size: 13px;
-            font-weight: 400;
-            @include bodyfont;
-            text-align: right;
-            padding-right: 10px;
-        }
-        
-        .progress-value {
-            animation: load 3s normal forwards;
-            border-radius: 0;
-            background: var(--theme2);
-            height: 15px;
-            width: 0;
-        }
-        
-        @keyframes load {
-            0% { width: 0; }
-            100% { width: 68%; }
+    }
+    @keyframes animate{
+        100%{
+          transform: scaleX(1);
         }
     }
 }
