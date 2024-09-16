@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!--Animate css-->
     <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- finest-icon.min.css -->
+    <link rel="stylesheet" href="assets/css/finest-icon.min.css">
     <!--main css-->
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
@@ -49,7 +51,7 @@
 
     <!--Header Section Start-->
     <header class="main__header">
-      <div class="container">
+      <div class="container ralt">
         <div class="header__thumb">
           <img src="assets/img/header/bg2.png" alt="header__img">
         </div>
@@ -95,81 +97,79 @@
             </div>
             <div class="header-section">
               <div class="header-wrapper">
-                <ul class="main-menu">
-                  <li>
-                    <a href="#"> Home </a>
-                    <ul class="sub-menu">
+                <div id="mobile-menu-active">  
+                    <ul class="main-menu">
                       <li>
-                        <a href="index.html">Home construction</a>
+                        <a href="#"> Home </a>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="index.html">Home construction</a>
+                          </li>
+                          <li>
+                            <a href="index-2.html">industry Home</a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
-                        <a href="index-2.html">industry Home</a>
+                        <a href="about.html"> About Us </a>
+                      </li>
+                      <li>
+                        <a href="#"> Services </a>
+                        <ul class="sub-menu">
+                          <li class="subtwohober">
+                            <a href="service.html">Services Main</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="service-single.html">Services Single</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="service-single.html">Building Construction</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="service-single.html">Roof Top Services</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="service-single.html">Rennovation</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="service-single.html">Architecture</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="service-single.html">Iterior Design</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#"> Blog </a>
+                        <ul class="sub-menu">
+                          <li class="subtwohober">
+                            <a href="blog.html">Blog</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="blog-single.html">Blog Single</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="contact.html"> Contact </a>
+                      </li>
+                      <li>
+                        <a href="#0" class="search-trigger search-icon">
+                          <i class="fa-solid fa-search"></i>
+                        </a>
                       </li>
                     </ul>
-                  </li>
-                  <li>
-                    <a href="about.html"> About Us </a>
-                  </li>
-                  <li>
-                    <a href="#"> Services </a>
-                    <ul class="sub-menu">
-                      <li class="subtwohober">
-                        <a href="service.html">Services Main</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="service-single.html">Services Single</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="service-single.html">Building Construction</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="service-single.html">Roof Top Services</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="service-single.html">Rennovation</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="service-single.html">Architecture</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="service-single.html">Iterior Design</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#"> Blog </a>
-                    <ul class="sub-menu">
-                      <li class="subtwohober">
-                        <a href="blog.html">Blog</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="blog-single.html">Blog Single</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="contact.html"> Contact </a>
-                  </li>
-                  <li>
-                    <a href="#0" class="search-trigger search-icon">
-                      <i class="fa-solid fa-search"></i>
-                    </a>
-                  </li>
-                </ul>
+                </div>
                 <div class="menu__components d-flex align-items-center">
                   <a href="#0" class="small-cmn--btn small-btn"> Get a quote </a>
                   <a href="#0" class="cmn--btn">
                     <i class="fa-solid fa-phone"></i> (80) 58 9820 20 </a>
-                  <div class="header-bar d-lg-none">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="mobile-menu d-lg-none"></div>
       </div>
     </header>
     <!--Header Section End-->
@@ -519,6 +519,8 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <!--swipper Js-->
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- jquery.meanmenu.js -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
     <!--swipper bundle Js-->
     <script src="assets/js/wow.min.js"></script>
     <!--main Js-->

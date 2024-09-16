@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="assets/css/odometer.min.css">
     <!--Owl carousel css-->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- slick.css -->
+    <link rel="stylesheet" href="assets/css/slick.css">
     <!--Owl theme css-->
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <!--Magnific popup css-->
@@ -88,7 +90,7 @@
         </div>
       </div>
       <div class="header-section header__section__two">
-        <div class="container">
+        <div class="container ralt">
           <div class="header-wrapper style__two">
             <div class="logo-menu">
               <a href="index.html">
@@ -96,77 +98,75 @@
               </a>
             </div>
             <div class="d-flex align-items-center">
-              <ul class="main-menu">
-                <li>
-                  <a href="#"> Home </a>
-                  <ul class="sub-menu">
+              <div id="mobile-menu-active">
+                  <ul class="main-menu">
                     <li>
-                      <a href="index.html">Home construction</a>
+                      <a href="#"> Home </a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="index.html">Home construction</a>
+                        </li>
+                        <li>
+                          <a href="index-2.html">industry Home</a>
+                        </li>
+                      </ul>
                     </li>
                     <li>
-                      <a href="index-2.html">industry Home</a>
+                      <a href="about.html"> About Us </a>
+                    </li>
+                    <li>
+                      <a href="#"> Services </a>
+                      <ul class="sub-menu">
+                        <li class="subtwohober">
+                          <a href="service.html">Services Main</a>
+                        </li>
+                        <li class="subtwohober">
+                          <a href="service-single.html">Services Single</a>
+                        </li>
+                        <li class="subtwohober">
+                          <a href="service-single.html">Building Construction</a>
+                        </li>
+                        <li class="subtwohober">
+                          <a href="service-single.html">Roof Top Services</a>
+                        </li>
+                        <li class="subtwohober">
+                          <a href="service-single.html">Rennovation</a>
+                        </li>
+                        <li class="subtwohober">
+                          <a href="service-single.html">Architecture</a>
+                        </li>
+                        <li class="subtwohober">
+                          <a href="service-single.html">Iterior Design</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"> Blog </a>
+                      <ul class="sub-menu">
+                        <li class="subtwohober">
+                          <a href="blog.html">Blog</a>
+                        </li>
+                        <li class="subtwohober">
+                          <a href="blog-single.html">Blog Single</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="contact.html"> Contact </a>
+                    </li>
+                    <li>
+                      <a href="#0" class="search-trigger search-icon">
+                        <i class="fa-solid fa-search"></i>
+                      </a>
                     </li>
                   </ul>
-                </li>
-                <li>
-                  <a href="about.html"> About Us </a>
-                </li>
-                <li>
-                  <a href="#"> Services </a>
-                  <ul class="sub-menu">
-                    <li class="subtwohober">
-                      <a href="service.html">Services Main</a>
-                    </li>
-                    <li class="subtwohober">
-                      <a href="service-single.html">Services Single</a>
-                    </li>
-                    <li class="subtwohober">
-                      <a href="service-single.html">Building Construction</a>
-                    </li>
-                    <li class="subtwohober">
-                      <a href="service-single.html">Roof Top Services</a>
-                    </li>
-                    <li class="subtwohober">
-                      <a href="service-single.html">Rennovation</a>
-                    </li>
-                    <li class="subtwohober">
-                      <a href="service-single.html">Architecture</a>
-                    </li>
-                    <li class="subtwohober">
-                      <a href="service-single.html">Iterior Design</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#"> Blog </a>
-                  <ul class="sub-menu">
-                    <li class="subtwohober">
-                      <a href="blog.html">Blog</a>
-                    </li>
-                    <li class="subtwohober">
-                      <a href="blog-single.html">Blog Single</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="contact.html"> Contact </a>
-                </li>
-                <li>
-                  <a href="#0" class="search-trigger search-icon">
-                    <i class="fa-solid fa-search"></i>
-                  </a>
-                </li>
-              </ul>
+              </div>
               <div class="title__button d-none d-lg-block">
                 <a href="#0" class="cmn--btn">Get a quote</a>
               </div>
             </div>
-            <div class="header-bar d-lg-none">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
           </div>
+          <div class="mobile-menu d-lg-none"></div>
         </div>
       </div>
     </header>
@@ -519,9 +519,7 @@
               <h2 class="sub"> Testimonials </h2>
             </div>
             <div class="testi__item ralt">
-              <div class="swiper testi__slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                <div class="testi-active">
                     <div class="testi__content">
                       <h5> That they cannot foresee the pain and trouble that are bound equal blame belongs a those who fail in their duty through weakness equal blame <span>belongs</span> to those who fail in their duty through the equal blame belongs a those who fail in their duty through which is the same as saying through shrinking </h5>
                       <ul class="d-flex mb-20">
@@ -543,8 +541,6 @@
                       </ul>
                       <h5> Adrian Paul </h5>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
                     <div class="testi__content">
                       <h5> That they cannot foresee the pain and trouble that are bound equal blame belongs a those who fail in their duty through weakness equal blame <span>belongs</span> to those who fail in their duty through the equal blame belongs a those who fail in their duty through which is the same as saying through shrinking </h5>
                       <ul class="d-flex mb-20">
@@ -566,8 +562,6 @@
                       </ul>
                       <h5> Adrian Paul </h5>
                     </div>
-                  </div>
-                  <div class="swiper-slide">
                     <div class="testi__content">
                       <h5> That they cannot foresee the pain and trouble that are bound equal blame belongs a those who fail in their duty through weakness equal blame <span>belongs</span> to those who fail in their duty through the equal blame belongs a those who fail in their duty through which is the same as saying through shrinking </h5>
                       <ul class="d-flex mb-20">
@@ -589,16 +583,16 @@
                       </ul>
                       <h5> Adrian Paul </h5>
                     </div>
-                  </div>
                 </div>
-              </div>
               <div class="testi__dot__wrp">
                 <div class="dot testi__dot"></div>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div class="testi__thumb ralt">
+            <div class="testi__thumb ralt testi-nav">
+              <img src="assets/img/testimonial/testi2.png" alt="testi__img">
+              <img src="assets/img/testimonial/testi2.png" alt="testi__img">
               <img src="assets/img/testimonial/testi2.png" alt="testi__img">
             </div>
           </div>
@@ -808,8 +802,12 @@
     <script src="assets/js/odometer.min.js"></script>
     <!--Owl carousel Js-->
     <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- slick.min.js -->
+    <script src="assets/js/slick.min.js"></script>
     <!--swipper Js-->
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- jquery.meanmenu.js -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
     <!--swipper bundle Js-->
     <script src="assets/js/wow.min.js"></script>
     <!--main Js-->
