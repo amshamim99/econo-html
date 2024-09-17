@@ -534,7 +534,7 @@ a.meanmenu-reveal {
 }
 .mean-nav ul.main-menu li ul.sub-menu {
 	background: var(--theme);
-	width: 88%;
+	width: 82%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -542,6 +542,12 @@ a.meanmenu-reveal {
 	border-radius: 5px;
 	margin-bottom: 20px;
 	padding: 0 25px;
+	@include breakpoint(xs){
+		width: 84%;
+	}
+	@include breakpoint(md){
+		width: 88%;
+	}
 }
 .mean-container .mean-nav ul li a {
 	display: block;

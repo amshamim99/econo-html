@@ -154,8 +154,11 @@
     }
     .progress__wrap{
         .progress-item{
-            padding: 15px 24px 15px 0;
-            width: 100%;
+            @include breakpoint(max-lg){
+                width: 100%;
+            }
+            padding: 15px 0;
+            width: 96%;
             .progre-head{
                 margin-bottom: 20px;
                 width: 100%;

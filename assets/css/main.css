@@ -1939,7 +1939,7 @@ a.meanmenu-reveal {
 
 .mean-nav ul.main-menu li ul.sub-menu {
   background: var(--theme);
-  width: 88%;
+  width: 82%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1947,6 +1947,16 @@ a.meanmenu-reveal {
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 0 25px;
+}
+@media (min-width: 500px) {
+  .mean-nav ul.main-menu li ul.sub-menu {
+    width: 84%;
+  }
+}
+@media (min-width: 768px) {
+  .mean-nav ul.main-menu li ul.sub-menu {
+    width: 88%;
+  }
 }
 
 .mean-container .mean-nav ul li a {
@@ -2903,8 +2913,13 @@ input.main-search-input::placeholder {
   padding: 12px 48px;
 }
 .about__section .progress__wrap .progress-item {
-  padding: 15px 24px 15px 0;
-  width: 100%;
+  padding: 15px 0;
+  width: 96%;
+}
+@media (max-width: 991px) {
+  .about__section .progress__wrap .progress-item {
+    width: 100%;
+  }
 }
 .about__section .progress__wrap .progress-item .progre-head {
   margin-bottom: 20px;

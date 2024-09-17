@@ -301,21 +301,21 @@ $(document).ready(function () {
     const skillBars = document.querySelectorAll('.skill-bar');
 
     function showProgress(){
-    skillBars.forEach(skillBar=> {
-        const value = skillBar.dataset.progress;
-        skillBar.style.opacity = 1;
-        skillBar.style.width = `${value}%`;
-        
-    });
+        skillBars.forEach(skillBar=> {
+            const value = skillBar.dataset.progress;
+            skillBar.style.opacity = 1;
+            skillBar.style.width = `${value}%`;
+            
+        });
     }
     window.addEventListener('scroll',() => {
         const sectionPos = aboutSection.getBoundingClientRect().top;
         const screenPos = window.innerHeight /3;
 
         if(sectionPos < screenPos){
-        showProgress();
+            showProgress();
         }else{
-        hideProgress();
+            // hideProgress();
         }
     });
     // progressbar-end////
