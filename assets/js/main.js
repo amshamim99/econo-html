@@ -423,6 +423,29 @@ $(function () {
     });
 });
 
+// custom-cursor start//
+let cursor = document.getElementById("cursor");
+let size;
+document.body.addEventListener("mousemove", (ev)=>{
+    let path = ev.composedPath();
+
+    if (path.some(x=>x.tagName == "A")) size = 80;
+    else size = 6;
+
+    cursor.style.left   = (ev.clientX - size/2) + "px";
+    cursor.style.top    = (ev.clientY - size/2) + "px";
+    cursor.style.width  = size + "px";
+    cursor.style.height = size + "px";
+});
+
+$("*a").mouseenter(function(){
+    cursor.style.opacity = ".2";
+    cursor.style.transition = ".2s";
+})
+$("*a").mouseleave(function(){
+    cursor.style.opacity = "1";
+})
+//custom-cursor end//
 
 });
 

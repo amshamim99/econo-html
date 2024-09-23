@@ -2281,6 +2281,15 @@ input.main-search-input::placeholder {
   opacity: 0;
 }
 
+#cursor {
+  position: fixed;
+  background-color: var(--theme2);
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 999999;
+  transition: 0.1s;
+}
+
 /* 5. Banner */
 .banner__section {
   background: url(../img/banner/main-bg.png) no-repeat center center;

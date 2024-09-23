@@ -858,3 +858,14 @@ input.main-search-input::placeholder {
     top: -100%;
     opacity: 0;
 }
+
+// custom-cursor-start///
+#cursor {
+    position: fixed;
+    background-color: var(--theme2);
+    pointer-events: none;
+    border-radius: 50%;
+	z-index: 999999;
+	transition: .1s;
+}
+// custom-cursor-end///
