@@ -92,8 +92,23 @@ $(document).ready(function () {
         autoplay:true,
         items:1,
         margin: 10,
-        nav:false,
+        autoplayTimeout: 7000,
+        smartSpeed: 1000,
+        nav:true,
         dots:false,
+        navText: [
+            '<i class="fa-solid fa-chevron-left"></i>',
+            '<i class="fa-solid fa-chevron-right"></i>'
+        ],
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+            },
+            992:{
+                nav:true,
+            },
+        }
     })
     // slide-active end
 
