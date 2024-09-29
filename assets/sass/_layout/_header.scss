@@ -702,14 +702,14 @@
 	letter-spacing: -0.8px;
 	font-weight: 700;
 	margin-bottom: 15px;
-	color: var(--tp-common-black);
+	color: var(--theme);
 }
 .tp-offcanvas-title.sm {
 	font-size: 20px;
 	font-weight: 700;
 	margin-bottom: 15px;
 	text-transform: uppercase;
-	color: var(--tp-common-black);
+	color: var(--theme);
 }
 .tp-offcanvas-gallery {
 	margin-bottom: 65px;
@@ -723,9 +723,14 @@
 .tp-offcanvas-contact ul li:not(:last-child) {
 	margin-bottom: 2px;
 }
+.tp-offcanvas-contact ul li i {
+	color: var(--theme2);
+	margin-right: 5px;
+	font-size: 16px;
+}
 .tp-offcanvas-contact ul li a {
 	display: inline-block;
-	color: #414144;
+	color: var(--theme);
 	font-size: 18px;
 	position: relative;
 }
@@ -737,15 +742,34 @@
 	height: 1px;
 	content: "";
 	transition: 0.4s;
-	background-color: #1e1e1e;
+	background-color: var(--theme2);
 }
 .tp-offcanvas-contact ul li a:hover {
-	color: var(--tp-common-black);
+	color: var(--theme2);
 }
 .tp-offcanvas-contact ul li a:hover::after {
 	width: 100%;
 	right: auto;
 	left: 0;
+}
+.tp-offcanvas-social ul li a {
+	display: inline-block;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	line-height: 38px;
+	border-radius: 40px;
+	color: var(--theme);
+	border: 1px solid rgba(2, 11, 24, 0.1);
+	transition: .3s;
+}
+.tp-offcanvas-social ul li a:hover{
+	color: var(--white);
+	background: var(--theme2);
+	border-color: 1px solid var(--theme2);
+}
+.tp-offcanvas-social ul li:not(:last-child) {
+	margin-right: 8px;
 }
 // mobile-menu-end///
 
