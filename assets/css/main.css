@@ -1401,6 +1401,14 @@ i {
 .main__header__two .header-wrapper .main-menu li .cmn--btn:hover {
   color: var(--white);
 }
+.main__header__two .header-wrapper .tp-offcanvas-open-btn {
+  background: transparent;
+  padding-right: 25px;
+}
+.main__header__two .header-wrapper .tp-offcanvas-open-btn i {
+  font-size: 32px;
+  color: var(--theme2);
+}
 .main__header__two .menu-fixed {
   position: fixed !important;
   top: 0 !important;
@@ -1410,15 +1418,6 @@ i {
   transition: all 0.9s;
   background-color: rgb(9, 30, 93);
   z-index: 999;
-}
-.main__header__two .header-section.header__section__two .mean-container .mean-bar {
-  top: 67px;
-}
-.main__header__two .header-section.header__section__two .mean-container a.meanmenu-reveal i {
-  color: var(--theme2);
-}
-.main__header__two .header-section.header__section__two .mean-container .mean-nav {
-  margin-top: 24px;
 }
 
 .main__header {

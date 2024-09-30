@@ -47,6 +47,14 @@
 				}
 			}
 		}
+		.tp-offcanvas-open-btn{
+			background: transparent;
+			padding-right: 25px;
+			i{
+				font-size: 32px;
+				color: var(--theme2);
+			}
+		}
 	}
 	.menu-fixed {
 		position: fixed !important;
@@ -58,17 +66,6 @@
 		background-color: rgba(9, 30, 93, 1);
 		z-index: 999;
 	}
-	.header-section.header__section__two{
-		.mean-container .mean-bar {
-			top: 67px;
-		}
-		.mean-container a.meanmenu-reveal i {
-			color: var(--theme2);
-		}
-		.mean-container .mean-nav {
-			margin-top: 24px;
-		}
-	} 
 }
 .main__header{
 	left: 0;
