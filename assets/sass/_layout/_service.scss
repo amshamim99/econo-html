@@ -227,11 +227,27 @@
                     left: 0;
                     padding: 75px 65px;
                     z-index: 99;
-                    @include breakpoint(max-xxl){
-                        padding: 45px 35px;
+                    @include breakpoint(max-md){
+                        top: 40%;
+                        transform: translateY(-40%);
                     }
                     @include breakpoint(max-xxsmall){
                         padding: 20px 20px;
+                    }
+                    @include breakpoint(xs){
+                        padding: 45px 35px;
+                    }
+                    @include breakpoint(md){
+                        padding: 25px 35px;
+                    }
+                    @include breakpoint(lg){
+                        padding: 55px 35px;
+                    }
+                    @include breakpoint(xl){
+                        padding: 35px;
+                    }
+                    @include breakpoint(xxl){
+                        padding: 75px 65px;
                     }
                     .count__item{
                         position: relative;
@@ -241,12 +257,19 @@
                         }
                         &::before{
                             position: absolute;
-                            bottom: -15px;
+                            // bottom: -15px;
+                            bottom: 12px;
                             left: 0;
                             content: "";
                             height: 1px;
                             width: 73px;
                             background-color: var(--white);
+                            @include breakpoint(xs){
+                                bottom: 0;
+                            }
+                            @include breakpoint(lg){
+                                bottom: -4px;
+                            }
                         }
                         span{
                             font-size: 90px;
