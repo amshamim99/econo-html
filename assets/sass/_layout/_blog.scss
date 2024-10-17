@@ -14,6 +14,29 @@
         padding: 140px 0;
     }
     background-color: #f2f1fc;
+    &.service__section{
+        padding: 60px 0;
+        @include breakpoint(xs){
+            padding: 80px 0;
+        }
+        @include breakpoint(md){
+            padding: 100px 0;
+        }
+        @include breakpoint(lg){
+            padding: 120px 0;
+        }
+        @include breakpoint(xl){
+            padding: 140px 0;
+        }     
+        .section__title .sub::before {
+            left: 0;
+            transform: initial;
+            @include breakpoint(max-xs){
+                left: 50% ;
+                transform: translateX(-50%);
+            }
+        } 
+    }
     .grad__shape{
         position: absolute;
         bottom: -15px;
@@ -213,6 +236,19 @@
     }
 }
 .blog__two{
+    padding: 60px 0;
+    @include breakpoint(xs){
+       padding: 80px 0;
+    }
+    @include breakpoint(md){
+        padding: 100px 0;
+    }
+    @include breakpoint(lg){
+        padding: 120px 0;
+    }
+    @include breakpoint(xl){
+        padding: 140px 0;
+    }
     .left__shape{
         top: -17%;
         left: -14%;
@@ -458,14 +494,21 @@
     .comt__title{
         position: relative;
         margin-bottom: 110px;
+        @include breakpoint(max-md){
+            margin-bottom: 60px;
+        }
         &::before{
             position: absolute;
-            bottom: -50px;
+            // bottom: -50px;
+            bottom: -15px;
             left: 0;
             width: 182px;
             height: 1px;
             content: "";
             background-color: var(--theme2);
+            @include breakpoint(max-md){
+                width: 110px;
+            }
         }
     }
     .contact__right{

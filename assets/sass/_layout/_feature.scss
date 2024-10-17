@@ -16,6 +16,14 @@
     @include breakpoint(xl){
         padding: 140px 0;
     }
+    .row .col-xxl-4 .icon__item .icon__wrap .content .max__width {
+        @include breakpoint(max-xs){
+            margin: auto;
+        }
+        @include breakpoint(max-md){
+            max-width: 330px;
+        }
+    }
     .left__shape{    
         position: absolute;
         bottom: -60%;
@@ -45,6 +53,18 @@
             @include breakpoint(max-lg){
                 display: none;
             }
+        }
+        &.feature__wrapper_two{
+            .icon__item .icon__wrap{
+                @include breakpoint(max-xs){
+                    text-align: center;
+                }
+                .icon_wrap_inner {
+                    @include breakpoint(max-xs){
+                        margin: 0 auto 25px;
+                    }
+                }
+            } 
         }
     }
     .section__title{
@@ -146,6 +166,9 @@
     }
     .feature__box{
         gap: 25px;
+        @include breakpoint(max-xs){
+            justify-content: center;
+        }
         .title__cont{
             position: relative;
             span{
