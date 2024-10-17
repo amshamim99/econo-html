@@ -84,7 +84,7 @@
         overflow: hidden;
         img{
             @include imgw;
-            transform: scale(1.1);
+            transform: scale(1.15);
             transition: 4s;
         }
         padding-top: 170px;
@@ -164,13 +164,18 @@
     .slide-active{
         .owl-item.active{
             .box__shape{
-                animation: fadeInDown  ease 4s both;
+                animation: fadeInUpSlide  ease 1s both;
+                animation-delay: 0.7s;
             }
-            h1{
-                animation: fadeInUp  ease 3s both;
+            .banner__content{
+                h1{
+                    animation: fadeInUpSlide  ease 1s both;
+                    animation-delay: 1.1s;
+                }
             }
             .banner__button{
-                animation: fadeInUp  ease 4s both;
+                animation: fadeInUpSlide  ease 1s both;
+                animation-delay: 2.3s;
             }
             .banner-thum{
                 img{
@@ -178,10 +183,13 @@
                 }
             }
         }
+        &.owl-carousel, .owl-carousel .owl-item {
+            position: static;
+        }
         .owl-nav button {
             position: absolute;
             top: 50%;
-            left: -33px;
+            left: 30px;
             z-index: 2;
             transform: translatey(-50%);
             width: 72px;
@@ -199,16 +207,38 @@
                 left: 0;
                 opacity: 0;
             }
+            @include breakpoint(xl){
+                left: 15px;
+            }
+            @include breakpoint(xxxl){
+                left: 30px;
+            }
             &.owl-next {
                 left: auto;
-                right: -33px;
+                right: 30px;
                 @include breakpoint(max-xl){
                     right: 0;
                     opacity: 0;
                 }
+                @include breakpoint(xl){
+                    right: 15px;
+                }
+                @include breakpoint(xxxl){
+                    right: 30px;
+                }
             }
         }
     }   
+}
+@keyframes fadeInUpSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Start below the original position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
 }
 .banner__two{
     background: url(../img/banner/banner-bg.png) no-repeat center center;
