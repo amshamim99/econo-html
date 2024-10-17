@@ -118,11 +118,13 @@
         }
         .box__shape{
             gap: 25px;
-            img{
-                max-width: 100% !important;
+            > div:nth-child(1) {
                 @include breakpoint(max-sm){
                     display: none !important;
                 }
+            }
+            img{
+                max-width: 100% !important;
             }
             h4{
                 position: relative;

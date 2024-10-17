@@ -1,5 +1,15 @@
 /* 10. Testimonial */
 .testimonial__section{
+    padding: 100px 0 40px 0;
+    @include breakpoint(sm){
+        padding: 120px 0 60px 0;
+    }
+    @include breakpoint(lg){
+        padding: 120px 0;
+    }
+    @include breakpoint(xl){
+        padding: 140px 0;
+    }
     background: url(../img/testimonial/testi-bg-2.png) no-repeat center center;
     background-size: cover;
     .right__shape{
@@ -25,6 +35,15 @@
         }
     }
     .section__title{
+        &.pb-100{
+            padding-bottom: 60px;
+            @include breakpoint(md){
+                padding-bottom: 80px;
+            }
+            @include breakpoint(lg){
+                padding-bottom: 100px;
+            }
+        }
         .sub{
             color: var(--theme);
             &::before{

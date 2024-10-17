@@ -1,5 +1,21 @@
 /* 8. Feature */
 .feature__section{
+    padding: 60px 0 40px 0;
+    @include breakpoint(xs){
+        padding: 80px 0 50px 0;
+    }
+    @include breakpoint(sm){
+        padding: 80px 0 60px 0;
+    }
+    @include breakpoint(md){
+        padding: 100px 0 60px 0;
+    }
+    @include breakpoint(lg){
+        padding: 120px 0;
+    }
+    @include breakpoint(xl){
+        padding: 140px 0;
+    }
     .left__shape{    
         position: absolute;
         bottom: -60%;
@@ -204,10 +220,17 @@
 .icon__item{
     .icon__wrap{
         gap: 45px;
+        align-items: center;
         @include breakpoint(max-md){
             flex-wrap: wrap;
             gap: 25px;
         }
+        @include breakpoint(max-xxsmall){
+            width: 100%;
+            text-align: center;
+            display: block !important;
+        }
+        
         &:not(:last-child){
             margin-bottom: 40px;
         }
@@ -215,6 +238,9 @@
             background: transparent;
             filter: drop-shadow(0px 0px 10px rgba(0, 22, 89, 0.2));
             width: 80px;
+            @include breakpoint(max-xxsmall){
+                margin: 0 auto 25px;
+            }
             .icon__wrap_item {
                 width: fit-content;
                 background: var(--theme2);

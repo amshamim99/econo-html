@@ -1,6 +1,15 @@
 /* 6. About */
 .about__section{
-    padding: 90px 0 120px 0;
+    padding: 50px 0;
+    @include breakpoint(xs){
+        padding: 80px 0;
+    }
+    @include breakpoint(lg){
+        padding: 120px 0;
+    }
+    @include breakpoint(xl){
+        padding: 140px 0;
+    }
     .left__shape{
         position: absolute;
         bottom: -225px;
@@ -11,9 +20,6 @@
         @include breakpoint(max-xl){
             display: none;
         }
-    }
-    @include breakpoint(xl){
-        padding: 90px 0 120px 0;
     }
     .box__shape{
         position: absolute;
@@ -121,9 +127,12 @@
             @include breakpoint(max-md){
                 flex-wrap: wrap;
             }
+            &.mb-60 {
+                margin-bottom: 60px;
+            }
             &::before{
                 position: absolute;
-                bottom: -24px;
+                bottom: -15px;
                 left: 0;
                 border: 1px solid var(--theme2);
                 content: "";
@@ -297,4 +306,49 @@
         }
     }
 }
+.section__title{
+    @include breakpoint(max-xs){
+        text-align: center;
+    }
+    @include breakpoint(max-lg){
+        flex-direction: column;
+        align-items: start !important;
+        gap: 60px;
+    }
+    .sub {
+        font-size: 24px !important;
+        @include breakpoint(xs){
+            font-size: 30px !important;
+        }
+        @include breakpoint(md){
+            font-size: 38px !important;
+        }
+        &::before {
+            bottom: -15px;
+            @include breakpoint(md){
+                bottom: -18px;
+            }
+            @include breakpoint(lg){
+                bottom: -24px;
+            }
+            @include breakpoint(xl){
+                bottom: -30px;
+            }
+            @include breakpoint(x4l){
+                bottom: -35px;
+            }
+            @include breakpoint(max-md){
+                width: 110px;
+            }
+            @include breakpoint(max-xs){
+                left: 50%;
+                transform: translateX(-50%);
+            }   
+        }
+    }
+    @include breakpoint(max-xs){
+        align-items: center !important;
+        gap: 50px !important;
+    }
+} 
 //--About Section End--//
