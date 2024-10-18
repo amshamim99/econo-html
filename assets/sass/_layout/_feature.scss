@@ -272,6 +272,15 @@
             --bs-gutter-y: 4rem;
         }
     }
+    .g-2, .gx-2 {
+        --bs-gutter-x: 1.5rem;
+        @include breakpoint(max-sm){
+            --bs-gutter-x: 0;
+        }
+        @include breakpoint(max-lg){
+            --bs-gutter-y: 2rem;
+        }
+    }
 }
 .icon__item{
     .icon__wrap{

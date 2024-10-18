@@ -16,6 +16,14 @@
     background: url(../img/project/bg.png) no-repeat center center;
     background-size: cover;
     background-position: center bottom;
+    .section__title{
+        &.mb-80{
+            margin-bottom: 80px;
+            @include breakpoint(max-md){
+                margin-bottom: 60px;
+            }
+        }
+    } 
     .right__shape{
         position: absolute;
         top: 0;

@@ -3825,9 +3825,22 @@ input.main-search-input::placeholder {
   background: url(../img/service/service-3.jpg) no-repeat center center;
   background-size: cover;
 }
+.service__three .g-4, .service__three .gx-4 {
+  --bs-gutter-x: 1.5rem;
+}
+@media (max-width: 575px) {
+  .service__three .g-4, .service__three .gx-4 {
+    --bs-gutter-x: 0;
+  }
+}
+@media (max-width: 767px) {
+  .service__three .g-4, .service__three .gx-4 {
+    --bs-gutter-y: 3rem;
+  }
+}
 @media (max-width: 767px) {
   .service__three .section__title.mb-100 {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
 .service__three .section__title .sub {
@@ -4274,6 +4287,19 @@ input.main-search-input::placeholder {
 @media (max-width: 991px) {
   .feature__two .g-4, .feature__two .gx-4 {
     --bs-gutter-y: 4rem;
+  }
+}
+.feature__two .g-2, .feature__two .gx-2 {
+  --bs-gutter-x: 1.5rem;
+}
+@media (max-width: 575px) {
+  .feature__two .g-2, .feature__two .gx-2 {
+    --bs-gutter-x: 0;
+  }
+}
+@media (max-width: 991px) {
+  .feature__two .g-2, .feature__two .gx-2 {
+    --bs-gutter-y: 2rem;
   }
 }
 
@@ -4826,6 +4852,14 @@ input.main-search-input::placeholder {
     padding: 150px 0 275px 0;
   }
 }
+.project__section .section__title.mb-80 {
+  margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .project__section .section__title.mb-80 {
+    margin-bottom: 60px;
+  }
+}
 .project__section .right__shape {
   position: absolute;
   top: 0;
@@ -4988,6 +5022,11 @@ input.main-search-input::placeholder {
 }
 .connect__section .section__title .section__wrap .sub::before {
   bottom: -27px;
+}
+@media (max-width: 991px) {
+  .connect__section .section__title .section__wrap .sub::before {
+    bottom: -15px;
+  }
 }
 .connect__section .section__title .section__wrap .sub::after {
   position: absolute;

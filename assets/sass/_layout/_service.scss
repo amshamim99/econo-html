@@ -366,10 +366,19 @@
 .service__three{
     background: url(../img/service/service-3.jpg) no-repeat center center;
     background-size: cover;
+    .g-4, .gx-4 {
+        --bs-gutter-x: 1.5rem;
+        @include breakpoint(max-sm){
+            --bs-gutter-x: 0;
+        }
+        @include breakpoint(max-md){
+            --bs-gutter-y: 3rem;
+        }
+    }
     .section__title{
         &.mb-100{
             @include breakpoint(max-md){
-                margin-bottom: 60px;
+                margin-bottom: 40px;
             }
         }
         .sub{

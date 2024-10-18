@@ -40,6 +40,9 @@
                 }
                 &::before{
                     bottom: -27px;
+                    @include breakpoint(max-lg){
+                        bottom: -15px;
+                    }
                 }
                 &::after{
                     position: absolute;
