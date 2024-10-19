@@ -27,8 +27,12 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!--Animate css-->
     <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- finest-icon.min.css -->
+    <link rel="stylesheet" href="assets/css/finest-icon.min.css">
     <!-- leaflet.css -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <!-- cursor-css -->
+    <link rel="stylesheet" href="assets/css/cursor.css">
     <!--main css-->
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
@@ -49,9 +53,74 @@
     </div>
     <!--Scroll UP Section End-->
 
+    <!-- tp-offcanvus-area-end -->
+    <!-- add calss name"left-right" to open offcanvas menu left to right -->
+    <div class="tp-offcanvas-area left-right">
+      <div class="tp-offcanvas-wrapper">
+          <div class="tp-offcanvas-top d-flex justify-content-between align-items-center">
+              <div class="tp-offcanvas-logo">
+                <a href="index.html">
+                  <img src="assets/img/logo/logo.png" alt="logo__img">
+                  <div class="shape-1">
+                    <img src="assets/img/logo/shape.png" alt="shape__img">
+                  </div>
+                </a>
+              </div>
+              <div class="tp-offcanvas-close">
+                  <button class="tp-offcanvas-close-btn myh-text-xl">
+                      <i class="fi-close"></i>
+                  </button>
+              </div>
+          </div>
+          <div class="tp-offcanvas-main">
+              <div class="tp-offcanvas-content">
+                  <h3 class="tp-offcanvas-title">Hello There!</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+              </div>
+              <div class="tp-offcanvas-menu d-lg-none">
+                  <nav></nav>
+              </div>
+              <div class="tp-offcanvas-contact">
+                  <h3 class="tp-offcanvas-title sm">Information</h3>
+                  <ul>
+                    <li><i class="fa-solid fa-clock"></i> <a href="#">Sun-Mon 8am to 6pm</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> <a href="#">123, Park Avenue, Florida</a></li>
+                  </ul>
+              </div>
+              <div class="tp-offcanvas-social">
+                <h3 class="tp-offcanvas-title sm">Flow us</h3>
+                <ul class="social__icon d-flex align-items-center">
+                  <li>
+                    <a href="#0">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="body-overlay"></div>
+    <!-- tp-offcanvus-area-end -->
+
     <!--Header Section Start-->
     <header class="main__header">
-      <div class="container">
+      <div class="container ralt">
         <div class="header__thumb">
           <img src="assets/img/header/bg2.png" alt="header__img">
         </div>
@@ -97,80 +166,83 @@
             </div>
             <div class="header-section">
               <div class="header-wrapper">
-                <ul class="main-menu">
-                  <li>
-                    <a href="#"> Home </a>
-                    <ul class="sub-menu">
+                <div class="d-none d-lg-block">
+                  <nav class="tp-mobile-menu-active main-menu">
+                    <ul class="main-menu">
                       <li>
-                        <a href="index.html">Home construction</a>
+                        <a href="#"> Home </a>
+                        <ul class="tp-submenu sub-menu">
+                          <li>
+                            <a href="index.html">Home construction</a>
+                          </li>
+                          <li>
+                            <a href="index-2.html">industry Home</a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
-                        <a href="index-2.html">industry Home</a>
+                        <a href="about.html"> About Us </a>
+                      </li>
+                      <li>
+                        <a href="#"> Services </a>
+                        <ul class="tp-submenu sub-menu">
+                          <li class="subtwohober">
+                            <a href="service.html">Services Main</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="service-single.html">Services Single</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="service-single.html">Building Construction</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="service-single.html">Roof Top Services</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="service-single.html">Rennovation</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="service-single.html">Architecture</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="service-single.html">Iterior Design</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#"> Blog </a>
+                        <ul class="tp-submenu sub-menu">
+                          <li class="subtwohober">
+                            <a href="blog.html">Blog</a>
+                          </li>
+                          <li class="subtwohober">
+                            <a href="blog-single.html">Blog Single</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="contact.html"> Contact </a>
+                      </li>
+                      <li>
+                        <a href="#0" class="search-trigger search-icon">
+                          <i class="fa-solid fa-search"></i>
+                        </a>
                       </li>
                     </ul>
-                  </li>
-                  <li>
-                    <a href="about.html"> About Us </a>
-                  </li>
-                  <li>
-                    <a href="#"> Services </a>
-                    <ul class="sub-menu">
-                      <li class="subtwohober">
-                        <a href="service.html">Services Main</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="service-single.html">Services Single</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="service-single.html">Building Construction</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="service-single.html">Roof Top Services</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="service-single.html">Rennovation</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="service-single.html">Architecture</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="service-single.html">Iterior Design</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#"> Blog </a>
-                    <ul class="sub-menu">
-                      <li class="subtwohober">
-                        <a href="blog.html">Blog</a>
-                      </li>
-                      <li class="subtwohober">
-                        <a href="blog-single.html">Blog Single</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="contact.html"> Contact </a>
-                  </li>
-                  <li>
-                    <a href="#0" class="search-trigger search-icon">
-                      <i class="fa-solid fa-search"></i>
-                    </a>
-                  </li>
-                </ul>
+                  </nav>
+                </div>
                 <div class="menu__components d-flex align-items-center">
                   <a href="#0" class="small-cmn--btn small-btn"> Get a quote </a>
                   <a href="#0" class="cmn--btn">
                     <i class="fa-solid fa-phone"></i> (80) 58 9820 20 </a>
-                  <div class="header-bar d-lg-none">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- tp-offcanvas-open-btn  -->
+          <button class="tp-offcanvas-open-btn d-lg-none">
+            <i class="fi-menu"></i>
+         </button>
         </div>
       </div>
     </header>
@@ -416,6 +488,17 @@
     </section>
     <!--Footer Section End-->
     
+    <!--Custom Cursor START-->
+    <div class="econo-cursor econo-js-cursor">
+      <div class="econo-cursor-wrapper">
+      <div class="econo-cursor--follower econo-js-follower"></div>
+      <div class="econo-cursor--label econo-js-label"></div>
+      <div class="econo-cursor--drap econo-js-drap"></div>
+      <div class="econo-cursor--icon econo-js-icon"></div>
+      </div>
+    </div>
+    <!--Custom Cursor END-->
+
     <!--Jquery 3 6 0 Min Js-->
     <script src="assets/js/jquery-3.7.0.min.js"></script>
     <!--viewport Js-->
@@ -436,6 +519,8 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- leaflet.js -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!--cursor Js-->
+    <script src="assets/js/cursor.js"></script>
     <!--main Js-->
     <script src="assets/js/main.js"></script>
 

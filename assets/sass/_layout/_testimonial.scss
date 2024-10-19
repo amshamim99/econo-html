@@ -1,5 +1,15 @@
 /* 10. Testimonial */
 .testimonial__section{
+    padding: 100px 0 40px 0;
+    @include breakpoint(sm){
+        padding: 120px 0 60px 0;
+    }
+    @include breakpoint(lg){
+        padding: 120px 0;
+    }
+    @include breakpoint(xl){
+        padding: 140px 0;
+    }
     background: url(../img/testimonial/testi-bg-2.png) no-repeat center center;
     background-size: cover;
     .right__shape{
@@ -25,6 +35,15 @@
         }
     }
     .section__title{
+        &.pb-100{
+            padding-bottom: 60px;
+            @include breakpoint(md){
+                padding-bottom: 80px;
+            }
+            @include breakpoint(lg){
+                padding-bottom: 100px;
+            }
+        }
         .sub{
             color: var(--theme);
             &::before{
@@ -109,6 +128,13 @@
     }
 }
 .testi__style__two{
+    padding: 80px 0;
+    @include breakpoint(lg){
+        padding: 120px 0;
+    }
+    @include breakpoint(xl){
+        padding: 140px 0;
+    }
     background: url(../img/testimonial/bg.jpg) no-repeat center center;
     background-size: cover;
     &::before{
@@ -130,12 +156,22 @@
     }
     .section__title{
         position: relative;
+        &.mb-100{
+            margin-bottom: 60px;
+            @include breakpoint(lg){
+               margin-bottom: 100px;
+            }
+        }
         .sub{
             color: var(--white);
             &::before{
                 left: initial;
                 transform: initial;
                 width: 110px;
+                @include breakpoint(max-xs){
+                    left: 50%;
+                    transform: translate(-50%, -50%)
+                }
             }
         }
     }
@@ -167,25 +203,49 @@
         }
     }
     .testi__thumb{
+        width: 25%;
+        margin-top: -150px;
+        margin-left: auto;
+        @include breakpoint(xs){
+            width: 20%;
+        }
+        @include breakpoint(md){
+            width: 70%;
+            margin-top: initial;
+        }
+        @include breakpoint(lg){
+            width: 100%;
+        }
         img{
             @include imgw;
         }
     }
-    .testi__dot__wrp{
-        .swiper-pagination-bullet {
-            width: 12px;
-            height: 12px;
-            border-radius: 100px;
-            transition: 0.6s;
-            border:1px solid var(--white);
-            background-color: transparent;
-            opacity: 1;
+    .testi-active{
+        .slick-dots{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            gap: 10px;
+            li{
+                button{
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 100px;
+                    transition: 0.6s;
+                    border:1px solid var(--white);
+                    font-size: 0;
+                    background-color: transparent;
+                    opacity: 1;
+                }
+                &.slick-active button{
+                    background-color: var(--theme2);
+                    border:1px solid var(--theme2);
+                    transition: 0.6s;
+                }
+            } 
         }
-        .swiper-pagination-bullet.swiper-pagination-bullet-active {
-            background-color: var(--theme2);
-            border:1px solid var(--theme2);
-            transition: 0.6s;
-        }
+        
     }
 }
 //--Testmonial Section End--//

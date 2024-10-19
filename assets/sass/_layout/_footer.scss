@@ -1,6 +1,9 @@
 /* 17. Footer */
 .footer__section{
     .footer__top{
+        &.pt-70 {
+            padding-top: 70px;
+        }
         .footer__widget{
             .widget__head{
                 position: relative;
@@ -11,10 +14,19 @@
                 &::before{
                     position: absolute;
                     content: "";
-                    bottom: -20px;
+                    bottom: -8px;
                     left: 0;
                     border-bottom: 1px solid var(--theme2);
                     width: 80px;
+                    @include breakpoint(lg){
+                        bottom: -12px;
+                    }
+                    @include breakpoint(xxl){
+                        bottom: -14px;
+                    }
+                    @include breakpoint(xxxl){
+                        bottom: -16px;
+                    }
                 }
             }
             p{
@@ -92,6 +104,9 @@
                     &::placeholder{
                         color: var(--white);
                     }
+                    @include breakpoint(max-sm){
+                        width: 80%;
+                    }
                 }
                 .button{
                     .cmn--btn{
@@ -108,6 +123,30 @@
         }
     }
     .footer__bottom{
+        &.pt-70 {
+            padding-top: 30px;
+            @include breakpoint(lg){
+                padding-top: 50px;
+            }
+            @include breakpoint(xl){
+                padding-top: 60px;
+            }
+            @include breakpoint(xxxl){
+                padding-top: 70px;
+            }
+        }
+        &.pb-70 {
+            padding-bottom: 30px;
+            @include breakpoint(lg){
+                padding-bottom: 50px;
+            }
+            @include breakpoint(xl){
+                padding-bottom: 60px;
+            }
+            @include breakpoint(xxxl){
+                padding-bottom: 70px;
+            }
+        }
         border-top: 1px solid var(--border);
         p{
             color: var(--white);

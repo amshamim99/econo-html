@@ -1,6 +1,16 @@
 /* 14. Team */
 .team__section{
     position: relative;
+    padding: 70px 0 0 0;
+    @include breakpoint(sm){
+        padding: 100px 0 0 0;
+    }
+    @include breakpoint(lg){
+        padding: 120px 0 0 0;
+    }
+    @include breakpoint(xl){
+        padding: 140px 0 0 0;
+    }
     .left__shape{
         position: absolute;
         top: -8px;
@@ -14,6 +24,9 @@
         --bs-gutter-x: 3rem;
         @include breakpoint(max-sm){
             --bs-gutter-x: 0;
+        }
+        @include breakpoint(max-lg){
+            --bs-gutter-y: 5rem;
         }
     }
     .vector__shape{
@@ -34,6 +47,12 @@
     .section__title{
         .sub{
             color: var(--theme);
+        }
+        &.mb-120 {
+            margin-bottom: 60px;
+            @include breakpoint(lg){
+                margin-bottom: 120px;
+            }
         }
     }
     .team__items{

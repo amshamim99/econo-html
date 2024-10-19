@@ -18,24 +18,46 @@ $(document).ready(function () {
     //menu top fixed bar
 
     //--Header Menu
-    $(".header-bar").on("click", function(e) {
-        $(".main-menu, .header-bar").toggleClass("active");
-    });
-    $(".main-menu li a").on("click", function(e) {
-        var element = $(this).parent("li");
-        if (element.hasClass("open")) {
-            element.removeClass("open");
-            element.find("li").removeClass("open");
-            element.find("ul").slideUp(300, "swing");
-        } else {
-            element.addClass("open");
-            element.children("ul").slideDown(300, "swing");
-            element.siblings("li").children("ul").slideUp(300, "swing");
-            element.siblings("li").removeClass("open");
-            element.siblings("li").find("li").removeClass("open");
-            element.siblings("li").find("ul").slideUp(300, "swing");
-        }
-    });
+    // mobile menu 
+	var tpMenuWrap = $('.tp-mobile-menu-active > ul').clone();
+	var tpSideMenu = $('.tp-offcanvas-menu nav');
+	tpSideMenu.append(tpMenuWrap);
+	if ($(tpSideMenu).find('.tp-submenu, .tp-mega-menu').length != 0) {
+		$(tpSideMenu).find('.tp-submenu, .tp-mega-menu').parent().append
+			('<button class="tp-menu-close"><i class="fi-chevron-right"></i></button>');
+	}
+	var sideMenuList =
+		$('.tp-offcanvas-menu nav > ul > li button.tp-menu-close, .tp-offcanvas-menu nav > ul li.has-dropdown > a');
+	$(sideMenuList).on('click', function (e) {
+		e.preventDefault();
+		if (!($(this).parent().hasClass('active'))) {
+			$(this).parent().addClass('active');
+			$(this).siblings('.tp-submenu, .tp-mega-menu').slideDown();
+		} else {
+			$(this).siblings('.tp-submenu, .tp-mega-menu').slideUp();
+			$(this).parent().removeClass('active');
+		}
+	});
+
+	// offcanvas
+	$(".tp-offcanvas-open-btn").on("click", function () {
+		$(".tp-offcanvas-area").addClass("opened");
+		$(".body-overlay").addClass("opened");
+	});
+	$(".tp-offcanvas-close-btn").on("click", function () {
+		$(".tp-offcanvas-area").removeClass("opened");
+		$(".body-overlay").removeClass("opened");
+	});
+
+	// // 09. Body overlay Js
+	$(".body-overlay").on("click", function () {
+		$(".tp-offcanvas-area").removeClass("opened");
+		$(".body-overlay").removeClass("opened");
+	});
+    // mobile-menu-end////
+
+
+    // scrollToTop//
     $(".scrollToTop").on("click", function() {
         $("html, body").animate({
                 scrollTop: 0,
@@ -102,8 +124,23 @@ $(document).ready(function () {
         autoplay:true,
         items:1,
         margin: 10,
-        nav:false,
+        autoplayTimeout: 7000,
+        smartSpeed: 1000,
+        nav:true,
         dots:false,
+        navText: [
+            '<i class="fa-solid fa-chevron-left"></i>',
+            '<i class="fa-solid fa-chevron-right"></i>'
+        ],
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+            },
+            992:{
+                nav:true,
+            },
+        }
     })
     // slide-active end
 
@@ -266,22 +303,73 @@ $(document).ready(function () {
    //project-slide-area-start-End
 
    // Blog slider area start here ***
-	var swiper = new Swiper(".testi__slider", {
-		loop: "true",
-		spaceBetween: 30,
-		speed: 1200,
-		autoplay: {
-			delay: 1500,
-			disableOnInteraction: false,
-		},
-		pagination: {
-			el: ".testi__dot",
-			clickable: true,
-		},
-	});
+	// testimonial-active//
+    if($('.testi-active').length > 0){
+        $('.testi-active').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay:true,
+          arrows: false,
+          dots:true,
+          infinite: true,
+          fade: false,
+          asNavFor: '.testi-nav',
+      });
+    }
+    if($('.testi-nav').length > 0){
+      $('.testi-nav').slick({
+          slidesToShow:1,
+          slidesToScroll: 1,
+          asNavFor: '.testi-active',
+          dots: false,
+          centerMode: true,
+          infinite: true,
+          fade: true,
+          initialSlide:0,
+          focusOnSelect: true,
+          centerPadding:'0px',
+          arrows: false,
+          responsive: [
+              {
+                  breakpoint: 767,
+                      settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      arrows:false,
+                  }
+              }
+          ]
+      });
+    }
 	// Blog slider area end here ***
 
-     //Wow-animation-area-start-here
+    // progressbar-start////
+
+    function showProgress(){
+        const skillBars = document.querySelectorAll('.skill-bar');
+        skillBars.forEach(skillBar=> {
+            const value = skillBar.dataset.progress;
+            skillBar.style.opacity = 1;
+            skillBar.style.width = `${value}%`;
+            
+        });
+    }
+    if($('#about-section').length > 0){
+        const aboutSection = document.getElementById('about-section');
+        window.addEventListener('scroll',() => {
+            const sectionPos = aboutSection.getBoundingClientRect().top;
+            const screenPos = window.innerHeight /3;
+    
+            if(sectionPos < screenPos){
+                showProgress();
+            }else{
+                // hideProgress();
+            }
+        });
+    }
+    // progressbar-end////
+
+    //Wow-animation-area-start-here
 	 new WOW().init();
      //Wow-animation-area-start-End
 
