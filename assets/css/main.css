@@ -1390,7 +1390,7 @@ i {
   padding: 30px 0;
 }
 .main__header__two .header-wrapper .main-menu {
-  gap: 0 35px;
+  gap: 0 25px;
 }
 .main__header__two .header-wrapper .main-menu li a {
   color: var(--white);
