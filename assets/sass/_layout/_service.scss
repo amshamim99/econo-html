@@ -1,5 +1,15 @@
 /* 7. Service */
 .service__section{
+    padding: 60px 0;
+    @include breakpoint(xs){
+        padding: 80px 0;
+    }
+    @include breakpoint(md){
+        padding: 120px 0;
+    }
+    @include breakpoint(xl){
+        padding: 140px 0;
+    }
     background: url(../img/service/service-bg.jpg) no-repeat center center;
     background-size: cover;
     .right__shape{
@@ -217,11 +227,27 @@
                     left: 0;
                     padding: 75px 65px;
                     z-index: 99;
-                    @include breakpoint(max-xxl){
-                        padding: 45px 35px;
+                    @include breakpoint(max-md){
+                        top: 40%;
+                        transform: translateY(-40%);
                     }
                     @include breakpoint(max-xxsmall){
                         padding: 20px 20px;
+                    }
+                    @include breakpoint(xs){
+                        padding: 45px 35px;
+                    }
+                    @include breakpoint(md){
+                        padding: 25px 35px;
+                    }
+                    @include breakpoint(lg){
+                        padding: 55px 35px;
+                    }
+                    @include breakpoint(xl){
+                        padding: 35px;
+                    }
+                    @include breakpoint(xxl){
+                        padding: 75px 65px;
                     }
                     .count__item{
                         position: relative;
@@ -231,12 +257,19 @@
                         }
                         &::before{
                             position: absolute;
-                            bottom: -15px;
+                            // bottom: -15px;
+                            bottom: 12px;
                             left: 0;
                             content: "";
                             height: 1px;
                             width: 73px;
                             background-color: var(--white);
+                            @include breakpoint(xs){
+                                bottom: 0;
+                            }
+                            @include breakpoint(lg){
+                                bottom: -4px;
+                            }
                         }
                         span{
                             font-size: 90px;
@@ -333,7 +366,21 @@
 .service__three{
     background: url(../img/service/service-3.jpg) no-repeat center center;
     background-size: cover;
+    .g-4, .gx-4 {
+        --bs-gutter-x: 1.5rem;
+        @include breakpoint(max-sm){
+            --bs-gutter-x: 0;
+        }
+        @include breakpoint(max-md){
+            --bs-gutter-y: 3rem;
+        }
+    }
     .section__title{
+        &.mb-100{
+            @include breakpoint(max-md){
+                margin-bottom: 40px;
+            }
+        }
         .sub{
             font-size: 45px;
             @include breakpoint(max-xxsmall){
@@ -354,8 +401,13 @@
         background-color: rgba(38, 54, 109, 0.6);
         padding: 120px 65px;
         clip-path: polygon(100% 0, 100% 43%, 100% 82%, 83% 100%, 0 100%, 0% 60%, 0 0);
+        height: 350px;
+        width: 100%;
         @include breakpoint(max-xl){
             padding: 100px 35px;
+        }
+        @include breakpoint(xl){
+           height: 401px;
         }
         .service__three__content{
             position: relative;
@@ -408,12 +460,16 @@
                 margin-bottom: 80px;
                 &::before{
                     position: absolute;
-                    bottom: -40px;
+                    // bottom: -40px;
+                    bottom: -24px;
                     left: 0;
                     content: "";
                     width: 182px;
                     height: 1px;
                     background-color: var(--theme2);
+                    @include breakpoint(max-md){
+                        width: 110px;
+                    }
                 }
             }
             .single__item{

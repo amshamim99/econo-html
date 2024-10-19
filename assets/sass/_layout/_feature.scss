@@ -1,5 +1,29 @@
 /* 8. Feature */
 .feature__section{
+    padding: 60px 0 40px 0;
+    @include breakpoint(xs){
+        padding: 80px 0 50px 0;
+    }
+    @include breakpoint(sm){
+        padding: 80px 0 60px 0;
+    }
+    @include breakpoint(md){
+        padding: 100px 0 60px 0;
+    }
+    @include breakpoint(lg){
+        padding: 120px 0;
+    }
+    @include breakpoint(xl){
+        padding: 140px 0;
+    }
+    .row .col-xxl-4 .icon__item .icon__wrap .content .max__width {
+        @include breakpoint(max-xs){
+            margin: auto;
+        }
+        @include breakpoint(max-md){
+            max-width: 330px;
+        }
+    }
     .left__shape{    
         position: absolute;
         bottom: -60%;
@@ -29,6 +53,18 @@
             @include breakpoint(max-lg){
                 display: none;
             }
+        }
+        &.feature__wrapper_two{
+            .icon__item .icon__wrap{
+                @include breakpoint(max-xs){
+                    text-align: center;
+                }
+                .icon_wrap_inner {
+                    @include breakpoint(max-xs){
+                        margin: 0 auto 25px;
+                    }
+                }
+            } 
         }
     }
     .section__title{
@@ -130,6 +166,9 @@
     }
     .feature__box{
         gap: 25px;
+        @include breakpoint(max-xs){
+            justify-content: center;
+        }
         .title__cont{
             position: relative;
             span{
@@ -148,6 +187,24 @@
     }
 }
 .feature__two{
+    padding: 60px 0;
+    @include breakpoint(xs){
+        padding: 80px 0;
+    }
+    @include breakpoint(md){
+        padding: 100px 0;
+    }
+    @include breakpoint(lg){
+        padding: 120px 0;
+    }
+    @include breakpoint(xl){
+        padding: 140px 0;
+    }
+    .section__title.mb-140 {
+        @include breakpoint(md){
+            margin-bottom: 140px;
+        }
+    }
     .feature__items__two{
         position: relative;
         .feature__number{
@@ -188,26 +245,57 @@
                     position: relative;
                     &::before{
                         position: absolute;
-                        bottom: -30px;
+                        bottom: -14px;
                         content: "";
                         height: 1px;
                         width: 155px;
                         left: 50%;
                         transform: translate(-50%, -50%);
                         background-color: var(--theme2);
+                        @include breakpoint(max-md){
+                            width: 110px;
+                        }
+                        @include breakpoint(lg){
+                            bottom: -20px;
+                        }
                     }
                 }
             }
+        }
+    }
+    .g-4, .gx-4 {
+        --bs-gutter-x: 1.5rem;
+        @include breakpoint(max-sm){
+            --bs-gutter-x: 0;
+        }
+        @include breakpoint(max-lg){
+            --bs-gutter-y: 4rem;
+        }
+    }
+    .g-2, .gx-2 {
+        --bs-gutter-x: 1.5rem;
+        @include breakpoint(max-sm){
+            --bs-gutter-x: 0;
+        }
+        @include breakpoint(max-lg){
+            --bs-gutter-y: 2rem;
         }
     }
 }
 .icon__item{
     .icon__wrap{
         gap: 45px;
+        align-items: center;
         @include breakpoint(max-md){
             flex-wrap: wrap;
             gap: 25px;
         }
+        @include breakpoint(max-xxsmall){
+            width: 100%;
+            text-align: center;
+            display: block !important;
+        }
+        
         &:not(:last-child){
             margin-bottom: 40px;
         }
@@ -215,6 +303,9 @@
             background: transparent;
             filter: drop-shadow(0px 0px 10px rgba(0, 22, 89, 0.2));
             width: 80px;
+            @include breakpoint(max-xxsmall){
+                margin: 0 auto 25px;
+            }
             .icon__wrap_item {
                 width: fit-content;
                 background: var(--theme2);
