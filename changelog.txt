@@ -1,3 +1,9 @@
+= 1.0.2 - Oct 19, 2024 =
+    * New: Custom cursor style
+    * New: Off-Canvas menu added to mobile version
+    * Fix: Responsive issue
+    * Update: Added odometer support on different sections
+
 = 1.0.1 - July 29, 2024 =
     * Fix: Feature section CSS issue
     * Fix: Social icon CSS issue
