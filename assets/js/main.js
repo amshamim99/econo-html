@@ -344,27 +344,27 @@ $(document).ready(function () {
 	// Blog slider area end here ***
 
     // progressbar-start////
-    const aboutSection = document.getElementById('about-section');
-    const skillBars = document.querySelectorAll('.skill-bar');
+    // const aboutSection = document.getElementById('about-section');
+    // const skillBars = document.querySelectorAll('.skill-bar');
 
-    function showProgress(){
-        skillBars.forEach(skillBar=> {
-            const value = skillBar.dataset.progress;
-            skillBar.style.opacity = 1;
-            skillBar.style.width = `${value}%`;
+    // function showProgress(){
+    //     skillBars.forEach(skillBar=> {
+    //         const value = skillBar.dataset.progress;
+    //         skillBar.style.opacity = 1;
+    //         skillBar.style.width = `${value}%`;
             
-        });
-    }
-    window.addEventListener('scroll',() => {
-        const sectionPos = aboutSection.getBoundingClientRect().top;
-        const screenPos = window.innerHeight /3;
+    //     });
+    // }
+    // window.addEventListener('scroll',() => {
+    //     const sectionPos = aboutSection.getBoundingClientRect().top;
+    //     const screenPos = window.innerHeight /3;
 
-        if(sectionPos < screenPos){
-            showProgress();
-        }else{
-            // hideProgress();
-        }
-    });
+    //     if(sectionPos < screenPos){
+    //         showProgress();
+    //     }else{
+    //         // hideProgress();
+    //     }
+    // });
     // progressbar-end////
 
     //Wow-animation-area-start-here

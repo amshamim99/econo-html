@@ -62,9 +62,11 @@
             margin-top: 60px;
             @include flex;
             gap: 20px;
-            span{
+            .odometer{
                 color: #1cb0eb;
                 font-size: 33px;
+                line-height: 120%;
+                font-weight: 700;
             }
         }
     }
