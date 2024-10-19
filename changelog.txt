@@ -2,6 +2,7 @@
     * New: Custom cursor style
     * New: Off-Canvas menu added to mobile version
     * Fix: Responsive issue
+    * Fix: Progress bar slide issue fixed
     * Update: Added odometer support on different sections
 
 = 1.0.1 - July 29, 2024 =
